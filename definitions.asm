@@ -1,0 +1,38 @@
+;mm1_ram_pre_definitions
+
+;nes_registers
+	ppu_ctrl = $2000
+	ppu_mask = $2001
+	ppu_status = $2002
+	ppu_oam_address = $2003
+	ppu_oam_data = $2004
+	ppu_scroll = $2005
+	ppu_address = $2006
+	ppu_data = $2007
+	square1_volume = $4000
+	square1_sweep = $4001
+	square1_low = $4002
+	square1_high = $4003
+	square2_volume = $4004
+	square2_sweep = $4005
+	square2_low = $4006
+	square2_high = $4007
+	triangle_linear = $4008
+	triangle_low = $400a
+	triangle_high = $400b
+	noise_volume = $400c
+	noise_low = $400e
+	noise_high = $400f
+	dmc_freq = $4010
+	apu_status = $4015
+	apu_frame_counter = $4017 ;write
+	joy2_frame = $4017 ;read
+
+;mm1_uxrom_registers
+	bank0 = $c000
+	bank1 = $c001
+	bank2 = $c002
+	bank3 = $c003
+	bank4 = $c004
+	bank5 = $c005
+	bank6 = $c006
