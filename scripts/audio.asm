@@ -54,6 +54,10 @@ MACRO volume a
 	ENDIF
 ENDM
 
+MACRO triangle_linear a
+	db 3, a
+ENDM
+
 MACRO loop a, b
 	db 4
 	db a
@@ -249,21 +253,26 @@ MACRO noise_note a, b
 		error "Noise note is out of range"
 	ENDIF
 	IF b == 2 && tempo_number
-		c = $41
+		c = $40
 	ELSEIF b == 4
-		c = $61
+		c = $60
 	ELSEIF b == 8
-		c = $81
+		c = $80
 	ELSEIF b == 16
-		c = $a1
+		c = $a0
 	ELSEIF b == 32
-		c = $c1
+		c = $c0
 	ELSEIF b == 64
-		c = $e1
+		c = $e0
 	ELSE
 		error "Invalid note length"
 	ENDIF
-	db a+c
+	IF $f-a
+		d = $f-a
+	ELSE
+		d = $10
+	ENDIF
+	db c+d
 ENDM
 
 MACRO pitch_bend a, b
