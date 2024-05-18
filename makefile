@@ -1,4 +1,4 @@
-mm1: asm6 testadd
+mm1: asm6
 
 asm6: 
 	$(MAKE) -C tools/
