@@ -1,10 +1,10 @@
 music_all_stage_clear:
 	music_pointers
-    channel_flags = $f
-    channel_1, music_all_stage_clear_pulse1
-    channel_2, music_all_stage_clear_pulse2
-    channel_3, music_all_stage_clear_triangle
-    channel_4, music_all_stage_clear_noise
+	channel_flags = $f
+	channel_1, music_all_stage_clear_pulse1
+	channel_2, music_all_stage_clear_pulse2
+	channel_3, music_all_stage_clear_triangle
+	channel_4, music_all_stage_clear_noise
 	dw music_all_stage_clear_modulation
 
 music_all_stage_clear_pulse1:
