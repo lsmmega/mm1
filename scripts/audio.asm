@@ -91,7 +91,7 @@ MACRO triplet_set
 ENDM
 
 MACRO rest a
-	IF a == 2 & tempo_flags != 1
+	IF a == 2 && tempo_flags != 1
 		b = $40
 	ELSEIF a == 4
 		b = $60
@@ -222,7 +222,7 @@ MACRO note a, b
 	ELSE
 		c = a-current_base_note
 	ENDIF
-	IF b == 2 & tempo_flags != 1
+	IF b == 2 && tempo_flags != 1
 		d = $41
 	ELSEIF b == 4
 		d = $61
@@ -246,7 +246,7 @@ MACRO noise_note a, b
 	ELSEIF a>$1e
 		error "Noise note is out of range"
 	ENDIF
-	IF b == 2 & tempo_flags != 1
+	IF b == 2 && tempo_flags != 1
 		c = $41
 	ELSEIF b == 4
 		c = $61
