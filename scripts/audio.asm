@@ -47,9 +47,7 @@ MACRO duty_cycle a
 ENDM
 
 MACRO volume a
-	IF a < 0
-		error "Invalid volume"
-	ELSEIF a > $f
+	IF a < 0 || a > $f
 		error "Invalid volume"
 	ELSE
 		db 3, a+$30
@@ -75,7 +73,11 @@ MACRO volume_envelope a, b
 ENDM
 
 MACRO modulation a
-	db 8, a
+	IF a > $3f
+		error "Modulation is out of range"
+	ELSE
+		db 8, a
+	ENDIF
 ENDM
 
 MACRO stop_playing
@@ -83,15 +85,19 @@ MACRO stop_playing
 ENDM
 
 MACRO number_of_note_connect a
-	db a+$21
+	db a+$20
 ENDM
 
 MACRO triplet_set
 	db $30
 ENDM
 
+;general
+even = 1
+odd = 0
+
 MACRO rest a
-	IF a == 2 && tempo_flags&1
+	IF a == 2 && tempo_number
 		b = $40
 	ELSEIF a == 4
 		b = $60
@@ -215,25 +221,23 @@ ENDM
 	B_7 = $5f
 
 MACRO note a, b
-	IF a < current_base_note
-		error "Note is out of range"
-	ELSEIF a-current_base_note > $1e
+	IF a-current_base_note < 1 || a-current_base_note > $1e
 		error "Note is out of range"
 	ELSE
 		c = a-current_base_note
 	ENDIF
-	IF b == 2 && tempo_flags&1
-		d = $41
+	IF b == 2 && tempo_number
+		d = $40
 	ELSEIF b == 4
-		d = $61
+		d = $60
 	ELSEIF b == 8
-		d = $81
+		d = $80
 	ELSEIF b == 16
-		d = $a1
+		d = $a0
 	ELSEIF b == 32
-		d = $c1
+		d = $c0
 	ELSEIF b == 64
-		d = $e1
+		d = $e0
 	ELSE
 		error "Invalid note length"
 	ENDIF
@@ -241,12 +245,10 @@ MACRO note a, b
 ENDM
 
 MACRO noise_note a, b
-	IF a<1
-		error "Noise note is out of range"
-	ELSEIF a>$1e
+	IF a < 0 || a > $1e
 		error "Noise note is out of range"
 	ENDIF
-	IF b == 2 && tempo_flags&1
+	IF b == 2 && tempo_number
 		c = $41
 	ELSEIF b == 4
 		c = $61
