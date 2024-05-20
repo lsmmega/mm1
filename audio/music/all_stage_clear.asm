@@ -325,9 +325,9 @@ music_all_stage_clear_noise_loop4:
 	
 music_all_stage_clear_modulation:
 ;modulation_0
-	pitch_bend $00, $e0
+	pitch_bend 0, 7, 0
 	volume_modulation $80, $00
 
 ;modulation_1
-	pitch_bend $01, $62
+	pitch_bend 1, 3, 2
 	volume_modulation $80, $00
