@@ -103,7 +103,7 @@ music_all_stage_clear_pulse1:
 	modulation $01
 	dotted_set
 	note A#4, 32
-	music_channel_end
+	channel_end
 
 music_all_stage_clear_pulse2:
 	tempo 6
@@ -202,7 +202,7 @@ music_all_stage_clear_pulse2:
 	modulation $01
 	dotted_set
 	note C#4, 32
-	music_channel_end
+	channel_end
 
 music_all_stage_clear_triangle:
 	tempo 6
@@ -260,7 +260,7 @@ music_all_stage_clear_triangle_loop7:
 	modulation $01
 	dotted_set
 	note F#3, 32
-	music_channel_end
+	channel_end
 
 music_all_stage_clear_noise:
 	tempo 6
@@ -321,7 +321,7 @@ music_all_stage_clear_noise_loop3:
 music_all_stage_clear_noise_loop4:
 	noise_note 10, 2
 	loop 24, music_all_stage_clear_noise_loop4
-	music_channel_end
+	channel_end
 	
 music_all_stage_clear_modulation:
 ;modulation_0
