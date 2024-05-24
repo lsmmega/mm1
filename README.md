@@ -1,4 +1,4 @@
 # Mega Man 1
- (WIP) Disassembly of Mega Man 1
- 
- Reserved
+(WIP) Disassembly of Mega Man 1
+
+Reserved
