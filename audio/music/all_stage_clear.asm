@@ -323,10 +323,10 @@ music_all_stage_clear_noise_loop4:
 	channel_end
 	
 music_all_stage_clear_modulation:
-;modulation_0
+;modulation_$00
 	pitch_bend 0, 7, 0
 	volume_modulation $80, $00
 
-;modulation_1
+;modulation_$01
 	pitch_bend 1, 3, 2
 	volume_modulation $80, $00
