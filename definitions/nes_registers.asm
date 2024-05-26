@@ -1,5 +1,3 @@
-;mm1_ram_pre_definitions
-
 ;nes_registers
 	ppu_ctrl = $2000
 	ppu_mask = $2001
@@ -27,12 +25,3 @@
 	apu_status = $4015
 	apu_frame_counter = $4017 ;write
 	joy2_frame = $4017 ;read
-
-;mm1_uxrom_registers
-	bank0 = $c000
-	bank1 = $c001
-	bank2 = $c002
-	bank3 = $c003
-	bank4 = $c004
-	bank5 = $c005
-	bank6 = $c006
