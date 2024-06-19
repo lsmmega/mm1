@@ -24,30 +24,30 @@
 	dw sfx_shoot
 	dw sfx_enemy_shoot
 	dw sfx_damage_mm
-	dw sfx_rock
+	dw sfx_block_scatter
 	dw sfx_health_bar
 	dw sfx_landing
 	dw sfx_gain_ball
 	dw sfx_destroy_enemy
 	dw sfx_select_robo
 	dw sfx_shoot_recoil
-	dw sfx_elec
+	dw sfx_thunder_beam
 	dw sfx_change_weapon
 	dw sfx_teleport_in
 	dw sfx_score
 	dw sfx_open_menu
 	dw sfx_lift
 	dw sfx_boss_door
-	dw sfx_cut
+	dw sfx_rolling_cutter
 	dw sfx_cutman
 	dw sfx_unused27
 	dw sfx_earthquake
 	dw sfx_bigeye
-	dw sfx_ice
+	dw sfx_ice_slasher
 	dw sfx_water
 	dw sfx_yoku_block
-	dw sfx_fireman
-	dw sfx_fire
+	dw sfx_fireman_storm
+	dw sfx_fire_storm
 	dw sfx_unused2f
 	dw sfx_flood
 	dw sfx_death
