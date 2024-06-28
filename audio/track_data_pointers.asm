@@ -4,7 +4,7 @@
 	dw music_game_start
 	dw music_game_over
 	dw music_stage_clear
-	;dw music_cut
+	dw music_cut
 	;dw music_fire
 	;dw music_fire
 	;dw music_bomb

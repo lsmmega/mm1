@@ -8,7 +8,7 @@ incsrc .\music\stage_select.asm
 incsrc .\music\game_start.asm
 incsrc .\music\game_over.asm
 incsrc .\music\stage_clear.asm
-;incsrc .\music\cut.asm
+incsrc .\music\cut.asm
 ;incsrc .\music\fire.asm
 ;incsrc .\music\bomb.asm
 ;incsrc .\music\elec.asm
