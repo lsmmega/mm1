@@ -27,5 +27,5 @@ mm1.nes: $(mm1_obj) \
 	ld65 $(rom_obj) -C mm1.cfg -o $@
 
 clean:
-	$(rm) $(rom_obj) \
+	$(RM) $(rom_obj) \
 	mm1.nes
