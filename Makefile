@@ -13,7 +13,11 @@ mm1_cfg := mm1.cfg
 
 mm1_obj := $(rom_obj:.o=.o)
 
-all: mm1.nes
+.PHONY: all mm1 clean
+
+all: mm1
+
+mm1: mm1.nes
 
 mm1.nes: $(mm1_obj) $(mm1_cfg)
 
