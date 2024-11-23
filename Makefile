@@ -9,17 +9,16 @@ rom_obj := \
 	bank06.o \
 	bank07.o
 
-mm1_cfg := mm1.cfg
-
 mm1_obj := $(rom_obj:.o=.o)
 
-.PHONY: all mm1 clean
+.phony: all mm1 clean
 
 all: mm1
 
 mm1: mm1.nes
 
-mm1.nes: $(mm1_obj) $(mm1_cfg)
+mm1.nes: $(mm1_obj) \
+	mm1.cfg
 
 %.o: %.asm
 	ca65 -o $@ $<
@@ -28,5 +27,5 @@ mm1.nes: $(mm1_obj) $(mm1_cfg)
 	ld65 $(rom_obj) -C mm1.cfg -o $@
 
 clean:
-	$(RM) $(rom_obj) \
-	      mm1.nes
+	$(rm) $(rom_obj) \
+	mm1.nes
