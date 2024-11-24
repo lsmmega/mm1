@@ -1,4 +1,5 @@
 rom_obj := \
+	audio.o  \
 	header.o \
 	bank00.o \
 	bank01.o \
