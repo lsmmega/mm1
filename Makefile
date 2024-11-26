@@ -1,14 +1,14 @@
 rom_obj := \
 	audio.o  \
 	header.o \
+	home.o   \
 	stages.o \
 	bank00.o \
 	bank01.o \
 	bank02.o \
 	bank03.o \
 	bank05.o \
-	bank06.o \
-	bank07.o
+	bank06.o
 
 mm1_obj := $(rom_obj:.o=.o)
 
