@@ -3,9 +3,8 @@ rom_obj := \
 	gfx.o    \
 	header.o \
 	home.o   \
-	stages.o \
-	bank05.o \
-	bank06.o
+	main.o   \
+	stages.o
 
 mm1_obj := $(rom_obj:.o=.o)
 
