@@ -21,8 +21,9 @@ mm1.nes: $(mm1_obj) \
 	ca65 -o $@ $<
 
 %.nes: $(rom_obj)
-	ld65 $(rom_obj) -C mm1.cfg -o $@
+	ld65 -C mm1.cfg $(rom_obj) -o $@ -m mm1.map
 
 clean:
 	$(RM) $(rom_obj) \
+	mm1.map \
 	mm1.nes
