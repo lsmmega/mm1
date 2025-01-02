@@ -2,7 +2,6 @@ rom_obj := \
 	audio.o  \
 	gfx.o    \
 	header.o \
-	home.o   \
 	main.o   \
 	stages.o
 
