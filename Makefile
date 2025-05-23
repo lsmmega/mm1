@@ -1,13 +1,13 @@
 rom_obj := \
 	header.o \
+	home.o \
 	0.o \
 	1.o \
 	2.o \
 	3.o \
 	4.o \
 	5.o \
-	6.o \
-	7.o
+	6.o
 
 cfg := \
 	mm1.cfg
@@ -48,9 +48,9 @@ header := \
 	6.asm \
 	6/*
 
-7 := \
-	7.asm \
-	7/*
+home := \
+	home.asm \
+	home/*
 
 gfx0 := \
 	gfx/0/0.bmp gfx/0/0.chr
@@ -100,8 +100,8 @@ header.o: $(header)
 6.o: $(6)
 	ca65 6.asm
 
-7.o: $(7)
-	ca65 7.asm
+home.o: $(home)
+	ca65 home.asm
 
 clean:
 	$(RM) $(rom_obj) \
