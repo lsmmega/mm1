@@ -16,6 +16,10 @@ header := \
 	constants/* \
 	header.asm
 
+home := \
+	home.asm \
+	home/*
+
 0 := \
 	0.asm \
 	0/* \
@@ -48,10 +52,6 @@ header := \
 	6.asm \
 	6/*
 
-home := \
-	home.asm \
-	home/*
-
 gfx0 := \
 	gfx/0/0.bmp gfx/0/0.chr
 
@@ -74,6 +74,9 @@ mm1: mm1.nes
 
 header.o: $(header)
 	ca65 header.asm
+
+home.o: $(home)
+	ca65 home.asm
 
 0.o: $(0)
 	bmp2nes $(gfx0)
@@ -99,9 +102,6 @@ header.o: $(header)
 
 6.o: $(6)
 	ca65 6.asm
-
-home.o: $(home)
-	ca65 home.asm
 
 clean:
 	$(RM) $(rom_obj) \
