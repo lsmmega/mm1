@@ -10,3 +10,4 @@
 .ENDENUM
 
 	OAM_DMA = $4014
+	JOY1    = $4016
