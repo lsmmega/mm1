@@ -53,7 +53,9 @@ home := \
 	6/*
 
 gfx0 := \
-	gfx/0/0.bmp gfx/0/0.chr
+	gfx/0/0_1.bmp gfx/0/0_1.chr \
+	gfx/0/stages_common.bmp gfx/0/stages_common.chr \
+	gfx/0/0_2.bmp gfx/0/0_2.chr
 
 gfx1 := \
 	gfx/1/1.bmp gfx/1/1.chr
@@ -62,6 +64,7 @@ gfx2 := \
 	gfx/2/2.bmp gfx/2/2.chr
 
 gfx3 := \
+	gfx/3/wily_common.bmp gfx/3/wily_common.chr \
 	gfx/3/3.bmp gfx/3/3.chr
 
 .PHONY: all mm1 clean

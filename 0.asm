@@ -1,3 +1,5 @@
 .SEGMENT "BANK00"
 .INCBIN "0/0.bin"
-.INCBIN "gfx/0/0.chr"
+.INCBIN "gfx/0/0_1.chr"
+.INCBIN "gfx/0/stages_common.chr"
+.INCBIN "gfx/0/0_2.chr"
