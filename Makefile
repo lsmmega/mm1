@@ -58,7 +58,12 @@ gfx0 := \
 	gfx/0/0_2.bmp gfx/0/0_2.chr
 
 gfx1 := \
-	gfx/1/1.bmp gfx/1/1.chr
+	gfx/1/cut.bmp gfx/1/cut.chr \
+	gfx/1/ice.bmp gfx/1/ice.chr \
+	gfx/1/bomb.bmp gfx/1/bomb.chr \
+	gfx/1/fire.bmp gfx/1/fire.chr \
+	gfx/1/elec.bmp gfx/1/elec.chr \
+	gfx/1/guts.bmp gfx/1/guts.chr
 
 gfx2 := \
 	gfx/2/2.bmp gfx/2/2.chr
