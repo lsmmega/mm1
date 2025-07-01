@@ -1,4 +1,5 @@
 .SEGMENT "BANK01"
+.INCLUDE "1/ice_wily2_tsa.asm"
 .INCBIN "1/1.bin"
 .INCBIN "gfx/1/cut.chr"
 .INCBIN "gfx/1/ice.chr"
