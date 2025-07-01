@@ -1,2 +1,3 @@
 .SEGMENT "BANK04"
-.INCBIN "4/4.bin"
+.INCLUDE "4/elec_tsa.asm"
+.INCBIN  "4/4.bin"
