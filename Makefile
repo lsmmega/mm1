@@ -67,7 +67,11 @@ gfx0 := \
 	gfx/sprites/bosses/fireman.bmp gfx/sprites/bosses/fireman.chr \
 	gfx/sprites/bosses/iceman.bmp gfx/sprites/bosses/iceman.chr \
 	gfx/sprites/bosses/elecman.bmp gfx/sprites/bosses/elecman.chr \
-	gfx/0/stages_common.bmp gfx/0/stages_common.chr \
+	gfx/stages/regular/common.bmp gfx/stages/regular/common.chr \
+	gfx/menus/menus.bmp gfx/menus/menus.chr \
+	gfx/sprites/miscellaneous/ready_font.bmp gfx/sprites/miscellaneous/ready_font.chr \
+	gfx/menus/equal.bmp gfx/menus/equal.chr \
+	gfx/sprites/miscellaneous/clear_points_font.bmp gfx/sprites/miscellaneous/clear_points_font.chr \
 	gfx/0/0_2.bmp gfx/0/0_2.chr
 
 gfx1 := \
