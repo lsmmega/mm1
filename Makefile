@@ -30,7 +30,7 @@ home := \
 1 := \
 	1.asm \
 	1/* \
-	gfx/1/*.bmp
+	gfx/stages/regular/*.bmp
 
 2 := \
 	2.asm \
@@ -66,12 +66,12 @@ gfx0 := \
 	gfx/0/0_2.bmp gfx/0/0_2.chr
 
 gfx1 := \
-	gfx/1/cut.bmp gfx/1/cut.chr \
-	gfx/1/ice.bmp gfx/1/ice.chr \
-	gfx/1/bomb.bmp gfx/1/bomb.chr \
-	gfx/1/fire.bmp gfx/1/fire.chr \
-	gfx/1/elec.bmp gfx/1/elec.chr \
-	gfx/1/guts.bmp gfx/1/guts.chr
+	gfx/stages/regular/cutman.bmp gfx/stages/regular/cutman.chr \
+	gfx/stages/regular/iceman.bmp gfx/stages/regular/iceman.chr \
+	gfx/stages/regular/bombman.bmp gfx/stages/regular/bombman.chr \
+	gfx/stages/regular/fireman.bmp gfx/stages/regular/fireman.chr \
+	gfx/stages/regular/elecman.bmp gfx/stages/regular/elecman.chr \
+	gfx/stages/regular/gutsman.bmp gfx/stages/regular/gutsman.chr
 
 gfx2 := \
 	gfx/2/2.bmp gfx/2/2.chr
