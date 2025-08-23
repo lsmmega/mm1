@@ -23,9 +23,14 @@ home := \
 0 := \
 	0.asm \
 	0/* \
-	gfx/0/*.bmp \
 	gfx/sprites/megaman/*.bmp \
-	gfx/sprites/bosses/*.bmp
+	gfx/sprites/bosses/*.bmp \
+	gfx/stages/regular/*.bmp \
+	gfx/menus/*.bmp \
+	gfx/sprites/miscellaneous/*.bmp \
+	gfx/font/*.bmp \
+	gfx/stage_select/*.bmp \
+	gfx/title/*.bmp
 
 1 := \
 	1.asm \
@@ -72,7 +77,14 @@ gfx0 := \
 	gfx/sprites/miscellaneous/ready_font.bmp gfx/sprites/miscellaneous/ready_font.chr \
 	gfx/menus/equal.bmp gfx/menus/equal.chr \
 	gfx/sprites/miscellaneous/clear_points_font.bmp gfx/sprites/miscellaneous/clear_points_font.chr \
-	gfx/0/0_2.bmp gfx/0/0_2.chr
+	gfx/font/font_1.bmp gfx/font/font_1.chr \
+	gfx/stage_select/border.bmp gfx/stage_select/border.chr \
+	gfx/title/1987.bmp gfx/title/1987.chr \
+	gfx/title/unknown_1.bmp gfx/title/unknown_1.chr \
+	gfx/stage_select/gutsman_wily_copyright.bmp gfx/stage_select/gutsman_wily_copyright.chr \
+	gfx/font/font_2.bmp gfx/font/font_2.chr \
+	gfx/title/megaman_pose.bmp gfx/title/megaman_pose.chr \
+	gfx/title/unknown_2.bmp gfx/title/unknown_2.chr \
 
 gfx1 := \
 	gfx/stages/regular/cutman.bmp gfx/stages/regular/cutman.chr \
