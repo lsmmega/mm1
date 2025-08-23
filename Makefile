@@ -23,7 +23,9 @@ home := \
 0 := \
 	0.asm \
 	0/* \
-	gfx/0/*.bmp
+	gfx/0/*.bmp \
+	gfx/sprites/megaman/*.bmp \
+	gfx/sprites/bosses/*.bmp
 
 1 := \
 	1.asm \
@@ -40,7 +42,7 @@ home := \
 	3/* \
 	gfx/3/*.bmp
 
-4:= \
+4 := \
 	4.asm \
 	4/*
 
@@ -53,7 +55,13 @@ home := \
 	6/*
 
 gfx0 := \
-	gfx/0/0_1.bmp gfx/0/0_1.chr \
+	gfx/sprites/megaman/megaman.bmp gfx/sprites/megaman/megaman.chr \
+	gfx/sprites/bosses/cutman.bmp gfx/sprites/bosses/cutman.chr \
+	gfx/sprites/bosses/gutsman.bmp gfx/sprites/bosses/gutsman.chr \
+	gfx/sprites/bosses/bombman.bmp gfx/sprites/bosses/bombman.chr \
+	gfx/sprites/bosses/fireman.bmp gfx/sprites/bosses/fireman.chr \
+	gfx/sprites/bosses/iceman.bmp gfx/sprites/bosses/iceman.chr \
+	gfx/sprites/bosses/elecman.bmp gfx/sprites/bosses/elecman.chr \
 	gfx/0/stages_common.bmp gfx/0/stages_common.chr \
 	gfx/0/0_2.bmp gfx/0/0_2.chr
 
