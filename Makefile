@@ -121,6 +121,6 @@ home.o: $(home)
 
 clean:
 	$(RM) $(rom_obj) \
-	gfx/*/*.chr \
 	*.nes \
 	*.map
+	find -name "*.chr" -delete
