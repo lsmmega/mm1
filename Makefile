@@ -40,7 +40,12 @@ home := \
 3 := \
 	3.asm \
 	3/* \
-	gfx/3/*.bmp
+	gfx/stages/wily/*.bmp \
+	gfx/ending/*.bmp \
+	gfx/title/*.bmp \
+	gfx/yellow_devil/*.bmp \
+	gfx/sprites/bosses/*.bmp \
+	gfx/wily_machine_1/*.bmp
 
 4 := \
 	4.asm \
@@ -77,8 +82,13 @@ gfx2 := \
 	gfx/2/2.bmp gfx/2/2.chr
 
 gfx3 := \
-	gfx/3/wily_common.bmp gfx/3/wily_common.chr \
-	gfx/3/3.bmp gfx/3/3.chr
+	gfx/stages/wily/wily.bmp gfx/stages/wily/wily.chr \
+	gfx/ending/ending.bmp gfx/ending/ending.chr \
+	gfx/title/title.bmp gfx/title/title.chr \
+	gfx/yellow_devil/yellow_devil.bmp gfx/yellow_devil/yellow_devil.chr \
+	gfx/sprites/bosses/yellow_devil.bmp gfx/sprites/bosses/yellow_devil.chr \
+	gfx/wily_machine_1/wily_machine_1.bmp gfx/wily_machine_1/wily_machine_1.chr \
+	gfx/sprites/bosses/wily_machine_1.bmp gfx/sprites/bosses/wily_machine_1.chr
 
 .PHONY: all mm1 clean
 
