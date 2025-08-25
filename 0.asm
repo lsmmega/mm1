@@ -5,7 +5,7 @@
 .INCBIN  "gfx/sprites/bosses/cutman.chr"
 .INCBIN  "gfx/sprites/bosses/gutsman.chr"
 .INCBIN  "gfx/sprites/bosses/bombman.chr"
-.INCBIN  "gfx/sprites/bosses/fireman.chr"
+.INCBIN  "gfx/sprites/bosses/fireman/fireman_1.chr"
 .INCBIN  "gfx/sprites/bosses/iceman.chr"
 .INCBIN  "gfx/sprites/bosses/elecman.chr"
 .INCBIN  "gfx/stages/regular/common.chr"
