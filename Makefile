@@ -22,6 +22,8 @@ home := \
 
 0 := \
 	0.asm \
+	constants/* \
+	stages/cutman_wily1/* \
 	0/* \
 	gfx/sprites/megaman/*.bmp \
 	gfx/sprites/bosses/*.bmp \
