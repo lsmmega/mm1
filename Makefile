@@ -25,6 +25,7 @@ home := \
 	constants/* \
 	macros/* \
 	stages/cutman_wily1/* \
+	unknown/* \
 	gfx/sprites/megaman/*.bmp \
 	gfx/sprites/bosses/*.bmp \
 	gfx/sprites/bosses/fireman/*.bmp \
