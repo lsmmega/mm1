@@ -38,7 +38,10 @@ home := \
 
 1 := \
 	1.asm \
-	1/* \
+	constants/* \
+	macros/* \
+	stages/iceman_wily2/* \
+	unknown/* \
 	gfx/stages/regular/*.bmp
 
 2 := \
