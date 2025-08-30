@@ -46,7 +46,10 @@ home := \
 
 2 := \
 	2.asm \
-	2/* \
+	constants/* \
+	macros/* \
+	stages/bombman_wily3/* \
+	unknown/* \
 	gfx/sprites/weapons/*.bmp \
 	gfx/sprites/bosses/cwu_01p/*.bmp \
 	gfx/sprites/unknown/*.bmp \
