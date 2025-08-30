@@ -76,7 +76,10 @@ home := \
 
 3 := \
 	3.asm \
-	3/* \
+	constants/* \
+	macros/* \
+	stages/fireman_wily4/* \
+	unknown/* \
 	gfx/stages/wily/*.bmp \
 	gfx/ending/*.bmp \
 	gfx/title/*.bmp \
