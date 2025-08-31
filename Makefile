@@ -93,7 +93,8 @@ home := \
 	macros/* \
 	stages/elecman/* \
 	unknown/* \
-	4/*
+	screen/* \
+	audio/*
 
 5 := \
 	5.asm \
