@@ -89,6 +89,10 @@ home := \
 
 4 := \
 	4.asm \
+	constants/* \
+	macros/* \
+	stages/elecman/* \
+	unknown/* \
 	4/*
 
 5 := \
