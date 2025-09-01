@@ -102,6 +102,7 @@ home := \
 	macros/* \
 	stages/gutsman_ending/* \
 	unknown/* \
+	screen/* \
 	5/*
 
 6 := \

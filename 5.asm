@@ -12,6 +12,6 @@
 .INCLUDE "stages/gutsman_ending/gutsman_ending_tiles_init.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_ending_sprites_set.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_special_blockset.asm"
-.INCBIN  "5/5_0.bin"
+.INCLUDE "screen/wily_machine_1.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_door.asm"
-.INCBIN  "5/5_1.bin"
+.INCBIN  "5/5.bin"
