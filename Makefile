@@ -98,6 +98,10 @@ home := \
 
 5 := \
 	5.asm \
+	constants/* \
+	macros/* \
+	stages/gutsman_ending/* \
+	unknown/* \
 	5/*
 
 6 := \
