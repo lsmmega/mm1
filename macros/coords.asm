@@ -3,14 +3,14 @@
 	.BYTE b << 4 | c, d
 .ENDMACRO
 
-.MACRO screencoord b, c
+.MACRO leftscreencoord b, c
 	.DBYT $2000 + b + c << 5
 .ENDMACRO
 
-.MACRO hiscreencoord b, c
+.MACRO hileftscreencoord b, c
 	.HIBYTES $2000 + b + c << 5
 .ENDMACRO
 
-.MACRO loscreencoord b, c
+.MACRO loleftscreencoord b, c
 	.LOBYTES $2000 + b + c << 5
 .ENDMACRO
