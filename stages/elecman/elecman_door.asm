@@ -31,34 +31,34 @@
 	.BYTE (elecman_door_1_end - elecman_door_1) / 2
 
 elecman_door_1:
-	mapcoord 14, 16, 0
-	mapcoord 14, 16, 1
-	mapcoord 14, 12, 0
-	mapcoord 14, 12, 1
+	mapdoorcoord 14, 16, 0
+	mapdoorcoord 14, 16, 1
+	mapdoorcoord 14, 12, 0
+	mapdoorcoord 14, 12, 1
 elecman_door_1_end:
 
 	.BYTE (elecman_door_2_end - elecman_door_2) / 2
 
 elecman_door_2:
-	mapcoord 6, 24, 2
-	mapcoord 6, 24, 3
-	mapcoord 8, 24, 2
-	mapcoord 8, 24, 3
+	mapdoorcoord 6, 24, 2
+	mapdoorcoord 6, 24, 3
+	mapdoorcoord 8, 24, 2
+	mapdoorcoord 8, 24, 3
 elecman_door_2_end:
 
 	.BYTE (elecman_door_3_end - elecman_door_3) / 2
 
 elecman_door_3:
-	mapcoord 14, 20, 5
-	mapcoord 14, 20, 6
-	mapcoord 14, 16, 5
-	mapcoord 14, 16, 7
+	mapdoorcoord 14, 20, 5
+	mapdoorcoord 14, 20, 6
+	mapdoorcoord 14, 16, 5
+	mapdoorcoord 14, 16, 7
 elecman_door_3_end:
 
 	.BYTE (elecman_door_4_end - elecman_door_4) / 2
 
 elecman_door_4:
-	mapcoord 0, 20, 4
+	mapdoorcoord 0, 20, 4
 elecman_door_4_end:
 
 ;end

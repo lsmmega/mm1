@@ -34,40 +34,40 @@
 	.BYTE (cutman_wily1_door_1_end - cutman_wily1_door_1) / 2
 
 cutman_wily1_door_1:
-	mapcoord 14, 16, 0
-	mapcoord 14, 16, 1
-	mapcoord 14, 12, 0
-	mapcoord 14, 12, 1
+	mapdoorcoord 14, 16, 0
+	mapdoorcoord 14, 16, 1
+	mapdoorcoord 14, 12, 0
+	mapdoorcoord 14, 12, 1
 cutman_wily1_door_1_end:
 
 	.BYTE (cutman_wily1_door_2_end - cutman_wily1_door_2) / 2
 
 cutman_wily1_door_2:
-	mapcoord 14, 16, 2
-	mapcoord 14, 16, 3
-	mapcoord 14, 12, 4
-	mapcoord 14, 12, 5
+	mapdoorcoord 14, 16, 2
+	mapdoorcoord 14, 16, 3
+	mapdoorcoord 14, 12, 4
+	mapdoorcoord 14, 12, 5
 cutman_wily1_door_2_end:
 
 	.BYTE (cutman_wily1_door_3_end - cutman_wily1_door_3) / 2
 
 cutman_wily1_door_3:
-	mapcoord 0, 12, 6
-	mapcoord 0, 12, 7
-	mapcoord 0, 16, 6
-	mapcoord 0, 16, 7
+	mapdoorcoord 0, 12, 6
+	mapdoorcoord 0, 12, 7
+	mapdoorcoord 0, 16, 6
+	mapdoorcoord 0, 16, 7
 cutman_wily1_door_3_end:
 
 	.BYTE (cutman_wily1_door_4_end - cutman_wily1_door_4) / 2
 cutman_wily1_door_4:
-	mapcoord 0, 4, 8
-	mapcoord 0, 4, 9
-	mapcoord 0, 8, 8
-	mapcoord 0, 8, 9
-	mapcoord 0, 12, 8
-	mapcoord 0, 12, 9
-	mapcoord 0, 16, 8
-	mapcoord 0, 16, 9
+	mapdoorcoord 0, 4, 8
+	mapdoorcoord 0, 4, 9
+	mapdoorcoord 0, 8, 8
+	mapdoorcoord 0, 8, 9
+	mapdoorcoord 0, 12, 8
+	mapdoorcoord 0, 12, 9
+	mapdoorcoord 0, 16, 8
+	mapdoorcoord 0, 16, 9
 cutman_wily1_door_4_end:
 
 ;end

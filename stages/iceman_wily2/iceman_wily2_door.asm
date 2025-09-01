@@ -31,33 +31,33 @@
 	.BYTE (iceman_wily2_door_1_end - iceman_wily2_door_1) / 2
 
 iceman_wily2_door_1:
-	mapcoord 14, 16, 0
-	mapcoord 14, 16, 1
-	mapcoord 14, 12, 0
-	mapcoord 14, 12, 1
+	mapdoorcoord 14, 16, 0
+	mapdoorcoord 14, 16, 1
+	mapdoorcoord 14, 12, 0
+	mapdoorcoord 14, 12, 1
 iceman_wily2_door_1_end:
 
 	.BYTE (iceman_wily2_door_2_end - iceman_wily2_door_2) / 2
 
 iceman_wily2_door_2:
-	mapcoord 14, 16, 2
-	mapcoord 14, 16, 1
-	mapcoord 14, 12, 3
-	mapcoord 14, 12, 4
+	mapdoorcoord 14, 16, 2
+	mapdoorcoord 14, 16, 1
+	mapdoorcoord 14, 12, 3
+	mapdoorcoord 14, 12, 4
 iceman_wily2_door_2_end:
 
 	.BYTE (iceman_wily2_door_3_end - iceman_wily2_door_3) / 2
 
 iceman_wily2_door_3:
-	mapcoord 0, 12, 5
-	mapcoord 0, 12, 6
-	mapcoord 0, 16, 5
-	mapcoord 0, 16, 6
+	mapdoorcoord 0, 12, 5
+	mapdoorcoord 0, 12, 6
+	mapdoorcoord 0, 16, 5
+	mapdoorcoord 0, 16, 6
 iceman_wily2_door_3_end:
 
 	.BYTE (iceman_wily2_door_4_end - iceman_wily2_door_4) / 2
 iceman_wily2_door_4:
-	mapcoord 2, 0, 7
+	mapdoorcoord 2, 0, 7
 iceman_wily2_door_4_end:
 
 ;end
