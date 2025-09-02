@@ -1,6 +1,7 @@
 .SEGMENT "BANK03"
-.INCLUDE "constants/scrolling.asm"
 .INCLUDE "constants/palettes.asm"
+.INCLUDE "constants/ppu_attributes.asm"
+.INCLUDE "constants/scrolling.asm"
 .INCLUDE "constants/tiles_address.asm"
 .INCLUDE "macros/coords.asm"
 .INCLUDE "stages/fireman_wily4/fireman_wily4_tsa.asm"

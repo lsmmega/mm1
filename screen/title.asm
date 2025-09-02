@@ -1,14 +1,13 @@
 ;title screen set
-;attribute
-	;     topleft | topright | bottomleft | bottomright
-	.BYTE 2 << 0 | 2 << 2 | 2 << 4 | 2 << 6 ;y0
-	.BYTE 2 << 0 | 2 << 2 | 2 << 4 | 2 << 6 ;y1
-	.BYTE 2 << 0 | 2 << 2 | 2 << 4 | 2 << 6 ;y2
-	.BYTE 3 << 0 | 3 << 2 | 2 << 4 | 2 << 6 ;y3
-	.BYTE 0 << 0 | 0 << 2 | 0 << 4 | 0 << 6 ;y4
-	.BYTE 0 << 0 | 0 << 2 | 0 << 4 | 0 << 6 ;y5
-	.BYTE 1 << 0 | 1 << 2 | 1 << 4 | 1 << 6 ;y6
-	.BYTE 0 << 0 | 0 << 2 | 0 << 4 | 0 << 6 ;y7
+;attributes
+	.BYTE topleft_palette_2 | topright_palette_2 | bottomleft_palette_2 | bottomright_palette_2 ;y0
+	.BYTE topleft_palette_2 | topright_palette_2 | bottomleft_palette_2 | bottomright_palette_2 ;y1
+	.BYTE topleft_palette_2 | topright_palette_2 | bottomleft_palette_2 | bottomright_palette_2 ;y2
+	.BYTE topleft_palette_3 | topright_palette_3 | bottomleft_palette_2 | bottomright_palette_2 ;y3
+	.BYTE topleft_palette_0 | topright_palette_0 | bottomleft_palette_0 | bottomright_palette_0 ;y4
+	.BYTE topleft_palette_0 | topright_palette_0 | bottomleft_palette_0 | bottomright_palette_0 ;y5
+	.BYTE topleft_palette_1 | topright_palette_1 | bottomleft_palette_1 | bottomright_palette_1 ;y6
+	.BYTE topleft_palette_0 | topright_palette_0 | bottomleft_palette_0 | bottomright_palette_0 ;y7
 
 ;tileset start on leftscreencoord
 	hileftscreencoord 4, 13

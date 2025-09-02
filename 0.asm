@@ -1,6 +1,7 @@
 .SEGMENT "BANK00"
-.INCLUDE "constants/scrolling.asm"
 .INCLUDE "constants/palettes.asm"
+.INCLUDE "constants/ppu_attributes.asm"
+.INCLUDE "constants/scrolling.asm"
 .INCLUDE "constants/tiles_address.asm"
 .INCLUDE "macros/coords.asm"
 .INCLUDE "stages/cutman_wily1/cutman_wily1_tsa.asm"

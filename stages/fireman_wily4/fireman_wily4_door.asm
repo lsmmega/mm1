@@ -14,18 +14,17 @@
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00
 
-;attribute
-	;     topleft | topright | bottomleft | bottomright
-	.BYTE 0 << 0 | 0 << 2 | 0 << 4 | 0 << 6
-	.BYTE 0 << 0 | 0 << 2 | 0 << 4 | 0 << 6
-	.BYTE 1 << 0 | 0 << 2 | 1 << 4 | 1 << 6
-	.BYTE 1 << 0 | 1 << 2 | 1 << 4 | 1 << 6
-	.BYTE 1 << 0 | 0 << 2 | 1 << 4 | 1 << 6
-	.BYTE 1 << 0 | 1 << 2 | 1 << 4 | 1 << 6
-	.BYTE 0 << 0 | 1 << 2 | 1 << 4 | 1 << 6
-	.BYTE 0 << 0 | 1 << 2 | 0 << 4 | 1 << 6
-	.BYTE 0 << 0 | 0 << 2 | 2 << 4 | 2 << 6
-	.BYTE 2 << 0 | 2 << 2 | 2 << 4 | 2 << 6
+;attributes
+	.BYTE topleft_palette_0 | topright_palette_0 | bottomleft_palette_0 | bottomright_palette_0
+	.BYTE topleft_palette_0 | topright_palette_0 | bottomleft_palette_0 | bottomright_palette_0
+	.BYTE topleft_palette_1 | topright_palette_0 | bottomleft_palette_1 | bottomright_palette_1
+	.BYTE topleft_palette_1 | topright_palette_1 | bottomleft_palette_1 | bottomright_palette_1
+	.BYTE topleft_palette_1 | topright_palette_0 | bottomleft_palette_1 | bottomright_palette_1
+	.BYTE topleft_palette_1 | topright_palette_1 | bottomleft_palette_1 | bottomright_palette_1
+	.BYTE topleft_palette_0 | topright_palette_1 | bottomleft_palette_1 | bottomright_palette_1
+	.BYTE topleft_palette_0 | topright_palette_1 | bottomleft_palette_0 | bottomright_palette_1
+	.BYTE topleft_palette_0 | topright_palette_0 | bottomleft_palette_2 | bottomright_palette_2
+	.BYTE topleft_palette_2 | topright_palette_2 | bottomleft_palette_2 | bottomright_palette_2
 
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00
