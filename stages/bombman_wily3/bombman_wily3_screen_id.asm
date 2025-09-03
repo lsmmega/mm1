@@ -50,7 +50,7 @@
 	.BYTE $14
 	.BYTE $15
 
-;screen id pointer
+;screen id pointers
 	.WORD bombman_wily3_00
 	.WORD bombman_wily3_01
 	.WORD bombman_wily3_02

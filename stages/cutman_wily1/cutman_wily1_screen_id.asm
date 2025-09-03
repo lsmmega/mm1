@@ -52,7 +52,7 @@
 	.BYTE $FF
 	.BYTE $FF
 
-;screen id pointer
+;screen id pointers
 	.WORD cutman_wily1_00
 	.WORD cutman_wily1_01
 	.WORD cutman_wily1_02

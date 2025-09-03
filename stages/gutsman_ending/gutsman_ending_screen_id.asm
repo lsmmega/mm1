@@ -54,7 +54,7 @@
 	.BYTE $FF
 	.BYTE $FF
 
-;screen id pointer
+;screen id pointers
 	.WORD gutsman_ending_00
 	.WORD gutsman_ending_01
 	.WORD gutsman_ending_02
