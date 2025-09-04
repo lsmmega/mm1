@@ -107,6 +107,9 @@ home := \
 
 6 := \
 	6.asm \
+	constants/* \
+	sprites/pointers/* \
+	sprites/* \
 	6/*
 
 gfx0 := \
