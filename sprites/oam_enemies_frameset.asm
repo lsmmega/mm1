@@ -426,7 +426,7 @@ oam_enemies_frameset_4a_table:
 	.BYTE $8E, $8D, $8E, $8D
 oam_enemies_frameset_4a_table_end:
 
-;unknown
+;end
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00
 	.BYTE $00, $00, $00, $00
