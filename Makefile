@@ -111,6 +111,7 @@ home := \
 	sprites/pointers/* \
 	sprites/* \
 	6/* \
+	objects/* \
 	stages/* \
 	stages/cutman_wily1/* \
 	stages/iceman_wily2/* \
