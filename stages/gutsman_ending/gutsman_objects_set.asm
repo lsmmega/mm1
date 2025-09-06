@@ -1,0 +1,36 @@
+gutsman_objects_set:
+	;      id,   x,   y, object
+	.BYTE $00, $80, $FF, objects_track_platform
+	.BYTE $00, $D0, $98, objects_metall
+	.BYTE $00, $F8, $80, objects_30
+	.BYTE $01, $30, $78, objects_metall
+	.BYTE $01, $70, $58, objects_metall
+	.BYTE $01, $FC, $80, objects_2f
+	.BYTE $04, $58, $80, objects_2f
+	.BYTE $05, $01, $08, objects_spawn_tiles
+	.BYTE $05, $40, $0A, objects_spawn_tiles
+	.BYTE $05, $60, $80, objects_30
+	.BYTE $05, $6C, $4C, objects_bunby_heli
+	.BYTE $05, $A4, $8C, objects_bunby_heli
+	.BYTE $05, $B4, $5C, objects_bunby_heli
+	.BYTE $06, $10, $04, objects_spawn_tiles
+	.BYTE $06, $50, $06, objects_spawn_tiles
+	.BYTE $06, $B0, $78, objects_large_life_capsule
+	.BYTE $07, $C0, $84, objects_pickelman
+	.BYTE $08, $70, $44, objects_pickelman
+	.BYTE $09, $04, $44, objects_pickelman
+	.BYTE $09, $D0, $44, objects_pickelman
+	.BYTE $0A, $E0, $FF, objects_bunby_heli
+	.BYTE $0B, $28, $78, objects_small_life_capsule
+	.BYTE $0B, $38, $78, objects_small_life_capsule
+	.BYTE $0B, $70, $98, objects_small_weapon_capsule
+	.BYTE $0B, $B0, $58, objects_large_life_capsule
+	.BYTE $0B, $E0, $FF, objects_bunby_heli
+	.BYTE $0C, $30, $58, objects_1up
+	.BYTE $0C, $A0, $B9, objects_small_life_capsule
+	.BYTE $0D, $E0, $AC, objects_big_eye
+	.BYTE $0F, $E0, $98, objects_metall
+	.BYTE $10, $88, $98, objects_metall
+	.BYTE $11, $28, $98, objects_metall
+	.BYTE $11, $B0, $98, objects_metall
+	.BYTE objects_set_end

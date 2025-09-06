@@ -110,7 +110,14 @@ home := \
 	constants/* \
 	sprites/pointers/* \
 	sprites/* \
-	6/*
+	6/* \
+	stages/* \
+	stages/cutman_wily1/* \
+	stages/iceman_wily2/* \
+	stages/bombman_wily3/* \
+	stages/fireman_wily4/* \
+	stages/elecman/* \
+	stages/gutsman_ending/*
 
 gfx0 := \
 	gfx/sprites/megaman/megaman.bmp gfx/sprites/megaman/megaman.chr \
