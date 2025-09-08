@@ -1,3 +1,4 @@
+;note table constants
 	.DEFINE C_0 $00
 	.DEFINE C0# $01
 	.DEFINE D_0 $02
@@ -95,5 +96,6 @@
 	.DEFINE A7# $5E
 	.DEFINE B_7 $5F
 
+;cmd_7
 	volume_attack = 0
 	volume_decay  = 1 << 7
