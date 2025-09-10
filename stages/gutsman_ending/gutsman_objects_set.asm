@@ -1,4 +1,4 @@
-gutsman_objects_set:
+@gutsman:
 	;      id,   x,   y, object
 	.BYTE $00, $80, $FF, objects_track_platform
 	.BYTE $00, $D0, $98, objects_metall

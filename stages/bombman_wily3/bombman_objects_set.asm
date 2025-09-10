@@ -1,4 +1,4 @@
-bombman_objects_set:
+@bombman:
 	;      id,   x,   y, object
 	.BYTE $01, $30, $98, objects_kamadoma
 	.BYTE $01, $68, $78, objects_kamadoma

@@ -26,38 +26,38 @@
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00
 	.BYTE $00
 
-;doorset
-	.BYTE (iceman_wily2_door_1_end - iceman_wily2_door_1) / 2
+iceman_wily2_door:
+	.BYTE (@end_1 - @start_1) / 2
 
-iceman_wily2_door_1:
+@start_1:
 	mapdoorcoord 14, 16, 0
 	mapdoorcoord 14, 16, 1
 	mapdoorcoord 14, 12, 0
 	mapdoorcoord 14, 12, 1
-iceman_wily2_door_1_end:
+@end_1:
 
-	.BYTE (iceman_wily2_door_2_end - iceman_wily2_door_2) / 2
+	.BYTE (@end_2 - @start_2) / 2
 
-iceman_wily2_door_2:
+@start_2:
 	mapdoorcoord 14, 16, 2
 	mapdoorcoord 14, 16, 1
 	mapdoorcoord 14, 12, 3
 	mapdoorcoord 14, 12, 4
-iceman_wily2_door_2_end:
+@end_2:
 
-	.BYTE (iceman_wily2_door_3_end - iceman_wily2_door_3) / 2
+	.BYTE (@end_3 - @start_3) / 2
 
-iceman_wily2_door_3:
+@start_3:
 	mapdoorcoord 0, 12, 5
 	mapdoorcoord 0, 12, 6
 	mapdoorcoord 0, 16, 5
 	mapdoorcoord 0, 16, 6
-iceman_wily2_door_3_end:
+@end_3:
 
-	.BYTE (iceman_wily2_door_4_end - iceman_wily2_door_4) / 2
-iceman_wily2_door_4:
+	.BYTE (@end_4 - @start_4) / 2
+@start_4:
 	mapdoorcoord 2, 0, 7
-iceman_wily2_door_4_end:
+@end_4:
 
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00

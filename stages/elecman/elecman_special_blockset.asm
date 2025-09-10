@@ -1,8 +1,7 @@
-;elecman special blockset
-
-	.BYTE (elecman_special_blockset_end - elecman_special_blockset) / 6
-
 elecman_special_blockset:
+	.BYTE (@end - @start) / 6
+
+@start:
 	;      id,  no,  x1,  y1,  x2,  y2
 	.BYTE $00, $05, $40, $50, $50, $60
 	.BYTE $00, $05, $60, $70, $70, $80
@@ -24,7 +23,7 @@ elecman_special_blockset:
 	.BYTE $02, $17, $40, $A0, $60, $C0
 	.BYTE $01, $17, $60, $C0, $A0, $E0
 	.BYTE $01, $FF, $00, $00, $00, $00
-elecman_special_blockset_end:
+@end:
 
 ;end
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF

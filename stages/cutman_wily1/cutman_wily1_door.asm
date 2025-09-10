@@ -29,36 +29,36 @@
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00
 
-;doorset
-	.BYTE (cutman_wily1_door_1_end - cutman_wily1_door_1) / 2
+cutman_wily1_door:
+	.BYTE (@end_1 - @start_1) / 2
 
-cutman_wily1_door_1:
+@start_1:
 	mapdoorcoord 14, 16, 0
 	mapdoorcoord 14, 16, 1
 	mapdoorcoord 14, 12, 0
 	mapdoorcoord 14, 12, 1
-cutman_wily1_door_1_end:
+@end_1:
 
-	.BYTE (cutman_wily1_door_2_end - cutman_wily1_door_2) / 2
+	.BYTE (@end_2 - @start_2) / 2
 
-cutman_wily1_door_2:
+@start_2:
 	mapdoorcoord 14, 16, 2
 	mapdoorcoord 14, 16, 3
 	mapdoorcoord 14, 12, 4
 	mapdoorcoord 14, 12, 5
-cutman_wily1_door_2_end:
+@end_2:
 
-	.BYTE (cutman_wily1_door_3_end - cutman_wily1_door_3) / 2
+	.BYTE (@end_3 - @start_3) / 2
 
-cutman_wily1_door_3:
+@start_3:
 	mapdoorcoord 0, 12, 6
 	mapdoorcoord 0, 12, 7
 	mapdoorcoord 0, 16, 6
 	mapdoorcoord 0, 16, 7
-cutman_wily1_door_3_end:
+@end_3:
 
-	.BYTE (cutman_wily1_door_4_end - cutman_wily1_door_4) / 2
-cutman_wily1_door_4:
+	.BYTE (@end_4 - @start_4) / 2
+@start_4:
 	mapdoorcoord 0, 4, 8
 	mapdoorcoord 0, 4, 9
 	mapdoorcoord 0, 8, 8
@@ -67,7 +67,7 @@ cutman_wily1_door_4:
 	mapdoorcoord 0, 12, 9
 	mapdoorcoord 0, 16, 8
 	mapdoorcoord 0, 16, 9
-cutman_wily1_door_4_end:
+@end_4:
 
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00

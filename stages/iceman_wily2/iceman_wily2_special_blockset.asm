@@ -1,8 +1,7 @@
-;iceman special blockset
-
-	.BYTE (iceman_special_blockset_end - iceman_special_blockset) / 6
-
 iceman_special_blockset:
+	.BYTE (@end - @start) / 6
+
+@start:
 	;      id,  no,  x1,  y1,  x2,  y2
 	.BYTE $00, $0A, $60, $90, $70, $A0
 	.BYTE $00, $0A, $80, $30, $90, $40
@@ -27,23 +26,22 @@ iceman_special_blockset:
 	.BYTE $03, $16, $F0, $60, $00, $A0
 	.BYTE $01, $17, $00, $60, $10, $A0
 	.BYTE $01, $FF, $00, $00, $00, $00
-iceman_special_blockset_end:
+@end:
 
 ;end
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
 	.BYTE $FF, $FF, $FF, $FF, $FF
 
-;wily2 special blockset
-
-	.BYTE (wily2_special_blockset_end - wily2_special_blockset) / 6
-
 wily2_special_blockset:
+	.BYTE (@end - @start) / 6
+
+@start:
 	;      id,  no,  x1,  y1,  x2,  y2
 	.BYTE $01, $1C, $20, $C0, $40, $E0
 	.BYTE $01, $20, $20, $C0, $40, $E0
 	.BYTE $01, $FF, $00, $00, $00, $00
-wily2_special_blockset_end:
+@end:
 
 ;end
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF

@@ -24,33 +24,33 @@
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00
 	.BYTE $00, $00
 
-;doorset
-	.BYTE (gutsman_door_1_end - gutsman_door_1) / 2
+gutsman_door:
+	.BYTE (@end_1 - @start_1) / 2
 
-gutsman_door_1:
+@start_1:
 	mapdoorcoord 14, 16, 0
 	mapdoorcoord 14, 16, 1
 	mapdoorcoord 14, 12, 0
 	mapdoorcoord 14, 12, 1
-gutsman_door_1_end:
+@end_1:
 
-	.BYTE (gutsman_door_2_end - gutsman_door_2) / 2
+	.BYTE (@end_2 - @start_2) / 2
 
-gutsman_door_2:
+@start_2:
 	mapdoorcoord 14, 16, 2
 	mapdoorcoord 14, 16, 3
 	mapdoorcoord 14, 12, 2
 	mapdoorcoord 14, 12, 3
-gutsman_door_2_end:
+@end_2:
 
-	.BYTE (gutsman_door_3_end - gutsman_door_3) / 2
+	.BYTE (@end_3 - @start_3) / 2
 
-gutsman_door_3:
+@start_3:
 	mapdoorcoord 0, 12, 4
 	mapdoorcoord 0, 12, 5
 	mapdoorcoord 0, 16, 4
 	mapdoorcoord 0, 16, 5
-gutsman_door_3_end:
+@end_3:
 
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00

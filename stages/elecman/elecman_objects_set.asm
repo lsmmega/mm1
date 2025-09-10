@@ -1,4 +1,4 @@
-elecman_objects_set:
+@elecman:
 	;      id,   x,   y, object
 	.BYTE $00, $28, $5C, objects_gabyoall
 	.BYTE $00, $68, $9C, objects_gabyoall

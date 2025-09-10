@@ -29,42 +29,42 @@
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00
 
-;doorset
-	.BYTE (fireman_wily4_door_1_end - fireman_wily4_door_1) / 2
+fireman_wily4_door:
+	.BYTE (@end_1 - @start_1) / 2
 
-fireman_wily4_door_1:
+@start_1:
 	mapdoorcoord 14, 16, 0
 	mapdoorcoord 14, 16, 1
 	mapdoorcoord 14, 12, 0
 	mapdoorcoord 14, 12, 1
-fireman_wily4_door_1_end:
+@end_1:
 
-	.BYTE (fireman_wily4_door_2_end - fireman_wily4_door_2) / 2
+	.BYTE (@end_2 - @start_2) / 2
 
-fireman_wily4_door_2:
+@start_2:
 	mapdoorcoord 14, 16, 2
 	mapdoorcoord 14, 16, 3
 	mapdoorcoord 14, 12, 4
 	mapdoorcoord 14, 12, 5
-fireman_wily4_door_2_end:
+@end_2:
 
-	.BYTE (fireman_wily4_door_3_end - fireman_wily4_door_3) / 2
+	.BYTE (@end_3 - @start_3) / 2
 
-fireman_wily4_door_3:
+@start_3:
 	mapdoorcoord 0, 12, 6
 	mapdoorcoord 0, 12, 7
 	mapdoorcoord 0, 16, 6
 	mapdoorcoord 0, 16, 7
-fireman_wily4_door_3_end:
+@end_3:
 
-	.BYTE (fireman_wily4_door_4_end - fireman_wily4_door_4) / 2
+	.BYTE (@end_4 - @start_4) / 2
 
-fireman_wily4_door_4:
+@start_4:
 	mapdoorcoord 14, 20, 8
 	mapdoorcoord 14, 20, 9
 	mapdoorcoord 14, 16, 8
 	mapdoorcoord 14, 16, 9
-fireman_wily4_door_4_end:
+@end_4:
 
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00

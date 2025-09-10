@@ -1,4 +1,4 @@
-wily3_objects_set:
+@wily3:
 	;      id,   x,   y, object
 	.BYTE $18, $88, $68, objects_adhering_suzy_vertical
 	.BYTE $18, $98, $B8, objects_adhering_suzy_vertical

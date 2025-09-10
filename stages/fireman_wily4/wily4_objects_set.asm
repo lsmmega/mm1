@@ -1,4 +1,4 @@
-wily4_objects_set:
+@wily4:
 	;      id,   x,   y, object
 	.BYTE $14, $10, $FF, objects_watcher
 	.BYTE $15, $10, $FF, objects_watcher

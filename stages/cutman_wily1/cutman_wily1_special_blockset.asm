@@ -1,8 +1,7 @@
-;cutman special blockset
-
-	.BYTE (cutman_special_blockset_end - cutman_special_blockset) / 6
-
 cutman_special_blockset:
+	.BYTE (@end - @start) / 6
+
+@start:
 	;      id,  no,  x1,  y1,  x2,  y2
 	.BYTE $02, $00, $80, $40, $A0, $60
 	.BYTE $02, $00, $80, $A0, $A0, $C0
@@ -28,17 +27,16 @@ cutman_special_blockset:
 	.BYTE $02, $17, $40, $A0, $60, $C0
 	.BYTE $01, $17, $00, $60, $10, $A0
 	.BYTE $01, $FF, $00, $00, $00, $00
-cutman_special_blockset_end:
+@end:
 
 ;end
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF
 
-;wily1 special blockset
-
-	.BYTE (wily1_special_blockset_end - wily1_special_blockset) / 6
-
 wily1_special_blockset:
+	.BYTE (@end - @start) / 6
+
+@start:
 	;      id,  no,  x1,  y1,  x2,  y2
 	.BYTE $02, $1D, $A0, $80, $C0, $A0
 	.BYTE $02, $1D, $A0, $A0, $C0, $C0
@@ -55,7 +53,7 @@ wily1_special_blockset:
 	.BYTE $02, $21, $A0, $20, $C0, $40
 	.BYTE $01, $27, $00, $20, $10, $C0
 	.BYTE $01, $FF, $00, $00, $00, $00
-wily1_special_blockset_end:
+@end:
 
 ;end
 	.BYTE $FF, $FF, $FF, $FF, $FF, $00, $00, $00

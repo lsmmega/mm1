@@ -1,4 +1,4 @@
-iceman_objects_set:
+@iceman:
 	;      id,   x,   y, object
 	.BYTE $01, $00, $B4, objects_crazy_razy
 	.BYTE $02, $30, $94, objects_crazy_razy
