@@ -36,42 +36,43 @@
 	.BYTE $0C
 
 ;special title screen tileset
+special_title_screen_tileset:
 	leftscreencoord 11, 17
 
-	.BYTE special_title_screen_tileset_1_end - special_title_screen_tileset_1
+	.BYTE @end_1 - @start_1
 
-special_title_screen_tileset_1:
+@start_1:
 	.BYTE "PRESS START"
-special_title_screen_tileset_1_end:
+@end_1:
 
 	leftscreencoord 1, 22
 
-	.BYTE special_title_screen_tileset_2_end - special_title_screen_tileset_2
+	.BYTE @end_2 - @start_2
 
-special_title_screen_tileset_2:
+@start_2:
 	.BYTE "TM AND "
 	.BYTE $C8, $AA, $AB, $AC, $AD ;©️1987
 	.BYTE " CAPCOM U.S.A.,INC."
-special_title_screen_tileset_2_end:
+@end_2:
 
 	leftscreencoord 11, 24
 
-	.BYTE special_title_screen_tileset_3_end - special_title_screen_tileset_3
+	.BYTE @end_3 - @start_3
 
-special_title_screen_tileset_3:
+@start_3:
 	.BYTE "LICENSED BY"
-special_title_screen_tileset_3_end:
+@end_3:
 
 	leftscreencoord 4, 26
 
-	.BYTE special_title_screen_tileset_4_end - special_title_screen_tileset_4
+	.BYTE @end_4 - @start_4
 
-special_title_screen_tileset_4:
+@start_4:
 	.BYTE "NINTENDO OF AMERICA INC."
-special_title_screen_tileset_4_end:
+@end_4:
 
-	.BYTE special_title_screen_tileset_5_end - special_title_screen_tileset_5
+	.BYTE @end_5 - @start_5
 
-special_title_screen_tileset_5:
+@start_5:
 	.BYTE "TM"
-special_title_screen_tileset_5_end:
+@end_5:

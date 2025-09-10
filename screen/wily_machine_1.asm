@@ -1,106 +1,107 @@
 	.BYTE $01 ;unknown
 
 ;wily machine 1 screen set
-	.BYTE wily_machine_1_screen_1_end - wily_machine_1_screen_1
+wily_machine_1_screen:
+	.BYTE @end_1 - @start_1
 
 	rightscreencoord 18, 10
 
-wily_machine_1_screen_1:
+@start_1:
 	.BYTE $38, $39, $3A, $3A, $3A, $3B, $3C
-wily_machine_1_screen_1_end:
+@end_1:
 
-	.BYTE wily_machine_1_screen_2_end - wily_machine_1_screen_2
+	.BYTE @end_2 - @start_2
 
 	rightscreencoord 17, 11
 
-wily_machine_1_screen_2:
+@start_2:
 	.BYTE $90, $A6, $E0, $E1, $E2, $94, $95, $96
-wily_machine_1_screen_2_end:
+@end_2:
 
-	.BYTE wily_machine_1_screen_3_end - wily_machine_1_screen_3
+	.BYTE @end_3 - @start_3
 
 	rightscreencoord 16, 12
 
-wily_machine_1_screen_3:
+@start_3:
 	.BYTE $91, $92, $92, $92, $92, $93, $9A, $9B
 	.BYTE $9C, $9D
-wily_machine_1_screen_3_end:
+@end_3:
 
-	.BYTE wily_machine_1_screen_4_end - wily_machine_1_screen_4
+	.BYTE @end_4 - @start_4
 
 	rightscreencoord 15, 13
 
-wily_machine_1_screen_4:
+@start_4:
 	.BYTE $9E, $98, $98, $98, $98, $98, $99, $9F
 	.BYTE $A0, $A1, $A2, $A3
-wily_machine_1_screen_4_end:
+@end_4:
 
-	.BYTE wily_machine_1_screen_5_end - wily_machine_1_screen_5
+	.BYTE @end_5 - @start_5
 
 	rightscreencoord 15, 14
 
-wily_machine_1_screen_5:
+@start_5:
 	.BYTE $A4, $98, $98, $98, $98, $98, $A5, $A6
 	.BYTE $A7, $A8, $A9, $AA
-wily_machine_1_screen_5_end:
+@end_5:
 
-	.BYTE wily_machine_1_screen_6_end - wily_machine_1_screen_6
+	.BYTE @end_6 - @start_6
 
 	rightscreencoord 16, 15
 
-wily_machine_1_screen_6:
+@start_6:
 	.BYTE $AC, $AD, $AE, $AF, $B0, $B1, $B2, $B3
 	.BYTE $B4, $B5, $B6
-wily_machine_1_screen_6_end:
+@end_6:
 
-	.BYTE wily_machine_1_screen_7_end - wily_machine_1_screen_7
+	.BYTE @end_7 - @start_7
 
 	rightscreencoord 18, 16
 
-wily_machine_1_screen_7:
+@start_7:
 	.BYTE $B7, $B8, $B9, $BA, $BB, $BC, $BD, $BE
 	.BYTE $BF
-wily_machine_1_screen_7_end:
+@end_7:
 
-	.BYTE wily_machine_1_screen_8_end - wily_machine_1_screen_8
+	.BYTE @end_8 - @start_8
 
 	rightscreencoord 18, 17
 
-wily_machine_1_screen_8:
+@start_8:
 	.BYTE $C0, $C1, $C2, $C3, $C4, $C5, $C6, $C7
-wily_machine_1_screen_8_end:
+@end_8:
 
-	.BYTE wily_machine_1_screen_9_end - wily_machine_1_screen_9
+	.BYTE @end_9 - @start_9
 
 	rightscreencoord 18, 18
 
-wily_machine_1_screen_9:
+@start_9:
 	.BYTE $C8, $C9, $CA, $CB, $CC, $CD, $CE
-wily_machine_1_screen_9_end:
+@end_9:
 
-	.BYTE wily_machine_1_screen_a_end - wily_machine_1_screen_a
+	.BYTE @end_10 - @start_10
 
 	rightscreencoord 19, 19
 
-wily_machine_1_screen_a:
+@start_10:
 	.BYTE $CF, $D0, $D1, $D2, $D3, $D4
-wily_machine_1_screen_a_end:
+@end_10:
 
-	.BYTE wily_machine_1_screen_b_end - wily_machine_1_screen_b
+	.BYTE @end_11 - @start_11
 
 	rightscreencoord 19, 20
 
-wily_machine_1_screen_b:
+@start_11:
 	.BYTE $D5, $D6, $D7, $D8
-wily_machine_1_screen_b_end:
+@end_11:
 
-	.BYTE wily_machine_1_screen_c_end - wily_machine_1_screen_c
+	.BYTE @end_12 - @start_12
 
 	rightscreencoord 21, 21
 
-wily_machine_1_screen_c:
+@start_12:
 	.BYTE $D9
-wily_machine_1_screen_c_end:
+@end_12:
 
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00

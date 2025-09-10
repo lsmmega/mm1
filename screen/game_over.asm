@@ -1,26 +1,29 @@
 	.BYTE $01 ;unknown
 
 ;game over screen set
+game_over_GAME_OVER_string:
 	leftscreencoord 12, 9
 
-	.BYTE game_over_GAME_OVER_string_end - game_over_GAME_OVER_string
+	.BYTE @end - @start
 
-game_over_GAME_OVER_string:
+@start:
 	.BYTE "GAME OVER"
-game_over_GAME_OVER_string_end:
-
-	leftscreencoord 12, 16
-
-	.BYTE game_over_CONTINUE_string_end - game_over_CONTINUE_string
+@end:
 
 game_over_CONTINUE_string:
+	leftscreencoord 12, 16
+
+	.BYTE @end - @start
+
+@start:
 	.BYTE "CONTINUE"
-game_over_CONTINUE_string_end:
-
-	leftscreencoord 12, 18
-
-	.BYTE game_over_STAGE_SELECT_string_end - game_over_STAGE_SELECT_string
+@end:
 
 game_over_STAGE_SELECT_string:
+	leftscreencoord 12, 18
+
+	.BYTE @end - @start
+
+@start:
 	.BYTE "STAGE SELECT"
-game_over_STAGE_SELECT_string_end:
+@end:
