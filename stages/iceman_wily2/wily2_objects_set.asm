@@ -1,4 +1,4 @@
-@wily2:
+objects_set_wily2:
 	;      id,   x,   y, object
 	.BYTE $19, $10, $4C, objects_bunby_heli
 	.BYTE $19, $40, $8C, objects_bunby_heli

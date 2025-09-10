@@ -1,4 +1,4 @@
-@wily1:
+objects_set_wily1:
 	;      id,   x,   y, object
 	.BYTE $19, $08, $AC, objects_big_eye
 	.BYTE $1A, $F8, $AC, objects_big_eye

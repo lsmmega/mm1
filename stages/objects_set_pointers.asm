@@ -1,13 +1,12 @@
 ;objects set pointers
-objects_set_pointers:
-	.WORD @cutman
-	.WORD @iceman
-	.WORD @bombman
-	.WORD @fireman
-	.WORD @elecman
-	.WORD @gutsman
-	.WORD @wily1
-	.WORD @wily2
-	.WORD @wily3
-	.WORD @wily4
-	.WORD @elecman_unknown
+	.WORD objects_set_cutman
+	.WORD objects_set_iceman
+	.WORD objects_set_bombman
+	.WORD objects_set_fireman
+	.WORD objects_set_elecman
+	.WORD objects_set_gutsman
+	.WORD objects_set_wily1
+	.WORD objects_set_wily2
+	.WORD objects_set_wily3
+	.WORD objects_set_wily4
+	.WORD objects_set_elecman_unknown

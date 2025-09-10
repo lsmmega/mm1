@@ -1,4 +1,4 @@
-@cutman:
+objects_set_cutman:
 	;      id,   x,   y, object
 	.BYTE $01, $10, $4C, objects_bunby_heli
 	.BYTE $01, $40, $8C, objects_bunby_heli
