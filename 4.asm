@@ -19,4 +19,7 @@
 .INCLUDE "screen/game_over.asm"
 .INCLUDE "screen/title.asm"
 .INCLUDE "stages/elecman/elecman_door.asm"
+.INCBIN  "audio/engine.bin"
+.INCBIN  "audio/pointers.bin"
+.INCLUDE "audio/music/all_stages_clear.asm"
 .INCBIN  "audio/audio.bin"

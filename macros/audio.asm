@@ -133,3 +133,7 @@
 			.ERROR "Invaild note length."
 		.ENDIF
 .ENDMACRO
+
+.MACRO modulator_set b, c, d, e, f
+	.BYTE d, b << 5 | c, e, f
+.ENDMACRO

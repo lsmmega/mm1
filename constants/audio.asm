@@ -97,6 +97,5 @@
 	B_7
 .ENDENUM
 
-;cmd_7
 	volume_attack = 0
 	volume_decay  = 1 << 7

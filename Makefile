@@ -94,7 +94,8 @@ home := \
 	stages/elecman/* \
 	unknown/* \
 	screen/* \
-	audio/*
+	audio/* \
+	audio/music/*
 
 5 := \
 	5.asm \
