@@ -1,12 +1,12 @@
-music_all_stages_clear:
+music_wily_defeated:
 	music_header
-	.WORD music_all_stages_clear_pulse_1
-	.WORD music_all_stages_clear_pulse_2
-	.WORD music_all_stages_clear_triangle
-	.WORD music_all_stages_clear_noise
-	.WORD music_all_stages_clear_modulator
+	.WORD music_wily_defeated_pulse_1
+	.WORD music_wily_defeated_pulse_2
+	.WORD music_wily_defeated_triangle
+	.WORD music_wily_defeated_noise
+	.WORD music_wily_defeated_modulator
 
-music_all_stages_clear_pulse_1:
+music_wily_defeated_pulse_1:
 	tempo 6
 	duty_cycle 2
 	volume 12
@@ -98,7 +98,7 @@ music_all_stages_clear_pulse_1:
 	note Bb4, 32
 	music_end
 
-music_all_stages_clear_pulse_2:
+music_wily_defeated_pulse_2:
 	tempo 6
 	duty_cycle 2
 	volume 9
@@ -190,7 +190,7 @@ music_all_stages_clear_pulse_2:
 	note Db4, 32
 	music_end
 
-music_all_stages_clear_triangle:
+music_wily_defeated_triangle:
 	tempo 6
 	modulator_index 0
 	triangle_note_length $81
@@ -243,7 +243,7 @@ music_all_stages_clear_triangle:
 	note Gb3, 32
 	music_end
 
-music_all_stages_clear_noise:
+music_wily_defeated_noise:
 	tempo 6
 	volume 9
 	volume_envelope volume_decay, 1, 1
@@ -300,6 +300,6 @@ music_all_stages_clear_noise:
 	loop 24, @loop_4
 	music_end
 
-music_all_stages_clear_modulator:
+music_wily_defeated_modulator:
 	modulator_set 7, 0, 0, volume_decay, 0
 	modulator_set 3, 2, 1, volume_decay, 0

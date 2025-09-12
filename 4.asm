@@ -21,6 +21,6 @@
 .INCLUDE "stages/elecman/elecman_door.asm"
 .INCBIN  "audio/engine.bin"
 .INCBIN  "audio/pointers.bin"
-.INCLUDE "audio/music/all_stages_clear.asm"
+.INCLUDE "audio/music/wily_defeated.asm"
 .INCLUDE "audio/music/stage_select.asm"
 .INCBIN  "audio/audio.bin"
