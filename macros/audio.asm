@@ -41,7 +41,7 @@
 	.BYTE $07, b | d, c << 4
 .ENDMACRO
 
-.MACRO modulator_index b
+.MACRO modulator b
 	.BYTE $08, b
 .ENDMACRO
 

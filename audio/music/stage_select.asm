@@ -12,7 +12,7 @@ music_stage_select_pulse_1:
 @loop_1:
 	duty_cycle 3
 	volume 8
-	modulator_index 0
+	modulator 0
 	volume_envelope volume_decay, 2, 127
 	base_note G_1
 	note C_4, 4
@@ -58,7 +58,7 @@ music_stage_select_pulse_2:
 	volume 8
 	volume_envelope volume_decay, 2, 127
 	base_note G_1
-	modulator_index 0
+	modulator 0
 	note Eb3, 4
 	note Eb3, 4
 	note Eb3, 4
@@ -98,7 +98,7 @@ music_stage_select_triangle:
 	tempo 8
 
 @loop_1:
-	modulator_index 0
+	modulator 0
 	triangle_note_length $81
 	base_note G_2
 	note Ab3, 8

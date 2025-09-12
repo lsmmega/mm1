@@ -93,7 +93,7 @@ music_wily_defeated_pulse_1:
 	tempo 12
 	number_of_note_tied 2
 	note Bb4, 16
-	modulator_index 1
+	modulator 1
 	dotted_note_set
 	note Bb4, 32
 	music_end
@@ -185,14 +185,14 @@ music_wily_defeated_pulse_2:
 	tempo 12
 	number_of_note_tied 2
 	note Db4, 16
-	modulator_index 1
+	modulator 1
 	dotted_note_set
 	note Db4, 32
 	music_end
 
 music_wily_defeated_triangle:
 	tempo 6
-	modulator_index 0
+	modulator 0
 	triangle_note_length $81
 	base_note F_2
 	note Db3, 64
@@ -238,7 +238,7 @@ music_wily_defeated_triangle:
 	tempo 12
 	number_of_note_tied 2
 	note Gb3, 16
-	modulator_index 1
+	modulator 1
 	dotted_note_set
 	note Gb3, 32
 	music_end
