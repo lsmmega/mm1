@@ -23,4 +23,5 @@
 .INCBIN  "audio/pointers.bin"
 .INCLUDE "audio/music/wily_defeated.asm"
 .INCLUDE "audio/music/stage_select.asm"
+.INCLUDE "audio/music/boss_show.asm"
 .INCBIN  "audio/audio.bin"
