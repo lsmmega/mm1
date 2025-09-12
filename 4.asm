@@ -24,4 +24,5 @@
 .INCLUDE "audio/music/wily_defeated.asm"
 .INCLUDE "audio/music/stage_select.asm"
 .INCLUDE "audio/music/boss_show.asm"
+.INCLUDE "audio/music/game_over.asm"
 .INCBIN  "audio/audio.bin"
