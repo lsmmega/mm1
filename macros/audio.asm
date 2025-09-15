@@ -11,6 +11,10 @@
 	.BYTE $02, b << 6
 .ENDMACRO
 
+.MACRO noise_duty_cycle b
+	.BYTE $02, b << 7
+.ENDMACRO
+
 .MACRO volume b
 	.IF b & $0F
 		.BYTE $03, b | $30
