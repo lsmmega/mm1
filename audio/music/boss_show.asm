@@ -143,5 +143,5 @@ music_boss_show_triangle:
 	music_end
 
 music_boss_show_modulator:
-	modulator_set 0, 0, 0, volume_decay, 0
-	modulator_set 2, 2, 1, volume_decay, 0
+	modulator_set 0, 0, 0, volume_decay, 0, 0
+	modulator_set 2, 2, 1, volume_decay, 0, 0

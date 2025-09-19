@@ -126,4 +126,4 @@ music_stage_select_triangle:
 	music_end
 
 music_stage_select_modulator:
-	modulator_set 7, 0, 0, volume_decay, 0
+	modulator_set 7, 0, 0, volume_decay, 0, 0

@@ -138,6 +138,6 @@
 		.ENDIF
 .ENDMACRO
 
-.MACRO modulator_set b, c, d, e, f
-	.BYTE d, b << 5 | c, e, f
+.MACRO modulator_set b, c, d, e, f, g
+	.BYTE d, b << 5 | c, e | g, f
 .ENDMACRO

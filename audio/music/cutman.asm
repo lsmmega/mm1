@@ -810,6 +810,6 @@ music_cutman_noise:
 	loop 0, @loop_1
 
 music_cutman_modulator:
-	modulator_set 7, 0, 0, volume_decay, 0
-	modulator_set 3, 2, 1, volume_decay, 0
-	modulator_set 1, 2, 2, volume_decay, 0
+	modulator_set 7, 0, 0, volume_decay, 0, 0
+	modulator_set 3, 2, 1, volume_decay, 0, 0
+	modulator_set 1, 2, 2, volume_decay, 0, 0

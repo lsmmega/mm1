@@ -455,4 +455,4 @@ music_fireman_noise:
 	loop 0, @loop_1
 
 music_fireman_modulator:
-	modulator_set 7, 0, 0, volume_decay, 0
+	modulator_set 7, 0, 0, volume_decay, 0, 0

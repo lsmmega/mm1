@@ -301,5 +301,5 @@ music_wily_defeated_noise:
 	music_end
 
 music_wily_defeated_modulator:
-	modulator_set 7, 0, 0, volume_decay, 0
-	modulator_set 3, 2, 1, volume_decay, 0
+	modulator_set 7, 0, 0, volume_decay, 0, 0
+	modulator_set 3, 2, 1, volume_decay, 0, 0

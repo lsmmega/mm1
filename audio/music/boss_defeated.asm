@@ -210,5 +210,5 @@ music_boss_defeated_noise:
 	music_end
 
 music_boss_defeated_modulator:
-	modulator_set 7, 0, 0, volume_decay, 0
-	modulator_set 1, 2, 2, volume_decay, 0
+	modulator_set 7, 0, 0, volume_decay, 0, 0
+	modulator_set 1, 2, 2, volume_decay, 0, 0

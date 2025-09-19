@@ -137,5 +137,5 @@ music_game_over_noise:
 	music_end
 
 music_game_over_modulator:
-	modulator_set 0, 0, 0, volume_decay, 0
-	modulator_set 2, 2, 2, volume_decay, 0
+	modulator_set 0, 0, 0, volume_decay, 0, 0
+	modulator_set 2, 2, 2, volume_decay, 0, 0
