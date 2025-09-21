@@ -31,4 +31,5 @@
 .INCLUDE "audio/music/bombman.asm"
 .INCLUDE "audio/music/elecman.asm"
 .INCLUDE "audio/music/gutsman.asm"
+.INCLUDE "audio/music/wily_boss_fighting.asm"
 .INCBIN  "audio/audio.bin"
