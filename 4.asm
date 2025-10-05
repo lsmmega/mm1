@@ -44,4 +44,5 @@
 .INCLUDE "audio/sfx/mega_buster.asm"
 .INCLUDE "audio/sfx/enemy_bullet.asm"
 .INCLUDE "audio/sfx/megaman_hit.asm"
+.INCLUDE "audio/sfx/throw_boulder.asm"
 .INCBIN  "audio/audio.bin"
