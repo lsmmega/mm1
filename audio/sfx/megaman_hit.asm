@@ -1,0 +1,44 @@
+sfx_megaman_hit:
+	sfx_priority 15
+	.BYTE sfx_pulse_2 | sfx_triangle | sfx_noise
+
+;1
+;sfx_pulse_2
+	duty_cycle 3
+	volume 15
+	sfx_modulator_set 5, 3, 2, volume_decay, 7, 0
+	pitch_envelope $5F
+	sfx_note nB_4
+
+;sfx_triangle
+	triangle_note_length $7F
+	pitch_envelope $5F
+	sfx_modulator_set 5, 3, 2, volume_decay, 7, 0
+	sfx_note nBb6
+	sfx_frames 5
+
+;sfx_noise
+	sfx_modulator_set 2, 3, 1, volume_decay, 7, 0
+	pitch_envelope $5F
+	volume 15
+	sfx_noise_note 5
+
+;2
+;sfx_pulse_2
+	duty_cycle 3
+	pitch_envelope $F1
+	volume 8
+	sfx_note nDb5
+
+;sfx_triangle
+	triangle_note_length $81
+	pitch_envelope $F1
+	sfx_note nD_6
+	sfx_frames 13
+
+;sfx_noise
+	sfx_modulator_set 2, 3, 1, volume_decay, 7, 0
+	pitch_envelope $F1
+	noise_duty_cycle 1
+	sfx_noise_note 10
+	sfx_end
