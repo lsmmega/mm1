@@ -38,4 +38,7 @@
 .INCLUDE "audio/music/ending.asm"
 .INCLUDE "audio/music/iceman.asm"
 .INCLUDE "audio/music/wily3_4.asm"
+.INCLUDE "audio/sfx/wily_ufo.asm"
+.INCLUDE "audio/sfx/explosion.asm"
+.INCLUDE "audio/sfx/magnet_beam.asm"
 .INCBIN  "audio/audio.bin"
