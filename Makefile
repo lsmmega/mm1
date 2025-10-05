@@ -95,7 +95,8 @@ home := \
 	unknown/* \
 	screen/* \
 	audio/* \
-	audio/music/*
+	audio/music/* \
+	audio/sfx/*
 
 5 := \
 	5.asm \
