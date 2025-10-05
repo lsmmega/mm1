@@ -20,6 +20,7 @@
 .INCLUDE "screen/title.asm"
 .INCLUDE "stages/elecman/elecman_door.asm"
 .INCBIN  "audio/engine.bin"
+.INCLUDE "audio/engine.asm"
 .INCBIN  "audio/pointers.bin"
 .INCLUDE "audio/music/wily_defeated.asm"
 .INCLUDE "audio/music/stage_select.asm"
