@@ -23,7 +23,7 @@ sfx_explosion:
 	volume 9
 	sfx_note nAb4
 	sfx_frames 7
-	
+
 ;sfx_pulse_2
 	duty_cycle 3
 	pitch_envelope $2F

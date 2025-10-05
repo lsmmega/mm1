@@ -21,7 +21,7 @@ sfx_magnet_beam:
 	volume 15
 	sfx_modulator_set 7, 1, 1, volume_decay, 1, 7
 	sfx_note nA_3
-	
+
 ;sfx_noise
 	noise_duty_cycle 1
 	sfx_modulator_set 7, 1, 1, volume_decay, 1, 7
