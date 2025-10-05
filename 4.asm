@@ -41,4 +41,5 @@
 .INCLUDE "audio/sfx/wily_ufo.asm"
 .INCLUDE "audio/sfx/explosion.asm"
 .INCLUDE "audio/sfx/magnet_beam.asm"
+.INCLUDE "audio/sfx/mega_buster.asm"
 .INCBIN  "audio/audio.bin"
