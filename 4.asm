@@ -48,4 +48,5 @@
 .INCLUDE "audio/sfx/refill.asm"
 .INCLUDE "audio/sfx/landing.asm"
 .INCLUDE "audio/sfx/pickup_ball.asm"
+.INCLUDE "audio/sfx/enemy_hit.asm"
 .INCBIN  "audio/audio.bin"
