@@ -107,7 +107,7 @@ sfx_1up:
 	volume 8
 	sfx_note nC_6
 
-;1
+;16
 ;sfx_pulse_1
 	sfx_frames 3
 	duty_cycle 3
