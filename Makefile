@@ -89,6 +89,7 @@ home := \
 
 4 := \
 	4.asm \
+	audio.asm \
 	constants/* \
 	macros/* \
 	stages/elecman/* \
@@ -96,7 +97,8 @@ home := \
 	screen/* \
 	audio/* \
 	audio/music/* \
-	audio/sfx/*
+	audio/sfx/* \
+	audio/unused/*
 
 5 := \
 	5.asm \
