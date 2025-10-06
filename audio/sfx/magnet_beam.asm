@@ -13,10 +13,10 @@ sfx_magnet_beam:
 	noise_duty_cycle 1
 	sfx_modulator_set 7, 1, 1, volume_decay, 1, 7
 	sfx_noise_note 10
-	sfx_frames 24
 
 ;2
 ;sfx_pulse_2
+	sfx_frames 24
 	duty_cycle 1
 	volume 15
 	sfx_modulator_set 7, 1, 1, volume_decay, 1, 7

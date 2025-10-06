@@ -15,9 +15,9 @@ sfx_megaman_hit:
 	pitch_envelope $5F
 	sfx_modulator_set 5, 3, 2, volume_decay, 7, 0
 	sfx_note nBb6
-	sfx_frames 5
 
 ;sfx_noise
+	sfx_frames 5
 	sfx_modulator_set 2, 3, 1, volume_decay, 7, 0
 	pitch_envelope $5F
 	volume 15
@@ -34,9 +34,9 @@ sfx_megaman_hit:
 	triangle_note_length $81
 	pitch_envelope $F1
 	sfx_note nD_6
-	sfx_frames 13
 
 ;sfx_noise
+	sfx_frames 13
 	sfx_modulator_set 2, 3, 1, volume_decay, 7, 0
 	pitch_envelope $F1
 	noise_duty_cycle 1

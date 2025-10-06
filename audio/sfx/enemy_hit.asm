@@ -15,9 +15,9 @@ sfx_enemy_hit:
 	pitch_envelope $40
 	sfx_modulator_set 0, 5, 0, volume_decay, 7, 6
 	sfx_note nC_7
-	sfx_frames 21
 
 ;sfx_noise
+	sfx_frames 21
 	noise_duty_cycle 1
 	pitch_envelope $4F
 	volume 15

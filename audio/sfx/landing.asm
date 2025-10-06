@@ -2,11 +2,10 @@ sfx_landing:
 	sfx_priority 6
 	.BYTE sfx_pulse_2
 
-@loop_1:
-	sfx_frames 4
-
 ;1
 ;sfx_pulse_2
+@loop_1:
+	sfx_frames 4
 	duty_cycle 1
 	pitch_envelope $8B
 	volume 15

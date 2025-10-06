@@ -8,9 +8,9 @@ sfx_explosion:
 	pitch_envelope $32
 	volume 15
 	sfx_note nAb5
-	sfx_frames 21
 
 ;sfx_pulse_2
+	sfx_frames 21
 	duty_cycle 2
 	pitch_envelope $32
 	volume 15
@@ -22,9 +22,9 @@ sfx_explosion:
 	pitch_envelope $2F
 	volume 9
 	sfx_note nAb4
-	sfx_frames 7
 
 ;sfx_pulse_2
+	sfx_frames 7
 	duty_cycle 3
 	pitch_envelope $2F
 	volume 9

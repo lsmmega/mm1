@@ -12,9 +12,9 @@ sfx_enemy_immune:
 	volume 15
 	pitch_envelope $81
 	sfx_note nBb6
-	sfx_frames 4
 
 ;sfx_triangle
+	sfx_frames 4
 	triangle_note_length $3F
 	sfx_note nA_7
 	sfx_end

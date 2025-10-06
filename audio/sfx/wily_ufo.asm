@@ -10,9 +10,9 @@ sfx_wily_ufo:
 	sfx_modulator_set 1, 2, 0, volume_decay, 0, 0
 	volume 15
 	sfx_note nAb5
-	sfx_frames 16
 
 ;sfx_pulse_2
+	sfx_frames 16
 	duty_cycle 1
 	pitch_envelope $FF
 	sfx_modulator_set 1, 2, 0, volume_decay, 0, 0

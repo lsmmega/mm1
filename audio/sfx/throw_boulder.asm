@@ -9,9 +9,9 @@ sfx_throw_boulder:
 	duty_cycle 2
 	volume 15
 	sfx_note nAb4
-	sfx_frames 5
 
 ;sfx_triangle
+	sfx_frames 5
 	triangle_note_length $08
 	pitch_envelope $0F
 	sfx_note nBb3

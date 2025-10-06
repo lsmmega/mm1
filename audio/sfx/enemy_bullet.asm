@@ -8,9 +8,9 @@ sfx_enemy_bullet:
 	volume 14
 	pitch_envelope $0F
 	sfx_note nDb5
-	sfx_frames 8
 
 ;sfx_triangle
+	sfx_frames 8
 	triangle_note_length $08
 	sfx_modulator_set 6, 4, 1, volume_decay, 7, 2
 	pitch_envelope $0F
