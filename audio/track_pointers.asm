@@ -50,4 +50,3 @@ track_pointers:
 	.WORD sfx_flood
 	.WORD sfx_megaman_death
 	.WORD sfx_1up
-	
