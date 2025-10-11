@@ -6,7 +6,7 @@
 	track_game_over
 	track_boss_defeated
 	track_cutman
-	track_fireman
+	track_06
 	track_fireman
 	track_bombman
 	track_elecman
