@@ -1,7 +1,7 @@
 .SEGMENT "BANK06"
 .INCLUDE "constants/oam.asm"
 .INCLUDE "constants/objects.asm"
-.INCLUDE "constants/objects_default_flags.asm"
+.INCLUDE "constants/flags.asm"
 .INCLUDE "sprites/pointers/oam_sprites_pointers.asm"
 .INCLUDE "sprites/pointers/oam_frameset_pointers.asm"
 .INCLUDE "sprites/pointers/oamcoord_index_pointers.asm"
