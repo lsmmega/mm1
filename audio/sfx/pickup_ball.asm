@@ -3,7 +3,7 @@ sfx_pickup_ball:
 	.BYTE sfx_pulse_1 | sfx_pulse_2
 
 ;1
-;sfx_pulse_1, loop is sfx_pulse_2.
+;sfx_pulse_1, loop is sfx_pulse_2
 @loop_1:
 	sfx_frames 4
 	duty_cycle 2

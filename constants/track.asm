@@ -1,4 +1,4 @@
-;track ids.
+;track ids
 .ENUM
 	track_wily_defeated
 	track_stage_select

@@ -98,6 +98,6 @@ base_note_table:
 	.WORD nBb7
 	.WORD nB_7
 
-;unused.
+;unused
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF
