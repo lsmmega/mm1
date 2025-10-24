@@ -112,6 +112,7 @@ home := \
 6 := \
 	6.asm \
 	constants/* \
+	macros/* \
 	sprites/pointers/* \
 	sprites/* \
 	6/* \
@@ -122,7 +123,8 @@ home := \
 	stages/bombman_wily3/* \
 	stages/fireman_wily4/* \
 	stages/elecman/* \
-	stages/gutsman_ending/*
+	stages/gutsman_ending/* \
+	screen/*
 
 gfx0 := \
 	gfx/sprites/megaman/megaman.bmp gfx/sprites/megaman/megaman.chr \
