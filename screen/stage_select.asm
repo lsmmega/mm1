@@ -10,6 +10,8 @@ stage_select_character:
 	.WORD @start
 	.WORD @clear_points
 
+.INCLUDE "constants/lowerbits_charmap.asm"
+
 @cutman:
 	.BYTE "CUTMAN "
 

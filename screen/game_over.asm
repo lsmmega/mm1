@@ -1,7 +1,7 @@
 	.BYTE $01 ;unknown
 
 ;game over screen set
-game_over_GAME_OVER_string:
+game_over_string_1:
 	leftscreencoord 12, 9
 
 	.BYTE @end - @start
@@ -10,7 +10,7 @@ game_over_GAME_OVER_string:
 	.BYTE "GAME OVER"
 @end:
 
-game_over_CONTINUE_string:
+game_over_string_2:
 	leftscreencoord 12, 16
 
 	.BYTE @end - @start
@@ -19,7 +19,7 @@ game_over_CONTINUE_string:
 	.BYTE "CONTINUE"
 @end:
 
-game_over_STAGE_SELECT_string:
+game_over_string_3:
 	leftscreencoord 12, 18
 
 	.BYTE @end - @start
