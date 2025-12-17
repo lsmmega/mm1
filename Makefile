@@ -1,12 +1,7 @@
 rom_obj := \
 	header.o \
 	home.o \
-	0.o \
-	1.o \
-	2.o \
-	3.o \
-	4.o \
-	5.o \
+	stages.o \
 	6.o
 
 cfg := \
@@ -20,8 +15,8 @@ home := \
 	home.asm \
 	home/*
 
-0 := \
-	0.asm \
+stages := \
+	stages.asm \
 	constants/* \
 	macros/* \
 	stages/cutman_wily1/* \
@@ -34,27 +29,13 @@ home := \
 	gfx/sprites/miscellaneous/*.bmp \
 	gfx/font/*.bmp \
 	gfx/stage_select/*.bmp \
-	gfx/title/*.bmp
-
-1 := \
-	1.asm \
-	constants/* \
-	macros/* \
+	gfx/title/*.bmp \
 	stages/iceman_wily2/* \
-	unknown/* \
-	gfx/stages/regular/*.bmp
-
-2 := \
-	2.asm \
-	constants/* \
-	macros/* \
 	stages/bombman_wily3/* \
-	unknown/* \
 	gfx/sprites/weapons/*.bmp \
 	gfx/sprites/bosses/cwu_01p/*.bmp \
 	gfx/sprites/unknown/*.bmp \
 	gfx/sprites/title/*.bmp \
-	gfx/sprites/bosses/fireman/*.bmp \
 	gfx/sprites/points/*.bmp \
 	gfx/sprites/weapons/super_arm/*.bmp \
 	gfx/sprites/enemies/*.bmp \
@@ -71,42 +52,20 @@ home := \
 	gfx/sprites/menus/*.bmp \
 	gfx/sprites/dr_wily/*.bmp \
 	gfx/sprites/ending/*.bmp \
-	gfx/sprites/miscellaneous/*.bmp \
-	gfx/sprites/bar/*.bmp
-
-3 := \
-	3.asm \
-	constants/* \
-	macros/* \
+	gfx/sprites/bar/*.bmp \
 	stages/fireman_wily4/* \
-	unknown/* \
 	gfx/stages/wily/*.bmp \
 	gfx/ending/*.bmp \
-	gfx/title/*.bmp \
 	gfx/yellow_devil/*.bmp \
-	gfx/sprites/bosses/*.bmp \
-	gfx/wily_machine_1/*.bmp
-
-4 := \
-	4.asm \
+	gfx/wily_machine_1/*.bmp \
 	audio.asm \
-	constants/* \
-	macros/* \
 	stages/elecman/* \
-	unknown/* \
 	screen/* \
 	audio/* \
 	audio/music/* \
 	audio/sfx/* \
-	audio/unused/*
-
-5 := \
-	5.asm \
-	constants/* \
-	macros/* \
+	audio/unused/* \
 	stages/gutsman_ending/* \
-	unknown/* \
-	screen/* \
 	5/*
 
 6 := \
@@ -126,7 +85,7 @@ home := \
 	stages/gutsman_ending/* \
 	screen/*
 
-gfx0 := \
+gfx := \
 	gfx/sprites/megaman/megaman.bmp gfx/sprites/megaman/megaman.chr \
 	gfx/sprites/bosses/cutman.bmp gfx/sprites/bosses/cutman.chr \
 	gfx/sprites/bosses/gutsman.bmp gfx/sprites/bosses/gutsman.chr \
@@ -147,16 +106,12 @@ gfx0 := \
 	gfx/font/font_2.bmp gfx/font/font_2.chr \
 	gfx/title/megaman_pose.bmp gfx/title/megaman_pose.chr \
 	gfx/title/unknown_2.bmp gfx/title/unknown_2.chr \
-
-gfx1 := \
 	gfx/stages/regular/cutman.bmp gfx/stages/regular/cutman.chr \
 	gfx/stages/regular/iceman.bmp gfx/stages/regular/iceman.chr \
 	gfx/stages/regular/bombman.bmp gfx/stages/regular/bombman.chr \
 	gfx/stages/regular/fireman.bmp gfx/stages/regular/fireman.chr \
 	gfx/stages/regular/elecman.bmp gfx/stages/regular/elecman.chr \
-	gfx/stages/regular/gutsman.bmp gfx/stages/regular/gutsman.chr
-
-gfx2 := \
+	gfx/stages/regular/gutsman.bmp gfx/stages/regular/gutsman.chr \
 	gfx/sprites/weapons/fire_storm.bmp gfx/sprites/weapons/fire_storm.chr \
 	gfx/sprites/weapons/ice_slasher.bmp gfx/sprites/weapons/ice_slasher.chr \
 	gfx/sprites/weapons/magnet_beam.bmp gfx/sprites/weapons/magnet_beam.chr \
@@ -235,9 +190,7 @@ gfx2 := \
 	gfx/sprites/ending/roll_1.bmp gfx/sprites/ending/roll_1.chr \
 	gfx/sprites/ending/megaman_2.bmp gfx/sprites/ending/megaman_2.chr \
 	gfx/sprites/ending/roll_2.bmp gfx/sprites/ending/roll_2.chr \
-	gfx/sprites/hazards/fireball.bmp gfx/sprites/hazards/fireball.chr
-
-gfx3 := \
+	gfx/sprites/hazards/fireball.bmp gfx/sprites/hazards/fireball.chr \
 	gfx/stages/wily/wily.bmp gfx/stages/wily/wily.chr \
 	gfx/ending/ending.bmp gfx/ending/ending.chr \
 	gfx/title/title.bmp gfx/title/title.chr \
@@ -260,27 +213,9 @@ header.o: $(header)
 home.o: $(home)
 	ca65 home.asm
 
-0.o: $(0)
-	bmp2nes $(gfx0)
-	ca65 0.asm
-
-1.o: $(1)
-	bmp2nes $(gfx1)
-	ca65 1.asm
-
-2.o: $(2)
-	bmp2nes $(gfx2)
-	ca65 2.asm
-
-3.o: $(3)
-	bmp2nes $(gfx3)
-	ca65 3.asm
-
-4.o: $(4)
-	ca65 4.asm
-
-5.o: $(5)
-	ca65 5.asm
+stages.o: $(stages)
+	bmp2nes $(gfx)
+	ca65 stages.asm
 
 6.o: $(6)
 	ca65 6.asm

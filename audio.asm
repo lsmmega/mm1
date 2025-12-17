@@ -1,3 +1,5 @@
+.INCLUDE "constants/audio.asm"
+.INCLUDE "macros/audio.asm"
 .INCLUDE "audio/engine.asm"
 .INCLUDE "audio/track_pointers.asm"
 .INCLUDE "audio/music/wily_defeated.asm"

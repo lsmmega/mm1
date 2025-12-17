@@ -1,3 +1,5 @@
+.INCLUDE "constants/upperbits_charmap.asm"
+
 	.BYTE $01 ;unknown
 
 ;game over screen set
@@ -27,3 +29,5 @@ game_over_string_3:
 @start:
 	.BYTE "STAGE SELECT"
 @end:
+
+.INCLUDE "screen/title.asm"
