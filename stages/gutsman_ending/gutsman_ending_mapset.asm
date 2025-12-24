@@ -1,4 +1,4 @@
-gutsman_ending_mapset_00:
+mapset_gutsman_ending_00:
 	.BYTE $02, $02, $02, $02, $02, $02, $04, $03
 	.BYTE $02, $02, $02, $02, $3E, $41, $04, $03
 	.BYTE $02, $02, $02, $02, $40, $42, $04, $03
@@ -8,7 +8,7 @@ gutsman_ending_mapset_00:
 	.BYTE $01, $31, $33, $02, $02, $04, $03, $03
 	.BYTE $01, $32, $34, $35, $04, $03, $03, $03
 
-gutsman_ending_mapset_01:
+mapset_gutsman_ending_01:
 	.BYTE $01, $02, $02, $02, $04, $03, $03, $03
 	.BYTE $36, $02, $02, $02, $04, $03, $03, $03
 	.BYTE $02, $02, $02, $04, $03, $03, $03, $03
@@ -18,7 +18,7 @@ gutsman_ending_mapset_01:
 	.BYTE $01, $01, $05, $06, $06, $06, $06, $06
 	.BYTE $01, $01, $08, $01, $01, $01, $01, $01
 
-gutsman_ending_mapset_02:
+mapset_gutsman_ending_02:
 	.BYTE $01, $01, $0A, $01, $01, $01, $01, $01
 	.BYTE $01, $01, $0A, $01, $01, $01, $01, $01
 	.BYTE $01, $01, $0A, $01, $01, $01, $01, $01
@@ -28,7 +28,7 @@ gutsman_ending_mapset_02:
 	.BYTE $01, $01, $0A, $01, $0A, $01, $01, $01
 	.BYTE $01, $01, $0A, $01, $0D, $01, $08, $01
 
-gutsman_ending_mapset_03:
+mapset_gutsman_ending_03:
 	.BYTE $01, $01, $13, $01, $0A, $01, $0A, $01
 	.BYTE $01, $01, $01, $01, $0A, $01, $0B, $01
 	.BYTE $01, $01, $01, $01, $0A, $01, $0A, $01
@@ -38,7 +38,7 @@ gutsman_ending_mapset_03:
 	.BYTE $01, $01, $01, $01, $01, $01, $0A, $01
 	.BYTE $01, $01, $01, $01, $01, $01, $0B, $01
 
-gutsman_ending_mapset_04:
+mapset_gutsman_ending_04:
 	.BYTE $01, $01, $01, $01, $01, $01, $0A, $01
 	.BYTE $01, $01, $01, $01, $01, $01, $0B, $01
 	.BYTE $01, $01, $01, $01, $01, $01, $0F, $01
@@ -48,7 +48,7 @@ gutsman_ending_mapset_04:
 	.BYTE $01, $36, $02, $02, $02, $02, $04, $03
 	.BYTE $01, $02, $02, $02, $02, $02, $04, $03
 
-gutsman_ending_mapset_05:
+mapset_gutsman_ending_05:
 	.BYTE $01, $33, $02, $02, $04, $03, $03, $03
 	.BYTE $36, $34, $35, $02, $04, $03, $03, $03
 	.BYTE $02, $02, $34, $04, $03, $03, $03, $03
@@ -58,7 +58,7 @@ gutsman_ending_mapset_05:
 	.BYTE $02, $02, $02, $04, $03, $03, $03, $03
 	.BYTE $02, $02, $05, $06, $06, $06, $03, $03
 
-gutsman_ending_mapset_06:
+mapset_gutsman_ending_06:
 	.BYTE $01, $02, $02, $02, $52, $53, $53, $53
 	.BYTE $01, $3A, $3B, $30, $3C, $02, $02, $02
 	.BYTE $01, $01, $01, $01, $16, $19, $19, $19
@@ -68,7 +68,7 @@ gutsman_ending_mapset_06:
 	.BYTE $01, $01, $01, $01, $18, $19, $19, $19
 	.BYTE $01, $01, $01, $01, $17, $01, $01, $01
 
-gutsman_ending_mapset_07:
+mapset_gutsman_ending_07:
 	.BYTE $01, $01, $01, $01, $01, $01, $1B, $1A
 	.BYTE $01, $01, $01, $01, $16, $19, $4C, $1A
 	.BYTE $01, $01, $01, $01, $16, $19, $4C, $1A
@@ -78,7 +78,7 @@ gutsman_ending_mapset_07:
 	.BYTE $01, $01, $01, $01, $01, $23, $01, $22
 	.BYTE $24, $24, $24, $24, $24, $24, $24, $24
 
-gutsman_ending_mapset_08:
+mapset_gutsman_ending_08:
 	.BYTE $21, $21, $21, $26, $06, $06, $06, $06
 	.BYTE $01, $01, $01, $27, $25, $25, $25, $25
 	.BYTE $01, $01, $01, $01, $01, $01, $01, $01
@@ -88,7 +88,7 @@ gutsman_ending_mapset_08:
 	.BYTE $01, $01, $01, $01, $01, $01, $01, $01
 	.BYTE $24, $24, $24, $24, $24, $24, $24, $24
 
-gutsman_ending_mapset_09:
+mapset_gutsman_ending_09:
 	.BYTE $06, $06, $21, $21, $06, $06, $03, $03
 	.BYTE $25, $25, $01, $01, $25, $25, $03, $03
 	.BYTE $01, $01, $01, $01, $01, $1B, $21, $21
@@ -98,7 +98,7 @@ gutsman_ending_mapset_09:
 	.BYTE $01, $01, $01, $01, $01, $01, $01, $01
 	.BYTE $24, $24, $24, $24, $24, $24, $24, $24
 
-gutsman_ending_mapset_19:
+mapset_gutsman_ending_19:
 	.BYTE $03, $21, $21, $06, $06, $06, $06, $06
 	.BYTE $06, $01, $01, $25, $25, $25, $25, $25
 	.BYTE $21, $01, $01, $01, $01, $01, $01, $01
@@ -108,7 +108,7 @@ gutsman_ending_mapset_19:
 	.BYTE $01, $01, $01, $01, $01, $1B, $04, $03
 	.BYTE $24, $24, $24, $24, $24, $24, $03, $03
 
-gutsman_ending_mapset_0a:
+mapset_gutsman_ending_0a:
 	.BYTE $06, $06, $06, $03, $03, $03, $03, $03
 	.BYTE $25, $25, $25, $06, $03, $03, $03, $03
 	.BYTE $01, $01, $01, $01, $04, $03, $03, $03
@@ -118,7 +118,7 @@ gutsman_ending_mapset_0a:
 	.BYTE $01, $01, $36, $02, $02, $02, $04, $03
 	.BYTE $01, $01, $02, $02, $02, $02, $04, $03
 
-gutsman_ending_mapset_0b:
+mapset_gutsman_ending_0b:
 	.BYTE $01, $01, $3E, $49, $50, $51, $04, $03
 	.BYTE $01, $01, $3D, $02, $3E, $41, $04, $03
 	.BYTE $36, $02, $02, $02, $40, $42, $04, $03
@@ -128,7 +128,7 @@ gutsman_ending_mapset_0b:
 	.BYTE $4F, $4F, $4F, $02, $02, $04, $03, $03
 	.BYTE $4E, $4E, $54, $29, $29, $04, $03, $03
 
-gutsman_ending_mapset_0c:
+mapset_gutsman_ending_0c:
 	.BYTE $00, $00, $2A, $2B, $2B, $03, $00, $00
 	.BYTE $00, $00, $2A, $2B, $2B, $03, $00, $00
 	.BYTE $00, $00, $2A, $2B, $2B, $03, $00, $00
@@ -138,7 +138,7 @@ gutsman_ending_mapset_0c:
 	.BYTE $00, $00, $2A, $2B, $2B, $03, $00, $00
 	.BYTE $00, $00, $2A, $2B, $2B, $03, $00, $00
 
-gutsman_ending_mapset_0d:
+mapset_gutsman_ending_0d:
 	.BYTE $00, $00, $2A, $2B, $2B, $03, $00, $00
 	.BYTE $00, $00, $2A, $2B, $2B, $03, $00, $00
 	.BYTE $00, $00, $2A, $2B, $2B, $03, $00, $00
@@ -148,7 +148,7 @@ gutsman_ending_mapset_0d:
 	.BYTE $00, $00, $2A, $2B, $2B, $03, $00, $00
 	.BYTE $00, $00, $2A, $2C, $2C, $03, $00, $00
 
-gutsman_ending_mapset_0e:
+mapset_gutsman_ending_0e:
 	.BYTE $57, $57, $57, $2B, $2B, $06, $03, $03
 	.BYTE $2B, $2B, $2B, $2B, $2B, $2D, $03, $03
 	.BYTE $2B, $2B, $2B, $2B, $2B, $2D, $03, $03
@@ -158,7 +158,7 @@ gutsman_ending_mapset_0e:
 	.BYTE $2B, $2B, $2B, $2B, $2B, $2B, $03, $03
 	.BYTE $58, $58, $58, $58, $58, $58, $03, $03
 
-gutsman_ending_mapset_0f:
+mapset_gutsman_ending_0f:
 	.BYTE $57, $57, $57, $2B, $2B, $06, $03, $03
 	.BYTE $2B, $2B, $2B, $2B, $2B, $2B, $03, $03
 	.BYTE $2B, $2B, $2B, $2B, $2B, $2B, $03, $03
@@ -168,7 +168,7 @@ gutsman_ending_mapset_0f:
 	.BYTE $2B, $2B, $2B, $2B, $2B, $2B, $03, $03
 	.BYTE $58, $58, $58, $58, $58, $58, $03, $03
 
-gutsman_ending_mapset_10:
+mapset_gutsman_ending_10:
 	.BYTE $00, $B4, $9E, $80, $70, $70, $70, $70
 	.BYTE $00, $AF, $9F, $80, $70, $70, $70, $70
 	.BYTE $00, $B0, $96, $80, $70, $70, $70, $70
@@ -178,7 +178,7 @@ gutsman_ending_mapset_10:
 	.BYTE $00, $B0, $B7, $80, $70, $70, $70, $70
 	.BYTE $B4, $B2, $96, $80, $70, $70, $70, $70
 
-gutsman_ending_mapset_11:
+mapset_gutsman_ending_11:
 	.BYTE $00, $B4, $9D, $80, $70, $70, $70, $70
 	.BYTE $00, $B4, $9E, $80, $70, $70, $70, $70
 	.BYTE $00, $AF, $9F, $80, $70, $70, $70, $70
@@ -188,7 +188,7 @@ gutsman_ending_mapset_11:
 	.BYTE $00, $AF, $9F, $80, $70, $70, $70, $70
 	.BYTE $00, $B3, $9C, $80, $70, $70, $70, $70
 
-gutsman_ending_mapset_12:
+mapset_gutsman_ending_12:
 	.BYTE $00, $A1, $98, $80, $70, $70, $70, $70
 	.BYTE $00, $A7, $99, $80, $70, $70, $70, $70
 	.BYTE $00, $00, $9A, $80, $70, $70, $70, $70
@@ -198,7 +198,7 @@ gutsman_ending_mapset_12:
 	.BYTE $B4, $B2, $96, $80, $70, $70, $70, $70
 	.BYTE $00, $B3, $9C, $80, $70, $70, $70, $70
 
-gutsman_ending_mapset_13:
+mapset_gutsman_ending_13:
 	.BYTE $00, $A3, $B7, $80, $70, $70, $70, $70
 	.BYTE $A0, $AE, $97, $80, $70, $70, $70, $70
 	.BYTE $A2, $78, $7B, $80, $70, $70, $70, $70
@@ -208,7 +208,7 @@ gutsman_ending_mapset_13:
 	.BYTE $A7, $A6, $B7, $80, $70, $70, $70, $70
 	.BYTE $00, $AC, $96, $80, $70, $70, $70, $70
 
-gutsman_ending_mapset_14:
+mapset_gutsman_ending_14:
 	.BYTE $00, $00, $7A, $82, $70, $70, $70, $70
 	.BYTE $00, $A0, $93, $82, $70, $70, $70, $70
 	.BYTE $00, $A1, $94, $82, $70, $70, $70, $70
@@ -218,7 +218,7 @@ gutsman_ending_mapset_14:
 	.BYTE $A0, $A5, $96, $80, $70, $70, $70, $70
 	.BYTE $A7, $A6, $7C, $80, $70, $70, $70, $70
 
-gutsman_ending_mapset_15:
+mapset_gutsman_ending_15:
 	.BYTE $00, $00, $79, $82, $70, $70, $70, $70
 	.BYTE $00, $00, $79, $82, $70, $70, $70, $70
 	.BYTE $00, $00, $79, $82, $70, $70, $70, $70
@@ -228,7 +228,7 @@ gutsman_ending_mapset_15:
 	.BYTE $00, $00, $79, $82, $70, $70, $70, $70
 	.BYTE $00, $00, $79, $82, $70, $70, $70, $70
 
-gutsman_ending_mapset_16:
+mapset_gutsman_ending_16:
 	.BYTE $00, $00, $8F, $80, $70, $70, $70, $70
 	.BYTE $00, $00, $90, $80, $70, $70, $70, $70
 	.BYTE $00, $00, $91, $80, $70, $70, $70, $70
@@ -238,7 +238,7 @@ gutsman_ending_mapset_16:
 	.BYTE $00, $00, $79, $82, $70, $70, $70, $70
 	.BYTE $00, $00, $79, $82, $70, $70, $70, $70
 
-gutsman_ending_mapset_17:
+mapset_gutsman_ending_17:
 	.BYTE $00, $8C, $8B, $80, $70, $70, $70, $70
 	.BYTE $00, $87, $86, $80, $70, $70, $70, $70
 	.BYTE $00, $00, $8D, $80, $70, $70, $70, $70
@@ -248,7 +248,7 @@ gutsman_ending_mapset_17:
 	.BYTE $00, $00, $8A, $80, $70, $70, $70, $70
 	.BYTE $00, $72, $88, $80, $70, $70, $70, $70
 
-gutsman_ending_mapset_18:
+mapset_gutsman_ending_18:
 	.BYTE $7E, $BE, $BB, $B8, $70, $70, $70, $70
 	.BYTE $7D, $BF, $BB, $B8, $70, $70, $70, $70
 	.BYTE $00, $7E, $BC, $B9, $70, $70, $70, $70
@@ -258,7 +258,7 @@ gutsman_ending_mapset_18:
 	.BYTE $00, $89, $88, $80, $70, $70, $70, $70
 	.BYTE $00, $00, $8A, $80, $70, $70, $70, $70
 
-gutsman_ending_mapset_1a:
+mapset_gutsman_ending_1a:
 	.BYTE $B7, $CA, $E5, $04, $32, $06, $40, $C1
 	.BYTE $E1, $D1, $11, $2B, $35, $D5, $E5, $C5
 	.BYTE $AF, $32, $05, $40, $C3, $40, $0B, $C3
@@ -268,7 +268,7 @@ gutsman_ending_mapset_1a:
 	.BYTE $05, $C0, $B7, $F0, $4F, $E6, $08, $C2
 	.BYTE $5E, $35, $79, $E6, $10, $C2, $66, $35
 
-gutsman_ending_mapset_1b:
+mapset_gutsman_ending_1b:
 	.BYTE $79, $E6, $20, $C2, $6E, $35, $79, $E6
 	.BYTE $40, $C2, $7B, $35, $C9, $3A, $05, $40
 	.BYTE $3D, $32, $05, $40, $C9, $3A, $05, $40
@@ -278,7 +278,7 @@ gutsman_ending_mapset_1b:
 	.BYTE $7E, $FE, $08, $C8, $3E, $FF, $C3, $50
 	.BYTE $29, $C1, $D1, $E1, $21, $CC, $02, $E5
 
-gutsman_ending_mapset_1c:
+mapset_gutsman_ending_1c:
 	.BYTE $D5, $C5, $C9, $B7, $F5, $CD, $FE, $2F
 	.BYTE $22, $07, $40, $CD, $69, $32, $4F, $3A
 	.BYTE $11, $3E, $FE, $20, $CA, $B0, $35, $2A
@@ -288,7 +288,7 @@ gutsman_ending_mapset_1c:
 	.BYTE $FE, $3C, $C4, $9D, $04, $F1, $77, $E5
 	.BYTE $F5, $0E, $00, $2B, $3A, $11, $3E, $FE
 
-gutsman_ending_mapset_1d:
+mapset_gutsman_ending_1d:
 	.BYTE $20, $C2, $47, $36, $F1, $F5, $47, $CA
 	.BYTE $FA, $35, $CD, $8C, $32, $0C, $FE, $0D
 	.BYTE $CA, $44, $36, $FE, $3E, $CA, $47, $36
@@ -298,7 +298,7 @@ gutsman_ending_mapset_1d:
 	.BYTE $36, $F5, $3A, $0E, $40, $B7, $CA, $1F
 	.BYTE $36, $F1, $11, $47, $36, $D5, $FE, $20
 
-gutsman_ending_mapset_1e:
+mapset_gutsman_ending_1e:
 	.BYTE $C8, $FE, $09, $C8, $FE, $3B, $C8, $FE
 	.BYTE $2C, $C8, $D1, $C3, $37, $36, $F1, $FE
 	.BYTE $3C, $CA, $33, $36, $FE, $3E, $C2, $37
@@ -308,7 +308,7 @@ gutsman_ending_mapset_1e:
 	.BYTE $C2, $47, $36, $CD, $CD, $04, $36, $00
 	.BYTE $2B, $CD, $2E, $30, $78, $B7, $C4, $9D
 
-gutsman_ending_mapset_1f:
+mapset_gutsman_ending_1f:
 	.BYTE $04, $F1, $E1, $22, $09, $40, $26, $00
 	.BYTE $69, $22, $FD, $3F, $C1, $D1, $E1, $01
 	.BYTE $6D, $36, $C3, $5C, $34, $AF, $C2, $3E
