@@ -3,6 +3,7 @@
 .INCLUDE "constants/ppu_attributes.asm"
 .INCLUDE "constants/scrolling.asm"
 .INCLUDE "constants/tiles_address.asm"
+.INCLUDE "constants/track.asm"
 .INCLUDE "macros/coords.asm"
 .INCLUDE "stages/cutman_wily1/cutman_wily1_tsa.asm"
 .INCLUDE "stages/cutman_wily1/cutman_wily1_mapset.asm"
@@ -189,4 +190,96 @@
 .INCLUDE "stages/gutsman_ending/gutsman_special_blockset.asm"
 .INCLUDE "screen/wily_machine_1.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_door.asm"
-.INCBIN  "5/5.bin"
+.INCBIN  "5/5_0.bin"
+
+	track_queue track_jump_into_water
+
+.INCBIN  "5/5_1.bin"
+
+	track_queue track_pause
+
+.INCBIN  "5/5_2.bin"
+
+	track_queue track_wily_boss_fighting
+
+.INCBIN  "5/5_3.bin"
+
+	track_queue track_refill
+
+.INCBIN  "5/5_4.bin"
+
+	track_queue track_landing
+
+.INCBIN  "5/5_5.bin"
+
+	track_queue track_teleport
+
+.INCBIN  "5/5_6.bin"
+
+	track_queue track_megaman_hit
+
+.INCBIN  "5/5_7.bin"
+
+	track_queue track_fireman_move
+
+.INCBIN  "5/5_8.bin"
+
+	track_queue track_explosion
+
+.INCBIN  "5/5_9.bin"
+
+	track_queue track_explosion
+
+.INCBIN  "5/5_10.bin"
+
+	track_queue track_mega_buster
+
+.INCBIN  "5/5_11.bin"
+
+	track_queue track_rolling_cutter
+
+.INCBIN  "5/5_12.bin"
+
+	track_queue track_ice_slasher
+
+.INCBIN  "5/5_13.bin"
+
+	track_queue track_fire_storm
+
+.INCBIN  "5/5_14.bin"
+
+	track_queue track_thunder_beam
+
+.INCBIN  "5/5_15.bin"
+
+	track_queue track_magnet_beam
+
+.INCBIN  "5/5_16.bin"
+
+	track_queue track_big_eye
+
+.INCBIN  "5/5_17.bin"
+
+	track_queue track_explosion
+
+.INCBIN  "5/5_18.bin"
+
+	track_queue track_magnet_beam
+
+.INCBIN  "5/5_19.bin"
+
+	track_queue track_appearing_block
+
+.INCBIN  "5/5_20.bin"
+
+	track_queue track_explosion
+
+.INCBIN  "5/5_21.bin"
+
+	track_queue track_flood
+
+.INCBIN  "5/5_22.bin"
+
+	track_queue track_track_platform
+
+.INCBIN  "5/5_23.bin"

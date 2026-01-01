@@ -2,7 +2,6 @@
 .INCLUDE "constants/flags.asm"
 .INCLUDE "constants/oam.asm"
 .INCLUDE "constants/objects.asm"
-.INCLUDE "macros/coords.asm"
 .INCLUDE "sprites/pointers/oam_sprites_pointers.asm"
 .INCLUDE "sprites/pointers/oam_frameset_pointers.asm"
 .INCLUDE "sprites/pointers/oamcoord_index_pointers.asm"

@@ -1,8 +1,6 @@
 rom_obj := \
 	header.o \
-	home.o \
-	stages.o \
-	6.o
+	main.o
 
 cfg := \
 	mm1.cfg
@@ -210,15 +208,9 @@ mm1: mm1.nes
 header.o: $(header)
 	ca65 header.asm
 
-home.o: $(home)
-	ca65 home.asm
-
-stages.o: $(stages)
+main.o: $(home) $(stages) $(6)
 	bmp2nes $(gfx)
-	ca65 stages.asm
-
-6.o: $(6)
-	ca65 6.asm
+	ca65 main.asm
 
 clean:
 	$(RM) $(rom_obj) \
