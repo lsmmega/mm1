@@ -32,5 +32,35 @@
 .INCBIN  "6/6_1.bin"
 .INCLUDE "screen/ending.asm"
 .INCBIN  "6/6_2.bin"
-.INCLUDE "screen/stage_select.asm"
+
+	track_queue track_pause
+
 .INCBIN  "6/6_3.bin"
+
+	track_queue track_select
+
+.INCBIN  "6/6_4.bin"
+
+	track_queue track_stage_select
+
+.INCBIN  "6/6_5.bin"
+
+	track_queue track_select
+
+.INCBIN  "6/6_6.bin"
+
+	track_queue track_press_start
+	track_queue track_boss_show
+
+.INCBIN  "6/6_7.bin"
+
+	track_queue track_points
+
+.INCBIN  "6/6_8.bin"
+.INCBIN  "6/6_9.bin"
+
+	track_queue track_wily_ufo
+
+.INCBIN  "6/6_10.bin"
+.INCLUDE "screen/stage_select.asm"
+.INCBIN  "6/6_11.bin"
