@@ -1,5 +1,4 @@
 ;same as sprites/oam_frameset.asm, but enemies
-
 oam_enemies_frameset_00:
 	.BYTE 2 | (@end - @start - 1) << 4
 

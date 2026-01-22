@@ -1,5 +1,4 @@
 ;same as sprites/oam_sprites.asm, but enemies
-
 oam_enemies_sprites_00:
 	.BYTE (@end - @start) / 2
 	.BYTE $2E

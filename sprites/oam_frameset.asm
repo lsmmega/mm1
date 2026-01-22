@@ -1,5 +1,4 @@
 ;oam sprites changed per frame(s) | (@start length - 1) << 4, oam frameset
-
 oam_frameset_00:
 	.BYTE 8 | (@end - @start - 1) << 4
 
