@@ -1,4 +1,5 @@
 .SEGMENT "HOME"
+.INCLUDE "ram/ram.asm"
 .INCBIN  "home/home_0.bin"
 
 	track_queue track_wily_defeated
@@ -42,7 +43,9 @@ _track_queue:
 
 	track_queue track_door
 
-.INCBIN  "home/home_11.bin"
+.INCBIN  "home/home_11_0.bin"
+.INCLUDE "home/init_sprites.asm"
+.INCBIN  "home/home_11_1.bin"
 
 	track_queue track_cutman_move
 

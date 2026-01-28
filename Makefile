@@ -11,6 +11,7 @@ header := \
 
 home := \
 	home.asm \
+	ram/* \
 	home/*
 
 stages := \
