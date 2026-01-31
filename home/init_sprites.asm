@@ -1,4 +1,4 @@
-init_sprites:
+_init_sprites:
 	LDA #$F8
 
 @loop:
