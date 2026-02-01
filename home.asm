@@ -1,5 +1,9 @@
 .SEGMENT "HOME"
-.INCLUDE "ram/ram.asm"
+.INCLUDE "constants/bank.asm"
+.INCLUDE "constants/nes.asm"
+.INCLUDE "constants/uxrom.asm"
+.INCLUDE "home/bank.asm"
+.INCLUDE "home/reset.asm"
 .INCBIN  "home/home_0.bin"
 
 	track_queue track_wily_defeated

@@ -179,6 +179,8 @@
 .INCLUDE "audio.asm"
 
 .SEGMENT "BANK05"
+.INCLUDE "macros/stack.asm"
+.INCLUDE "ram/ram.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_ending_tsa.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_ending_mapset.asm"
 .INCLUDE "unknown/unknown_14bd0.asm"
@@ -190,6 +192,7 @@
 .INCLUDE "stages/gutsman_ending/gutsman_special_blockset.asm"
 .INCLUDE "screen/wily_machine_1.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_door.asm"
+.INCLUDE "engine/init.asm"
 .INCBIN  "5/5_0.bin"
 
 	track_queue track_jump_into_water

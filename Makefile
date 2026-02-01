@@ -11,6 +11,8 @@ header := \
 
 home := \
 	home.asm \
+	constants/* \
+	macros/* \
 	ram/* \
 	home/*
 
@@ -18,6 +20,7 @@ stages := \
 	stages.asm \
 	constants/* \
 	macros/* \
+	ram/* \
 	stages/cutman_wily1/* \
 	unknown/* \
 	gfx/sprites/megaman/*.bmp \
