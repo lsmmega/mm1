@@ -4,6 +4,7 @@
 .INCLUDE "constants/uxrom.asm"
 .INCLUDE "home/bank.asm"
 .INCLUDE "home/reset.asm"
+.INCLUDE "home/nmi_wait.asm"
 .INCBIN  "home/home_0.bin"
 
 	track_queue track_wily_defeated
@@ -24,9 +25,10 @@
 
 	track_queue track_explosion
 
-.INCBIN  "home/home_5.bin"
-
-_track_queue:
+.INCBIN  "home/home_5_0.bin"
+.INCLUDE "home/bankswitch.asm"
+.INCBIN  "home/home_5_1.bin"
+.INCLUDE "home/track_queue.asm"
 .INCBIN  "home/home_6.bin"
 
 	track_queue track_pickup_ball
@@ -50,6 +52,11 @@ _track_queue:
 .INCBIN  "home/home_11_0.bin"
 .INCLUDE "home/init_sprites.asm"
 .INCBIN  "home/home_11_1.bin"
+
+nmi:
+.INCBIN  "home/home_11_2.bin"
+.INCLUDE "home/joy.asm"
+.INCBIN  "home/home_11_3.bin"
 
 	track_queue track_cutman_move
 
@@ -90,6 +97,5 @@ _track_queue:
 	track_queue track_game_over
 
 .INCBIN  "home/home_21.bin"
-;.INCLUDE "home/reset.asm"
 ;.INCLUDE "home/nmi.asm"
-;.INCLUDE "home/vectors.asm"
+.INCLUDE "home/vectors.asm"
