@@ -1,4 +1,4 @@
-;oam sprites set pointers
+oam_enemies_sprites_lsb_pointers:
 	.WORD oam_enemies_sprites_00
 	.WORD oam_enemies_sprites_01
 	.WORD oam_enemies_sprites_02
@@ -127,6 +127,8 @@
 	.WORD oam_enemies_sprites_7d
 	.WORD oam_enemies_sprites_7e
 	.WORD oam_enemies_sprites_7f
+
+oam_enemies_sprites_msb_pointers:
 	.WORD oam_enemies_sprites_80
 	.WORD oam_enemies_sprites_81
 	.WORD oam_enemies_sprites_82

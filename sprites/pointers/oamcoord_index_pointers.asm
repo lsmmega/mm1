@@ -1,4 +1,4 @@
-;oamcoord index pointers
+oamcoord_index_pointers:
 	.WORD oamcoord_index_00
 	.WORD oamcoord_index_01
 	.WORD oamcoord_index_02

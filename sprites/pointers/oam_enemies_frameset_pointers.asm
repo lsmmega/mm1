@@ -1,4 +1,4 @@
-;oam frameset pointers
+oam_enemies_frameset_pointers:
 	.WORD oam_enemies_frameset_00
 	.WORD oam_enemies_frameset_01
 	.WORD oam_enemies_frameset_02

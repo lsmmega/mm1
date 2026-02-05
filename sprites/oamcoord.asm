@@ -1,4 +1,4 @@
-;oam ycoord
+oam_ycoord:
 	.FEATURE FORCE_RANGE
 	.BYTE -12
 	.BYTE -12
@@ -257,7 +257,7 @@
 	.BYTE +24
 	.BYTE +24
 
-;oam xleftcoord
+oam_xleftcoord:
 	.BYTE -12
 	.BYTE -4
 	.BYTE +4
@@ -515,7 +515,7 @@
 	.BYTE +8
 	.BYTE +16
 
-;oam xrightcoord
+oam_xrightcoord:
 	.BYTE +4
 	.BYTE -4
 	.BYTE -12

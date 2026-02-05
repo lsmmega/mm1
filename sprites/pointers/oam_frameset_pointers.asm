@@ -1,4 +1,4 @@
-;oam frameset pointers
+oam_frameset_pointers:
 	.WORD oam_frameset_00
 	.WORD oam_frameset_01
 	.WORD oam_frameset_02

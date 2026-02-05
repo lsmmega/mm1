@@ -1,4 +1,4 @@
-;oam sprites set pointers
+oam_sprites_pointers:
 	.WORD oam_sprites_00
 	.WORD oam_sprites_01
 	.WORD oam_sprites_02

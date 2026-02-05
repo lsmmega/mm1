@@ -1,0 +1,13 @@
+;stages
+.ENUM
+	stage_cutman
+	stage_iceman
+	stage_bombman
+	stage_fireman
+	stage_elecman
+	stage_gutsman
+	stage_wily1
+	stage_wily2
+	stage_wily3
+	stage_wily4
+.ENDENUM
