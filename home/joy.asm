@@ -10,11 +10,11 @@ _joy:
 
 @loop_2:
 	LDA JOY1, X
-	STA zjoy1_pressed_bits
+	STA z:zjoy1_pressed_bits
 	LSR
-	ORA zjoy1_pressed_bits
+	ORA z:zjoy1_pressed_bits
 	LSR
-	ROR zjoy1_pressed, X
+	ROR z:zjoy1_pressed, X
 	DEY
 	BNE @loop_2
 	DEX
