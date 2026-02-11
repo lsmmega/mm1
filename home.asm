@@ -55,11 +55,13 @@
 .INCBIN  "home/home_11_1.bin"
 .INCLUDE "home/init_sprites.asm"
 .INCBIN  "home/home_11_2.bin"
-
-nmi:
-.INCBIN  "home/home_11_3.bin"
+.INCLUDE "home/nmi_disable.asm"
+.INCLUDE "home/nmi.asm"
 .INCLUDE "home/joy.asm"
-.INCBIN  "home/home_11_4.bin"
+.INCLUDE "home/object_tile.asm"
+.INCLUDE "home/palette.asm"
+.INCLUDE "home/screen.asm"
+.INCBIN  "home/home_11_3.bin"
 
 	track_queue track_cutman_move
 

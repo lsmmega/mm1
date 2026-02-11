@@ -1,136 +1,135 @@
-NMI:
-	.ORG $D4A8
+nmi:
+	.FEATURE FORCE_RANGE
+	PHA
+	PHX
+	PHY
+	LDA znmi_wait
+	BEQ @yes
+	JMP @no
 
-	PHA
-	TXA
-	PHA
-	TYA
-	PHA
-	LDA $1F
-	BEQ label_1
-	JMP label_2
-label_1
-	JSR $D495
+@yes:
+	JSR _nmi_disable
 	LDA PPU_STATUS
 	LDA #$00
 	STA PPU_OAM_ADDR
-	LDA #$02
+	LDA #oam_hi_addr
 	STA OAM_DMA
-	JSR $D673
-	LDA $37
-	BEQ label_3
-	JSR $D60A
-label_3
-	LDA $5E
-	BEQ label_4
-	JSR $D5AB
-label_4
-	LDA $1B
+	JSR _screen_update
+	LDA z:zpalette_update_flag
+	BEQ @no_palette_update
+	JSR _palette_update
+
+@no_palette_update:
+	LDA z:zobject_tile_update_size
+	BEQ @no_object_tile_update
+	JSR _object_tile_update
+
+@no_object_tile_update:
+	LDA z:zscreen
 	PHA
-	LDA $1A
+	LDA z:zscreen_xcoord
 	PHA
-	LDA $B4
-	BEQ label_5
-	LDA $B3
-	STA $1B
-	LDA $B2
-	STA $1A
-label_5
-	LDA $FF
-	AND #$FC
-	STA $FF
-	LDA $1B
-	AND #$01
-	ORA $FF
+	LDA z:zforce_screen_flag
+	BEQ @no_force_screen
+	LDA z:zforce_screen
+	STA z:zscreen
+	LDA z:zforce_screen_xcoord
+	STA z:zscreen_xcoord
+
+@no_force_screen:
+	LDA z:zppu_ctrl
+	AND #~nametable_bottom_right
+	STA z:zppu_ctrl
+	LDA z:zscreen
+	AND #%00000001
+	ORA z:zppu_ctrl
 	STA PPU_CTRL
 	PHA
 	LDA PPU_STATUS
-	LDX #$04
-	LDA $47
-	BEQ label_6
-	DEC $47
+	LDX #4
+	LDA z:zgutsman_stomp_timer
+	BEQ @no_shake
+	DEC z:zgutsman_stomp_timer
 	LSR
-	BCC label_7
-	AND #$03
+	BCC @lsb_not_set
+	AND #%00000011
 	TAX
-label_7
-	LDA $0400
+
+@lsb_not_set:
+	LDA aobject_pointer
 	CMP #$09
-	BEQ label_6
+	BEQ @no_shake
 	CMP #$6F
-	BEQ label_6
-	LDA $0420
-	AND #$F0
-	ORA #$02
-	STA $0420
-label_6
+	BEQ @no_shake
+	LDA aobject_flag
+	AND #%11110000
+	ORA #can_collide_megaman
+	STA aobject_flag
+
+@no_shake:
 	CLC
-	LDA $1A
-	ADC label_8,X
+	LDA z:zscreen_xcoord
+	ADC @shake_xcoord_table, X
 	STA PPU_SCROLL
 	CLC
-	LDA $1E
-	ADC label_9,X
+	LDA z:zscreen_ycoord
+	ADC @shake_ycoord_table, X
 	STA PPU_SCROLL
-	LDA $FE
-	ORA #$1E
-	STA $FE
+	LDA z:zppu_mask
+	ORA #background_leftmost_enable | sprites_leftmost_enable | background_enable | sprite_enable
+	STA z:zppu_mask
 	STA PPU_MASK
 	PLA
-	ORA #$80
-	STA $FF
+	ORA #nmi_enable
+	STA z:zppu_ctrl
 	STA PPU_CTRL
 	PLA
-	STA $1A
+	STA z:zscreen_xcoord
 	PLA
-	STA $1B
+	STA z:zscreen
 	LDA #$01
-	STA $1F
-	INC $23
-label_2
-	LDA #$04
-	STA $C004
-	JSR $9000
-label_14
-	LDX $45
-	BEQ label_10
-	LDA $057F,X
-	CMP #$FD
-	BCS label_11
-	CMP #$33
-	BCS label_12
-label_11
-	BNE label_13
-	LDY $A7
-label_13
-	JSR $9003
-label_12
-	DEC $45
-	BNE label_14
-label_10
-	LDA $42
+	STA z:znmi_wait
+	INC z:znmi_frame
+
+@no:
+	farjsr _nmi_audio_processing
+
+@loop:
+	LDX z:ztrack_queue_pointer
+	BEQ @no_queue
+	LDA atrack_queue - 1, X
+	CMP #music_fade_out
+	BCS @sound_effect_lefd
+	CMP #track_1up + 1
+	BCS @skip
+
+@sound_effect_lefd:
+	BNE @not_sound_effect_fd
+	LDY z:zmusic_fade_out_rate
+
+@not_sound_effect_fd:
+	JSR _nmi_audio_track_queue
+
+@skip:
+	DEC z:ztrack_queue_pointer
+	BNE @loop
+
+@no_queue:
+	LDA z:zcurrent_bankswitch
 	TAX
-	STA $C000,X
-	LDA $0D
-	EOR $46
-	ADC $23
+	STA uxrom_prg_bank, X
+	LDA z:z0D
+	EOR z:zrandom
+	ADC z:znmi_frame
 	LSR
-	STA $46
-	PLA
-	TAY
-	PLA
-	TAX
+	STA z:zrandom
+	PLY
+	PLX
 	PLA
 	RTI
-label_8
-	BRK
-	PHP
-	BRK
-	SED
-	BRK
-label_9
-	INX
-	BRK
-	PHP
-	BRK
-	BRK
+
+@shake_xcoord_table:
+	.BYTE +0, +8, +0, -8, +0
+
+@shake_ycoord_table:
+	.BYTE -24, +0, +8, +0, +0
