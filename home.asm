@@ -38,6 +38,7 @@
 .INCLUDE "home/track_queue.asm"
 .INCBIN  "home/home_6_0.bin"
 .INCLUDE "home/check_object.asm"
+.INCLUDE "home/check_object_type.asm"
 .INCBIN  "home/home_6_1.bin"
 
 	track_queue track_pickup_ball
