@@ -34,6 +34,7 @@
 .INCLUDE "home/close_menu.asm"
 .INCLUDE "home/object_tile_prewrite.asm"
 .INCBIN  "home/home_5_2.bin"
+.INCLUDE "home/short_frozen.asm"
 .INCLUDE "home/track_queue.asm"
 .INCBIN  "home/home_6.bin"
 
