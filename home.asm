@@ -36,7 +36,9 @@
 .INCBIN  "home/home_5_2.bin"
 .INCLUDE "home/short_frozen.asm"
 .INCLUDE "home/track_queue.asm"
-.INCBIN  "home/home_6.bin"
+.INCBIN  "home/home_6_0.bin"
+.INCLUDE "home/check_object.asm"
+.INCBIN  "home/home_6_1.bin"
 
 	track_queue track_pickup_ball
 
