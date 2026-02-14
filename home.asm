@@ -18,7 +18,9 @@
 
 	track_queue track_points
 
-.INCBIN  "home/home_3.bin"
+.INCBIN  "home/home_3_0.bin"
+.INCLUDE "home/object_clear.asm"
+.INCBIN  "home/home_3_1.bin"
 
 	track_queue track_megaman_death
 
