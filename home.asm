@@ -31,6 +31,8 @@
 .INCBIN  "home/home_5_0.bin"
 .INCLUDE "home/bankswitch.asm"
 .INCBIN  "home/home_5_1.bin"
+.INCLUDE "home/close_menu.asm"
+.INCBIN  "home/home_5_2.bin"
 .INCLUDE "home/track_queue.asm"
 .INCBIN  "home/home_6.bin"
 
