@@ -106,5 +106,4 @@
 	track_queue track_game_over
 
 .INCBIN  "home/home_21.bin"
-;.INCLUDE "home/nmi.asm"
 .INCLUDE "home/vectors.asm"
