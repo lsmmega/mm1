@@ -75,7 +75,7 @@
 ;oam
 	oam_hi_addr     = 2
 	aoam_y          = oam_hi_addr << 8 + 4
-	aoam_tile       = oam_hi_addr << 8 + 5
+	aoam_tiles      = oam_hi_addr << 8 + 5
 	aoam_attributes = oam_hi_addr << 8 + 6
 	aoam_x          = oam_hi_addr << 8 + 7
 

@@ -168,7 +168,7 @@ _draw_object:
 @draw_sprites:
 @loop:
 	LDA (z00), Y
-	STA aoam_tile, X
+	STA aoam_tiles, X
 	INY
 	LDA (z00), Y
 	EOR z:z11
@@ -495,7 +495,7 @@ _draw_score_bar_tile:
 	LDA z:z0C
 	STA aoam_x, Y
 	LDA z:z0F
-	STA aoam_tile, Y
+	STA aoam_tiles, Y
 	LDA z:z12
 	STA aoam_attributes, Y
 	LDA z:z0E
