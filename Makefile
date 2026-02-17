@@ -14,7 +14,8 @@ home := \
 	constants/* \
 	macros/* \
 	ram/* \
-	home/*
+	home/* \
+	home/unused/*
 
 stages := \
 	stages.asm \

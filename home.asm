@@ -114,4 +114,5 @@ _stage_clear:
 .INCLUDE "home/object_collision_coord.asm"
 .INCLUDE "home/weapon_damage.asm"
 .INCBIN  "home/home_22.bin"
+.INCLUDE "home/unused/unused_1ff0a.asm"
 .INCLUDE "home/vectors.asm"
