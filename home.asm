@@ -6,6 +6,8 @@
 .INCLUDE "home/bank.asm"
 .INCLUDE "home/reset.asm"
 .INCLUDE "home/nmi_wait.asm"
+
+_stage_clear:
 .INCBIN  "home/home_0.bin"
 
 	track_queue track_wily_defeated
@@ -44,13 +46,7 @@
 .INCLUDE "home/tiles_init.asm"
 .INCLUDE "home/tiles_address.asm"
 .INCBIN  "home/home_6_2.bin"
-
-	track_queue track_pickup_ball
-
-.INCBIN  "home/home_7.bin"
-
-	track_queue track_pickup_ball
-
+.INCLUDE "home/items.asm"
 .INCBIN  "home/home_8.bin"
 
 	track_queue track_enemy_hit
