@@ -1,3 +1,4 @@
+_regular_stage_tiles_init:
 cutman_tiles_init:
 	.BYTE (@end - @start) / 2
 
@@ -19,6 +20,7 @@ cutman_tiles_init:
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00
 	.BYTE $00
 
+_wily_stage_tiles_init:
 wily1_tiles_init:
 	.BYTE (@end - @start) / 2
 

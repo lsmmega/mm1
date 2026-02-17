@@ -41,9 +41,9 @@
 .INCLUDE "home/check_object_type.asm"
 .INCBIN  "home/home_6_1.bin"
 .INCLUDE "home/update_palette.asm"
-.INCBIN  "home/home_6_2.bin"
+.INCLUDE "home/tiles_init.asm"
 .INCLUDE "home/tiles_address.asm"
-.INCBIN  "home/home_6_3.bin"
+.INCBIN  "home/home_6_2.bin"
 
 	track_queue track_pickup_ball
 
