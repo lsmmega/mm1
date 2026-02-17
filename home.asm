@@ -34,7 +34,7 @@ _stage_clear:
 .INCLUDE "home/bankswitch.asm"
 .INCBIN  "home/home_5_1.bin"
 .INCLUDE "home/close_menu.asm"
-.INCLUDE "home/object_tile_prewrite.asm"
+.INCLUDE "home/object_tiles_prewrite.asm"
 .INCBIN  "home/home_5_2.bin"
 .INCLUDE "home/short_frozen.asm"
 .INCLUDE "home/track_queue.asm"
@@ -67,7 +67,7 @@ _stage_clear:
 .INCLUDE "home/nmi_disable.asm"
 .INCLUDE "home/nmi.asm"
 .INCLUDE "home/joy.asm"
-.INCLUDE "home/object_tile.asm"
+.INCLUDE "home/object_tiles.asm"
 .INCLUDE "home/palette.asm"
 .INCLUDE "home/screen.asm"
 .INCBIN  "home/home_11_3.bin"
@@ -111,4 +111,6 @@ _stage_clear:
 	track_queue track_game_over
 
 .INCBIN  "home/home_21.bin"
+.INCLUDE "home/object_collision_coord.asm"
+.INCBIN  "home/home_22.bin"
 .INCLUDE "home/vectors.asm"

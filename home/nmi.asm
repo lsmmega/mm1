@@ -20,11 +20,11 @@ nmi:
 	JSR _palette_update
 
 @no_palette_update:
-	LDA z:zobject_tile_update_size
-	BEQ @no_object_tile_update
-	JSR _object_tile_update
+	LDA z:zobject_tiles_update_size
+	BEQ @no_object_tiles_update
+	JSR _object_tiles_update
 
-@no_object_tile_update:
+@no_object_tiles_update:
 	LDA z:zscreen
 	PHA
 	LDA z:zscreen_xcoord

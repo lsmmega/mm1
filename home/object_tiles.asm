@@ -1,4 +1,4 @@
-_object_tile_update:
+_object_tiles_update:
 	CMP #$FF
 	BEQ @yellow_devil
 	LDA aobject_ppu_address
@@ -11,7 +11,7 @@ _object_tile_update:
 	LDA aobject_ppu_data, X
 	STA PPU_DATA
 	INX
-	DEC z:zobject_tile_update_size
+	DEC z:zobject_tiles_update_size
 	BNE @loop_1
 	RTS
 
@@ -32,7 +32,7 @@ _object_tile_update:
 	INY
 	TYA
 	AND #%00000011
-	BEQ @yellow_devil_2xobject_tile
+	BEQ @yellow_devil_2xobject_tiles
 	CLC
 	LDA aobject_ppu_address + 1, X
 	ADC #$20
@@ -42,11 +42,11 @@ _object_tile_update:
 	STA aobject_ppu_address, X
 	BNE @loop_2
 
-@yellow_devil_2xobject_tile:
+@yellow_devil_2xobject_tiles:
 	INX
 	INX
-	DEC z:zyellow_devil_object_tile_flag
+	DEC z:zyellow_devil_object_tiles_flag
 	BNE @loop_2
 	LDA #$00
-	STA z:zobject_tile_update_size
+	STA z:zobject_tiles_update_size
 	RTS

@@ -1,4 +1,4 @@
-_object_tile_prewrite:
+_object_tiles_prewrite:
 	TAX
 	STA z:zcurrent_bankswitch
 	STA uxrom_prg_bank, X
