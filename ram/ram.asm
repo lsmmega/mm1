@@ -50,6 +50,9 @@
 	zsprites_pointer                = $54
 	zmegaman_invincibility_time     = $55
 	zboss_invincibility_time        = $56
+	ztiles_address                  = $59
+	ztiles_update_20size            = $5B
+	ztiles_bankswitch               = $5C
 	zgot_weapon_flag                = $5D
 	zobject_tiles_update_size       = $5E
 	zcurrent_weapon                 = $5F

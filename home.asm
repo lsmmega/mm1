@@ -95,7 +95,9 @@ _stage_clear:
 
 	track_queue track_earthquake
 
-.INCBIN  "home/home_17.bin"
+.INCBIN  "home/home_17_0.bin"
+.INCLUDE "home/tiles_update.asm"
+.INCBIN  "home/home_17_1.bin"
 
 	track_queue track_refill
 
