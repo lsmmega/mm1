@@ -17,9 +17,7 @@ _stage_clear:
 	track_queue track_boss_defeated
 
 .INCBIN  "home/home_2.bin"
-
-	track_queue track_points
-
+.INCLUDE "home/clear_points.asm"
 .INCBIN  "home/home_3_0.bin"
 .INCLUDE "home/object_clear.asm"
 .INCLUDE "home/timer.asm"
@@ -64,7 +62,7 @@ _stage_clear:
 .INCLUDE "home/sprites_timer.asm"
 .INCLUDE "home/clear_timer.asm"
 .INCLUDE "home/sprites.asm"
-.INCBIN  "home/home_11_1.bin"
+.INCLUDE "home/score_addition.asm"
 .INCLUDE "home/unfrozen.asm"
 .INCLUDE "home/init_sprites.asm"
 .INCLUDE "home/weapon_palette.asm"

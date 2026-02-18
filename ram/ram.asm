@@ -46,6 +46,7 @@
 	ztrack_queue_pointer            = $45
 	zrandom                         = $46
 	zgutsman_stomp_timer            = $47
+	zscore_addition                 = $4A
 	zsprites_pointer                = $54
 	zmegaman_invincibility_time     = $55
 	zboss_invincibility_time        = $56
@@ -69,6 +70,7 @@
 	zforce_screen_xcoord            = $B2
 	zforce_screen                   = $B3
 	zforce_screen_flag              = $B4
+	zundo_clear_points              = $B5
 	zstage_clear_flag               = $BB
 	zppu_mask                       = $FE
 	zppu_ctrl                       = $FF
