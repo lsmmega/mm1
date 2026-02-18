@@ -64,3 +64,6 @@
 .INCBIN  "6/6_10.bin"
 .INCLUDE "screen/stage_select.asm"
 .INCBIN  "6/6_11.bin"
+
+__open_menu_store:
+.INCBIN  "6/6_12.bin"

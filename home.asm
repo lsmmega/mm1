@@ -22,6 +22,7 @@ _stage_clear:
 
 .INCBIN  "home/home_3_0.bin"
 .INCLUDE "home/object_clear.asm"
+.INCLUDE "home/timer.asm"
 .INCBIN  "home/home_3_1.bin"
 
 	track_queue track_megaman_death
@@ -32,10 +33,10 @@ _stage_clear:
 
 .INCBIN  "home/home_5_0.bin"
 .INCLUDE "home/bankswitch.asm"
-.INCBIN  "home/home_5_1.bin"
+.INCLUDE "home/open_menu.asm"
 .INCLUDE "home/close_menu.asm"
 .INCLUDE "home/object_tiles_prewrite.asm"
-.INCBIN  "home/home_5_2.bin"
+.INCBIN  "home/home_5_1.bin"
 .INCLUDE "home/short_frozen.asm"
 .INCLUDE "home/track_queue.asm"
 .INCBIN  "home/home_6_0.bin"

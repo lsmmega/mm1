@@ -40,6 +40,7 @@
 	zpalette_update_flag            = $37
 	zpalette_update_alternative     = $38
 	zpalette_update_original        = $3A
+	ztimer                          = $3C
 	zboss_ai_pointer                = $3E
 	zcurrent_bankswitch             = $42
 	ztrack_queue_pointer            = $45
