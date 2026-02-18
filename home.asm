@@ -115,6 +115,7 @@ _stage_clear:
 .INCBIN  "home/home_21.bin"
 .INCLUDE "home/object_collision_coord.asm"
 .INCLUDE "home/weapon_damage.asm"
+.INCLUDE "home/score_table.asm"
 .INCBIN  "home/home_22.bin"
 .INCLUDE "home/unused/unused_1ff0a.asm"
 .INCLUDE "home/vectors.asm"
