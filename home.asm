@@ -18,7 +18,6 @@ _stage_clear:
 
 .INCBIN  "home/home_2.bin"
 .INCLUDE "home/clear_points.asm"
-.INCBIN  "home/home_3_0.bin"
 .INCLUDE "home/object_clear.asm"
 .INCLUDE "home/timer.asm"
 .INCBIN  "home/home_3_1.bin"
