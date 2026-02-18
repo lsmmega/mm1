@@ -63,6 +63,7 @@ _stage_clear:
 .INCBIN  "home/home_11_0.bin"
 .INCLUDE "home/sprites.asm"
 .INCBIN  "home/home_11_1.bin"
+.INCLUDE "home/unfrozen.asm"
 .INCLUDE "home/init_sprites.asm"
 .INCBIN  "home/home_11_2.bin"
 .INCLUDE "home/nmi_disable.asm"
