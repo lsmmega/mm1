@@ -1,4 +1,4 @@
-_frozen_timer:
+_clear_timer:
 	STA z:ztimer
 
 @loop:
