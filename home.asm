@@ -67,7 +67,7 @@ _stage_clear:
 .INCBIN  "home/home_11_1.bin"
 .INCLUDE "home/unfrozen.asm"
 .INCLUDE "home/init_sprites.asm"
-.INCBIN  "home/home_11_2.bin"
+.INCLUDE "home/weapon_palette.asm"
 .INCLUDE "home/nmi_disable.asm"
 .INCLUDE "home/nmi.asm"
 .INCLUDE "home/joy.asm"
