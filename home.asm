@@ -61,6 +61,7 @@ _stage_clear:
 	track_queue track_door
 
 .INCBIN  "home/home_11_0.bin"
+.INCLUDE "home/frozen_timer.asm"
 .INCLUDE "home/sprites.asm"
 .INCBIN  "home/home_11_1.bin"
 .INCLUDE "home/unfrozen.asm"
