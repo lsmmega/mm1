@@ -33,21 +33,29 @@ fireman_special_blockset:
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF
 
 wily4_special_blockset:
-	.BYTE (@end - @start) / 6
+	.BYTE (wily4_special_blockset_end - wily4_special_blockset_start) / 6
 
-@start:
+wily4_special_blockset_start:
 	;      id,  no,  x1,  y1,  x2,  y2
 	.BYTE $02, $16, $80, $60, $A0, $80
 	.BYTE $02, $16, $80, $80, $A0, $A0
 	.BYTE $02, $16, $80, $A0, $A0, $C0
+
+bombman_refighting_special_blockset_pointer:
 	.BYTE $01, $1D, $00, $A0, $10, $C0
+
+fireman_refighting_special_blockset_pointer:
 	.BYTE $01, $1E, $00, $A0, $10, $C0
+
+iceman_refighting_special_blockset_pointer:
 	.BYTE $01, $1F, $00, $A0, $10, $C0
+
+gutsman_refighting_special_blockset_pointer:
 	.BYTE $01, $20, $00, $A0, $10, $C0
 	.BYTE $03, $22, $E0, $80, $00, $C0
 	.BYTE $01, $23, $00, $10, $10, $C0
 	.BYTE $01, $FF, $00, $00, $00, $00
-@end:
+wily4_special_blockset_end:
 
 ;end
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF

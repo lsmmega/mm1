@@ -1,0 +1,7 @@
+refighting_special_blockset_remove_table:
+	.BYTE cutman_refighting_special_blockset_pointer - wily2_special_blockset_start
+	.BYTE iceman_refighting_special_blockset_pointer - wily4_special_blockset_start
+	.BYTE bombman_refighting_special_blockset_pointer - wily4_special_blockset_start
+	.BYTE fireman_refighting_special_blockset_pointer - wily4_special_blockset_start
+	.BYTE elecman_refighting_special_blockset_pointer - wily2_special_blockset_start
+	.BYTE gutsman_refighting_special_blockset_pointer - wily4_special_blockset_start

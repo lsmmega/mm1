@@ -16,7 +16,9 @@ _stage_clear:
 
 	track_queue track_boss_defeated
 
-.INCBIN  "home/home_2.bin"
+.INCBIN  "home/home_2_0.bin"
+.INCLUDE "home/refighting_special_blockset_remove_table.asm"
+.INCLUDE "home/clear_points_object.asm"
 .INCLUDE "home/clear_points.asm"
 .INCLUDE "home/object_clear.asm"
 .INCLUDE "home/timer.asm"
@@ -105,7 +107,10 @@ _stage_clear:
 
 	track_queue track_enemy_bullet
 
-.INCBIN  "home/home_19.bin"
+.INCBIN  "home/home_19_0.bin"
+
+_generate_object_common:
+.INCBIN  "home/home_19_1.bin"
 
 	track_queue track_throw_boulder
 

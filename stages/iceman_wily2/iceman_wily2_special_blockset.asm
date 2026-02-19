@@ -34,14 +34,18 @@ iceman_special_blockset:
 	.BYTE $FF, $FF, $FF, $FF, $FF
 
 wily2_special_blockset:
-	.BYTE (@end - @start) / 6
+	.BYTE (wily2_special_blockset_end - wily2_special_blockset_start) / 6
 
-@start:
+wily2_special_blockset_start:
 	;      id,  no,  x1,  y1,  x2,  y2
+
+cutman_refighting_special_blockset_pointer:
 	.BYTE $01, $1C, $20, $C0, $40, $E0
+
+elecman_refighting_special_blockset_pointer:
 	.BYTE $01, $20, $20, $C0, $40, $E0
 	.BYTE $01, $FF, $00, $00, $00, $00
-@end:
+wily2_special_blockset_end:
 
 ;end
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
