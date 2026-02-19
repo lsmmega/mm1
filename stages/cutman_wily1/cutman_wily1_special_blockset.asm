@@ -1,3 +1,4 @@
+regular_special_blockset:
 cutman_special_blockset:
 	.BYTE (@end - @start) / 6
 
@@ -33,6 +34,7 @@ cutman_special_blockset:
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
 	.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF
 
+wily_special_blockset:
 wily1_special_blockset:
 	.BYTE (@end - @start) / 6
 

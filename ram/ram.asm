@@ -105,3 +105,4 @@
 	aobject_frozen_timer            = $6A0
 	aboss_hp                        = $6C1
 	aobject_id                      = $6E0
+	ano_of_special_blockset         = $720

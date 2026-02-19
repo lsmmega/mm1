@@ -15,7 +15,7 @@ _palette_update:
 	STY z:zpalette_update_address + 1
 	LDA z:zpalette_update_type
 	PHA
-	JSR @do
+	JSR _palette_update_do
 	PLA
 	STA z:zpalette_update_type
 
@@ -27,7 +27,7 @@ _palette_update:
 	LDA z:zpalette_update_original + 1
 	STA z:zpalette_update_address + 1
 	LDA z:zpalette_update_type
-	JSR @do
+	JSR _palette_update_do
 	LDA z:zboss_ai_pointer
 	BEQ @done
 	CMP #5
@@ -37,7 +37,7 @@ _palette_update:
 @done:
 	RTS
 
-@do:
+_palette_update_do:
 	PHA
 	AND #%11110000
 	TAX

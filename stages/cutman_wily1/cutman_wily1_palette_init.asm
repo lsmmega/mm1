@@ -1,3 +1,4 @@
+regular_palette:
 ;cutman palette init
 ;background
 	.BYTE black, pale_gray,  white_spring, dark_red
@@ -17,6 +18,7 @@
 	.BYTE black, pale_gray,  white_gray,   light_gray
 	.BYTE black, white_gray, light_gray,   white_cyan
 
+wily_palette:
 ;wily1 palette init
 ;background
 	.BYTE black, white_gray,   dark_gray,        dark_blue
