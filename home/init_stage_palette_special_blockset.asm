@@ -28,16 +28,16 @@ _init_stage_palette_special_blockset:
 	LDA z:zcurrent_stage
 	CMP #stage_wily1
 	BCC @not_wily_special_blockset
-	LDA #<wily_special_blockset
+	LDA #<(wily_special_blockset - 1)
 	STA z:z04
-	LDA #>wily_special_blockset
+	LDA #>(wily_special_blockset - 1)
 	STA z:z05
 	BNE @continue_special_blockset
 
 @not_wily_special_blockset:
-	LDA #<regular_special_blockset
+	LDA #<(regular_special_blockset - 1)
 	STA z:z04
-	LDA #>regular_special_blockset
+	LDA #>(regular_special_blockset - 1)
 	STA z:z05
 
 @continue_special_blockset:

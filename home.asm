@@ -38,6 +38,7 @@ _stage_clear:
 .INCBIN  "home/home_5_1.bin"
 .INCLUDE "home/short_frozen.asm"
 .INCLUDE "home/track_queue.asm"
+.INCLUDE "home/init_stage_palette_special_blockset.asm"
 .INCBIN  "home/home_6_0.bin"
 .INCLUDE "home/check_object.asm"
 .INCLUDE "home/check_object_type.asm"
