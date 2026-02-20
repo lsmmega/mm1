@@ -47,8 +47,7 @@ _explosion:
 .INCLUDE "home/check_object.asm"
 .INCLUDE "home/check_object_type.asm"
 .INCBIN  "home/home_6_1_0.bin"
-
-_init_sprites_index:
+.INCLUDE "home/init_sprites_index.asm"
 .INCBIN  "home/home_6_1_1.bin"
 
 _init_tileset_palette:

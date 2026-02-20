@@ -1,4 +1,4 @@
-;screen sprites index
+;screen sprites tiles palette index
 	.BYTE 0 * $0B
 	.BYTE 0 * $0B
 	.BYTE 0 * $0B

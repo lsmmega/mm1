@@ -1,4 +1,4 @@
-;screen sprites index
+sprites_tiles_palette_index:
 	.BYTE 0 * $0B
 	.BYTE 0 * $0B
 	.BYTE 0 * $0B
