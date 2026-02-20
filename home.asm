@@ -26,7 +26,9 @@ _stage_clear:
 
 	track_queue track_megaman_death
 
-.INCBIN  "home/home_4.bin"
+.INCBIN  "home/home_4_0.bin"
+.INCLUDE "home/checkpoint_table.asm"
+.INCBIN  "home/home_4_1.bin"
 
 	track_queue track_explosion
 
