@@ -51,6 +51,7 @@
 	zmegaman_invincibility_time     = $55
 	zboss_invincibility_time        = $56
 	ztiles_address                  = $59
+	zobject_pointer                 = $5A
 	ztiles_update_20size            = $5B
 	ztiles_bankswitch               = $5C
 	zgot_weapon_flag                = $5D
@@ -62,10 +63,12 @@
 	zrolling_cutter                 = $6B
 	zmagnet_beam                    = $71
 	zscore                          = $72
+	zrunning_type                   = $94
 	zwater_delay                    = $95
 	z1up                            = $A6
 	zmusic_fade_out_rate            = $A7
 	zyellow_devil_object_tiles_flag = $AA
+	zcheckpoint_pointer             = $AB
 	zcurrent_boss                   = $AC
 	zcapsule_parameter              = $AD
 	zscore_ball                     = $AE

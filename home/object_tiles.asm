@@ -1,6 +1,8 @@
 _object_tiles_update:
 	CMP #$FF
-	BEQ @yellow_devil
+	BEQ _object_tiles_update_yellow_devil
+
+_init_object_tiles:
 	LDA aobject_ppu_address
 	STA PPU_ADDRESS
 	LDA aobject_ppu_address + 1
@@ -15,7 +17,7 @@ _object_tiles_update:
 	BNE @loop_1
 	RTS
 
-@yellow_devil:
+_object_tiles_update_yellow_devil:
 	LDX #$00
 	LDY #$00
 

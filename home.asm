@@ -22,13 +22,15 @@ _stage_clear:
 .INCLUDE "home/clear_points.asm"
 .INCLUDE "home/object_clear.asm"
 .INCLUDE "home/timer.asm"
-.INCBIN  "home/home_3_1.bin"
-
-	track_queue track_megaman_death
-
-.INCBIN  "home/home_4_0.bin"
+.INCLUDE "home/megaman_death.asm"
 .INCLUDE "home/checkpoint_table.asm"
-.INCBIN  "home/home_4_1.bin"
+.INCBIN  "home/home_4_1_0.bin"
+
+_explosion_timer:
+.INCBIN  "home/home_4_1_1.bin"
+
+_explosion:
+.INCBIN  "home/home_4_2.bin"
 
 	track_queue track_explosion
 
@@ -44,7 +46,13 @@ _stage_clear:
 .INCBIN  "home/home_6_0.bin"
 .INCLUDE "home/check_object.asm"
 .INCLUDE "home/check_object_type.asm"
-.INCBIN  "home/home_6_1.bin"
+.INCBIN  "home/home_6_1_0.bin"
+
+_init_sprites_index:
+.INCBIN  "home/home_6_1_1.bin"
+
+_init_tileset_palette:
+.INCBIN  "home/home_6_1_2.bin"
 .INCLUDE "home/update_palette.asm"
 .INCLUDE "home/tiles_init.asm"
 .INCLUDE "home/tiles_address.asm"

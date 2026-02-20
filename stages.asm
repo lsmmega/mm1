@@ -193,7 +193,16 @@
 .INCLUDE "screen/wily_machine_1.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_door.asm"
 .INCLUDE "engine/init.asm"
-.INCBIN  "5/5_0.bin"
+.INCBIN  "5/5_0_0.bin"
+
+_game_over:
+.INCBIN  "5/5_0_1.bin"
+
+_init_palette_special_blockset:
+.INCBIN  "5/5_0_2.bin"
+
+_init_regular:
+.INCBIN  "5/5_0_3.bin"
 
 	track_queue track_jump_into_water
 
