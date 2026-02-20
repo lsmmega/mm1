@@ -1,8 +1,7 @@
 _bankswitch_stage:
 	PHP
 	PHA
-	TXA
-	PHA
+	PHX
 	LDA z:zcurrent_stage
 	CMP #$06
 	BCC @non_wily
@@ -12,8 +11,7 @@ _bankswitch_stage:
 	TAX
 	STA z:zcurrent_bankswitch
 	STA uxrom_prg_bank, X
-	PLA
-	TAX
+	PLX
 	PLA
 	PLP
 	RTS
