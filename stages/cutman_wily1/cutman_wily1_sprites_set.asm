@@ -64,7 +64,7 @@ sprites_tiles_palette_index:
 	.BYTE 0 * $0B
 	.BYTE 0 * $0B
 
-;sprites set
+sprites_tiles_set:
 ;0
 	.BYTE tiles_address_9b00
 	.BYTE tiles_address_9f00

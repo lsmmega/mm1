@@ -53,12 +53,12 @@ _megaman_death:
 	JSR _init_sprites_index
 
 @loop_2:
-	JSR _init_tileset_palette
+	JSR _sprites_tiles_set
 	JSR _init_object_tiles
 	LDA z:ztiles_address
-	CMP #tiles_address_0a00
+	CMP #$28
 	BNE @loop_2
-	JSR _init_tileset_palette
+	JSR _sprites_tiles_set
 	LDA #white_cyan
 	STA aobject_palette + 1
 	LDA #light_azure

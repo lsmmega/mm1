@@ -35,9 +35,7 @@ _explosion_timer:
 .INCBIN  "home/home_6_1_0_1.bin"
 .INCLUDE "home/init_sprites_index.asm"
 .INCBIN  "home/home_6_1_1.bin"
-
-_init_tileset_palette:
-.INCBIN  "home/home_6_1_2.bin"
+.INCLUDE "home/sprites_tiles_set.asm"
 .INCLUDE "home/update_palette.asm"
 .INCLUDE "home/tiles_init.asm"
 .INCLUDE "home/tiles_address.asm"
