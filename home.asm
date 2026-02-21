@@ -41,10 +41,9 @@ _explosion_timer:
 .INCLUDE "home/tiles_address.asm"
 .INCBIN  "home/home_6_2.bin"
 .INCLUDE "home/items.asm"
-.INCBIN  "home/home_8.bin"
+.INCLUDE "home/collision.asm"
 
-	track_queue track_enemy_hit
-
+_boss_death:
 .INCBIN  "home/home_9.bin"
 
 	track_queue track_explosion

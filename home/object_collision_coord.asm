@@ -242,8 +242,6 @@ non_enemies_collision_ycoord:
 	.BYTE 12
 	.BYTE 12
 	.BYTE 12
-
-enemies_collision_ycoord:
 	.BYTE 12
 	.BYTE 12
 	.BYTE 12
@@ -342,6 +340,8 @@ enemies_collision_ycoord:
 	.BYTE 49
 	.BYTE 1
 	.BYTE 12
+
+enemies_collision_ycoord:
 	.BYTE 8
 	.BYTE 8
 	.BYTE 8
