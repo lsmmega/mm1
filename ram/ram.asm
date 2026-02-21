@@ -111,6 +111,6 @@
 	aobject_timer                   = $640
 	aobject_ycoord_speed            = $680
 	aobject_frozen_timer            = $6A0
-	aboss_hp                        = $6C1
+	aobject_hp                      = $6C0
 	aobject_id                      = $6E0
 	ano_of_special_blockset         = $720

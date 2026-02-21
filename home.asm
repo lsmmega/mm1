@@ -106,12 +106,7 @@ _init_tileset_palette:
 	track_queue track_refill
 
 .INCBIN  "home/home_18.bin"
-
-	track_queue track_enemy_bullet
-
-.INCBIN  "home/home_19_0.bin"
-
-_generate_object_common:
+.INCLUDE "home/generate_object.asm"
 .INCBIN  "home/home_19_1.bin"
 
 	track_queue track_throw_boulder
