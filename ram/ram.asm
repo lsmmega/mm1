@@ -106,9 +106,12 @@
 	aobject_frameset_timer          = $440
 	aobject_screen                  = $460
 	aobject_xcoord                  = $480
+	aobject_xcoord_speed            = $4C0
+	aobject_xcoord_speed_fraction   = $4E0
 	atrack_queue                    = $580
 	aobject_ycoord                  = $600
 	aobject_timer                   = $640
+	aobject_ycoord_speed_fraction   = $660
 	aobject_ycoord_speed            = $680
 	aobject_frozen_timer            = $6A0
 	aobject_hp                      = $6C0

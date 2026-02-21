@@ -111,7 +111,9 @@ _init_tileset_palette:
 
 	track_queue track_throw_boulder
 
-.INCBIN  "home/home_20.bin"
+.INCBIN  "home/home_20_0.bin"
+.INCLUDE "home/create_explosion.asm"
+.INCBIN  "home/home_20_1.bin"
 
 	track_queue track_game_over
 
