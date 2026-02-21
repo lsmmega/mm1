@@ -13,17 +13,11 @@
 .INCLUDE "home/object_clear.asm"
 .INCLUDE "home/timer.asm"
 .INCLUDE "home/megaman_death.asm"
-.INCBIN  "home/home_4_1_0.bin"
+.INCLUDE "home/explosion_before_table.asm"
 
 _explosion_timer:
 .INCBIN  "home/home_4_1_1.bin"
-
-_explosion:
-.INCBIN  "home/home_4_2.bin"
-
-	track_queue track_explosion
-
-.INCBIN  "home/home_5_0.bin"
+.INCLUDE "home/explosion.asm"
 .INCLUDE "home/bankswitch.asm"
 .INCLUDE "home/open_menu.asm"
 .INCLUDE "home/close_menu.asm"
