@@ -1,71 +1,71 @@
-;objects speed index
-	.BYTE $B0 ;objects_bunby_heli
-	.BYTE $08 ;objects_metall
-	.BYTE $08 ;objects_kamadoma
-	.BYTE $B4 ;objects_gabyoall
-	.BYTE $B8 ;objects_adhering_suzy_vertical
-	.BYTE $08 ;objects_screw_driver_ground
-	.BYTE $BC ;objects_watcher
-	.BYTE $C0 ;objects_pepe
-	.BYTE $C0 ;objects_killer_bomb
-	.BYTE $C4 ;objects_big_eye
-	.BYTE $B0 ;objects_mambu
-	.BYTE $08 ;objects_blaster_left_delayed
-	.BYTE $08 ;objects_thrower_delayed
-	.BYTE $08 ;objects_bombombomb
-	.BYTE $2C ;objects_fireball
-	.BYTE $08 ;objects_flame_pillar
-	.BYTE $08 ;objects_appearing_block_generator
-	.BYTE $08 ;objects_super_cutter
-	.BYTE $C8 ;objects_sniper_joe
-	.BYTE $CC ;objects_foot_holder
-	.BYTE $B0 ;objects_crazy_razy
-	.BYTE $C8 ;objects_pickelman
-	.BYTE $08 ;objects_screw_driver_ceiling
-	.BYTE $08 ;objects_blaster_right_delayed
-	.BYTE $08 ;objects_fireball_standby
-	.BYTE $08 ;objects_short_elec_beam
-	.BYTE $08 ;objects_enemies_bullet_palette_2
-	.BYTE $08 ;objects_enemies_killed
-	.BYTE $08 ;objects_super_cutter_standby
-	.BYTE $08 ;objects_crazy_razy_head_1
-	.BYTE $08 ;objects_crazy_razy_foot_1
-	.BYTE $08 ;objects_crazy_razy_head_2
-	.BYTE $08 ;objects_crazy_razy_hit
-	.BYTE $D0 ;objects_adhering_suzy_horizontal
-	.BYTE $08 ;objects_blaster_left
-	.BYTE $08 ;objects_blaster_right
-	.BYTE $08 ;objects_thrower
-	.BYTE $08 ;objects_short_elec_beam_delayed
-	.BYTE $08 ;objects_bombombomb_cluster
-	.BYTE $08 ;objects_appearing_block
-	.BYTE $08 ;objects_bomb_explosion_cluster
-	.BYTE $08 ;objects_crazy_razy_foot_2
-	.BYTE $08 ;objects_watcher_move
-	.BYTE $08 ;objects_watcher_elec_thrower
-	.BYTE $08 ;objects_track_platform
-	.BYTE $08 ;objects_enemies_bullet_palette_3
-	.BYTE $08 ;objects_pickaxe
-	.BYTE $08 ;objects_2f
-	.BYTE $08 ;objects_30
-	.BYTE $08 ;objects_changkey
-	.BYTE $08 ;objects_fireman_palette_alternate
-	.BYTE $08 ;objects_copy_robot_rolling_cutter
-	.BYTE $08 ;objects_copy_robot_ice_slasher
-	.BYTE $08 ;objects_copy_robot_hyper_bomb
-	.BYTE $08 ;objects_copy_robot_fire_storm_flame
-	.BYTE $08 ;objects_copy_robot_fire_storm_shield
-	.BYTE $08 ;objects_yellow_devil_parts
-	.BYTE $08 ;objects_yellow_devil_1
-	.BYTE $08 ;objects_cwu_01p
-	.BYTE $08 ;objects_3b
-	.BYTE $08 ;objects_score_ball
-	.BYTE $08 ;objects_small_weapon_capsule
-	.BYTE $08 ;objects_small_life_capsule
-	.BYTE $08 ;objects_large_weapon_capsule
-	.BYTE $08 ;objects_large_life_capsule
-	.BYTE $08 ;objects_1up
-	.BYTE $08 ;objects_magnet_beam
-	.BYTE $08 ;objects_teleport
-	.BYTE $08 ;objects_heart_part
-	.BYTE $08 ;objects_yashichi
+;objects speed index, related to home/object_speed_init.asm
+	.BYTE $2C << 2 ;objects_bunby_heli
+	.BYTE $02 << 2 ;objects_metall
+	.BYTE $02 << 2 ;objects_kamadoma
+	.BYTE $2D << 2 ;objects_gabyoall
+	.BYTE $2E << 2 ;objects_adhering_suzy_vertical
+	.BYTE $02 << 2 ;objects_screw_driver_ground
+	.BYTE $2F << 2 ;objects_watcher
+	.BYTE $30 << 2 ;objects_pepe
+	.BYTE $30 << 2 ;objects_killer_bomb
+	.BYTE $31 << 2 ;objects_big_eye
+	.BYTE $2C << 2 ;objects_mambu
+	.BYTE $02 << 2 ;objects_blaster_left_delayed
+	.BYTE $02 << 2 ;objects_thrower_delayed
+	.BYTE $02 << 2 ;objects_bombombomb
+	.BYTE $0B << 2 ;objects_fireball
+	.BYTE $02 << 2 ;objects_flame_pillar
+	.BYTE $02 << 2 ;objects_appearing_block_generator
+	.BYTE $02 << 2 ;objects_super_cutter
+	.BYTE $32 << 2 ;objects_sniper_joe
+	.BYTE $33 << 2 ;objects_foot_holder
+	.BYTE $2C << 2 ;objects_crazy_razy
+	.BYTE $32 << 2 ;objects_pickelman
+	.BYTE $02 << 2 ;objects_screw_driver_ceiling
+	.BYTE $02 << 2 ;objects_blaster_right_delayed
+	.BYTE $02 << 2 ;objects_fireball_standby
+	.BYTE $02 << 2 ;objects_short_elec_beam
+	.BYTE $02 << 2 ;objects_enemies_bullet_palette_2
+	.BYTE $02 << 2 ;objects_enemies_killed
+	.BYTE $02 << 2 ;objects_super_cutter_standby
+	.BYTE $02 << 2 ;objects_crazy_razy_head_1
+	.BYTE $02 << 2 ;objects_crazy_razy_foot_1
+	.BYTE $02 << 2 ;objects_crazy_razy_head_2
+	.BYTE $02 << 2 ;objects_crazy_razy_hit
+	.BYTE $34 << 2 ;objects_adhering_suzy_horizontal
+	.BYTE $02 << 2 ;objects_blaster_left
+	.BYTE $02 << 2 ;objects_blaster_right
+	.BYTE $02 << 2 ;objects_thrower
+	.BYTE $02 << 2 ;objects_short_elec_beam_delayed
+	.BYTE $02 << 2 ;objects_bombombomb_cluster
+	.BYTE $02 << 2 ;objects_appearing_block
+	.BYTE $02 << 2 ;objects_bomb_explosion_cluster
+	.BYTE $02 << 2 ;objects_crazy_razy_foot_2
+	.BYTE $02 << 2 ;objects_watcher_move
+	.BYTE $02 << 2 ;objects_watcher_elec_thrower
+	.BYTE $02 << 2 ;objects_track_platform
+	.BYTE $02 << 2 ;objects_enemies_bullet_palette_3
+	.BYTE $02 << 2 ;objects_pickaxe
+	.BYTE $02 << 2 ;objects_2f
+	.BYTE $02 << 2 ;objects_30
+	.BYTE $02 << 2 ;objects_changkey
+	.BYTE $02 << 2 ;objects_fireman_palette_alternate
+	.BYTE $02 << 2 ;objects_copy_robot_rolling_cutter
+	.BYTE $02 << 2 ;objects_copy_robot_ice_slasher
+	.BYTE $02 << 2 ;objects_copy_robot_hyper_bomb
+	.BYTE $02 << 2 ;objects_copy_robot_fire_storm_flame
+	.BYTE $02 << 2 ;objects_copy_robot_fire_storm_shield
+	.BYTE $02 << 2 ;objects_yellow_devil_parts
+	.BYTE $02 << 2 ;objects_yellow_devil_1
+	.BYTE $02 << 2 ;objects_cwu_01p
+	.BYTE $02 << 2 ;objects_3b
+	.BYTE $02 << 2 ;objects_score_ball
+	.BYTE $02 << 2 ;objects_small_weapon_capsule
+	.BYTE $02 << 2 ;objects_small_life_capsule
+	.BYTE $02 << 2 ;objects_large_weapon_capsule
+	.BYTE $02 << 2 ;objects_large_life_capsule
+	.BYTE $02 << 2 ;objects_1up
+	.BYTE $02 << 2 ;objects_magnet_beam
+	.BYTE $02 << 2 ;objects_teleport
+	.BYTE $02 << 2 ;objects_heart_part
+	.BYTE $02 << 2 ;objects_yashichi

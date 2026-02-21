@@ -105,7 +105,9 @@ _init_tileset_palette:
 
 	track_queue track_refill
 
-.INCBIN  "home/home_18.bin"
+.INCBIN  "home/home_18_0.bin"
+.INCLUDE "home/object_speed_init.asm"
+.INCBIN  "home/home_18_1.bin"
 .INCLUDE "home/generate_object.asm"
 .INCBIN  "home/home_19_1.bin"
 
