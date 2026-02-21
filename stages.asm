@@ -26,6 +26,8 @@
 .INCBIN  "gfx/menus/menus.chr"
 .INCBIN  "gfx/sprites/miscellaneous/ready_font.chr"
 .INCBIN  "gfx/menus/equal.chr"
+
+clear_points_font:
 .INCBIN  "gfx/sprites/miscellaneous/clear_points_font.chr"
 .INCBIN  "gfx/font/font_1.chr"
 .INCBIN  "gfx/stage_select/border.chr"
@@ -196,7 +198,13 @@
 .INCBIN  "5/5_0_0.bin"
 
 _game_over:
-.INCBIN  "5/5_0_1.bin"
+.INCBIN  "5/5_0_1_0.bin"
+
+_back_to_stage_select:
+.INCBIN  "5/5_0_1_1.bin"
+
+_stage_start:
+.INCBIN  "5/5_0_1_2.bin"
 
 _init_palette_special_blockset:
 .INCBIN  "5/5_0_2.bin"

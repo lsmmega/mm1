@@ -2,6 +2,7 @@
 ;start
 	.BYTE $00
 
+stage_scroll_set:
 ;cutman scroll set
 	.BYTE 3 | scroll_up
 	.BYTE 0 | scroll_up

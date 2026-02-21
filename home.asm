@@ -6,24 +6,13 @@
 .INCLUDE "home/bank.asm"
 .INCLUDE "home/reset.asm"
 .INCLUDE "home/nmi_wait.asm"
-
-_stage_clear:
-.INCBIN  "home/home_0.bin"
-
-	track_queue track_wily_defeated
-
-.INCBIN  "home/home_1.bin"
-
-	track_queue track_boss_defeated
-
-.INCBIN  "home/home_2_0.bin"
+.INCLUDE "home/stage_clear.asm"
 .INCLUDE "home/refighting_special_blockset_remove_table.asm"
 .INCLUDE "home/clear_points_object.asm"
 .INCLUDE "home/clear_points.asm"
 .INCLUDE "home/object_clear.asm"
 .INCLUDE "home/timer.asm"
 .INCLUDE "home/megaman_death.asm"
-.INCLUDE "home/checkpoint_table.asm"
 .INCBIN  "home/home_4_1_0.bin"
 
 _explosion_timer:
@@ -43,10 +32,13 @@ _explosion:
 .INCLUDE "home/short_frozen.asm"
 .INCLUDE "home/track_queue.asm"
 .INCLUDE "home/init_stage_palette_special_blockset.asm"
+.INCLUDE "home/checkpoint_ycoord.asm"
 .INCBIN  "home/home_6_0.bin"
 .INCLUDE "home/check_object.asm"
 .INCLUDE "home/check_object_type.asm"
-.INCBIN  "home/home_6_1_0.bin"
+.INCBIN  "home/home_6_1_0_0.bin"
+.INCLUDE "home/scrolling_set.asm"
+.INCBIN  "home/home_6_1_0_1.bin"
 .INCLUDE "home/init_sprites_index.asm"
 .INCBIN  "home/home_6_1_1.bin"
 

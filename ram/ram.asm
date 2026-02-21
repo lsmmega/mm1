@@ -34,6 +34,7 @@
 	znmi_wait                       = $1F
 	znmi_frame                      = $23
 	zscroll_end_direction           = $26
+	zobject_ram_index               = $2F
 	zcurrent_stage                  = $31
 	zpalette_update_type            = $34
 	zpalette_update_address         = $35
@@ -41,6 +42,7 @@
 	zpalette_update_alternative     = $38
 	zpalette_update_original        = $3A
 	ztimer                          = $3C
+	zclear_points                   = $3D
 	zboss_ai_pointer                = $3E
 	zcurrent_bankswitch             = $42
 	ztrack_queue_pointer            = $45
@@ -79,6 +81,7 @@
 	zforce_screen_flag              = $B4
 	zundo_clear_points              = $B5
 	zstage_clear_flag               = $BB
+	zstage_select_flag              = $BC
 	zppu_mask                       = $FE
 	zppu_ctrl                       = $FF
 
@@ -106,6 +109,7 @@
 	atrack_queue                    = $580
 	aobject_ycoord                  = $600
 	aobject_timer                   = $640
+	aobject_ycoord_speed            = $680
 	aobject_frozen_timer            = $6A0
 	aboss_hp                        = $6C1
 	aobject_id                      = $6E0
