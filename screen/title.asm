@@ -1,5 +1,4 @@
-;title screen set
-;attributes
+title_screen_attributes:
 	.BYTE topleft_palette_2 | topright_palette_2 | bottomleft_palette_2 | bottomright_palette_2 ;y0
 	.BYTE topleft_palette_2 | topright_palette_2 | bottomleft_palette_2 | bottomright_palette_2 ;y1
 	.BYTE topleft_palette_2 | topright_palette_2 | bottomleft_palette_2 | bottomright_palette_2 ;y2
@@ -9,7 +8,7 @@
 	.BYTE topleft_palette_1 | topright_palette_1 | bottomleft_palette_1 | bottomright_palette_1 ;y6
 	.BYTE topleft_palette_0 | topright_palette_0 | bottomleft_palette_0 | bottomright_palette_0 ;y7
 
-;tileset start on leftscreencoord
+title_screen_hileftscreencoord:
 	hileftscreencoord 4, 13
 	hileftscreencoord 5, 12
 	hileftscreencoord 6, 11
@@ -18,6 +17,7 @@
 	hileftscreencoord 9,  8
 	hileftscreencoord 10, 7
 
+title_screen_loleftscreencoord:
 	loleftscreencoord 4, 13
 	loleftscreencoord 5, 12
 	loleftscreencoord 6, 11
@@ -26,7 +26,7 @@
 	loleftscreencoord 9,  8
 	loleftscreencoord 10, 7
 	
-;length with increase by 1, start at 0
+title_screen_tileset_length_table:
 	.BYTE $18
 	.BYTE $16
 	.BYTE $14

@@ -3,6 +3,7 @@
 	.BYTE $01 ;unknown
 
 ;game over screen set
+game_over_screen:
 game_over_string_1:
 	leftscreencoord 12, 9
 

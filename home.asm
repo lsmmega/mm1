@@ -1,5 +1,6 @@
 .SEGMENT "HOME"
 .INCLUDE "constants/bank.asm"
+.INCLUDE "constants/button.asm"
 .INCLUDE "constants/nes.asm"
 .INCLUDE "constants/stage.asm"
 .INCLUDE "constants/uxrom.asm"
@@ -34,7 +35,7 @@ _explosion_timer:
 .INCLUDE "home/scrolling_set.asm"
 .INCBIN  "home/home_6_1_0_1.bin"
 .INCLUDE "home/init_sprites_index.asm"
-.INCBIN  "home/home_6_1_1.bin"
+.INCLUDE "home/spawn_tiles.asm"
 .INCLUDE "home/sprites_tiles_set.asm"
 .INCLUDE "home/update_palette.asm"
 .INCLUDE "home/tiles_init.asm"
@@ -107,10 +108,7 @@ _boss_death:
 .INCBIN  "home/home_20_0.bin"
 .INCLUDE "home/create_explosion.asm"
 .INCBIN  "home/home_20_1.bin"
-
-	track_queue track_game_over
-
-.INCBIN  "home/home_21.bin"
+.INCLUDE "home/title_game_over_screen.asm"
 .INCLUDE "home/object_collision_coord.asm"
 .INCLUDE "home/weapon_damage.asm"
 .INCLUDE "home/score_table.asm"

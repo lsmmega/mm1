@@ -66,6 +66,8 @@
 	zmagnet_beam                    = $71
 	zscore                          = $72
 	zsprites_tiles_palette_index    = $7A
+	zspawn_tiles_size               = $92
+	zspawn_tiles_index              = $93
 	zrunning_type                   = $94
 	zwater_delay                    = $95
 	z1up                            = $A6

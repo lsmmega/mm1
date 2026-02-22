@@ -22,6 +22,8 @@ _update_background_palette:
 	STA z:zpalette_update_original
 	LDA #$10
 	BNE _update_palette_common
+
+_update_background_palette_alternative:
 	JSR _update_background_palette
 	LDA #>abackground_palette_alternative
 	STA z:zpalette_update_alternative + 1
