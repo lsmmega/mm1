@@ -15,9 +15,7 @@
 .INCLUDE "home/timer.asm"
 .INCLUDE "home/megaman_death.asm"
 .INCLUDE "home/explosion_before_table.asm"
-
-_explosion_timer:
-.INCBIN  "home/home_4_1_1.bin"
+.INCLUDE "home/explosion_timer.asm"
 .INCLUDE "home/explosion.asm"
 .INCLUDE "home/bankswitch.asm"
 .INCLUDE "home/open_menu.asm"
@@ -68,6 +66,9 @@ _boss_death:
 .INCLUDE "home/palette.asm"
 .INCLUDE "home/screen.asm"
 .INCBIN  "home/home_11_3.bin"
+
+_run_bosses_ai:
+.INCBIN  "home/home_11_4.bin"
 
 	track_queue track_cutman_move
 

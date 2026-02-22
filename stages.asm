@@ -238,7 +238,10 @@ _init_regular:
 
 	track_queue track_megaman_hit
 
-.INCBIN  "5/5_7.bin"
+.INCBIN  "5/5_7_0.bin"
+
+_run_enemies_ai:
+.INCBIN  "5/5_7_1.bin"
 
 	track_queue track_fireman_move
 
