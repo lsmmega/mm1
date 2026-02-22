@@ -40,7 +40,7 @@ _explosion_timer:
 .INCLUDE "home/update_palette.asm"
 .INCLUDE "home/tiles_init.asm"
 .INCLUDE "home/tiles_address.asm"
-.INCBIN  "home/home_6_2.bin"
+.INCLUDE "home/recoil_thunder_beam.asm"
 .INCLUDE "home/items.asm"
 .INCLUDE "home/collision.asm"
 
