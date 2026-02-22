@@ -425,7 +425,7 @@ super_arm_damage_table:
 	.BYTE $00 ;objects_yellow_devil_1
 	.BYTE $14 ;objects_cwu_01p
 
-boss_damage_table:
+weapon_boss_damage_table:
 ;mega buster, rolling cutter, ice slasher, hyper bomb, fire storm, thunder beam, super arm, magnet beam
 	.BYTE 3,  1, 0,  2, 3,  1, 14, 0 ;cutman
 	.BYTE 1,  2, 0,  4, 1, 10,  0, 0 ;iceman

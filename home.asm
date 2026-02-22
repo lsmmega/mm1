@@ -112,6 +112,6 @@ _boss_death:
 .INCLUDE "home/object_collision_coord.asm"
 .INCLUDE "home/weapon_damage.asm"
 .INCLUDE "home/score_table.asm"
-.INCBIN  "home/home_22.bin"
-.INCLUDE "home/unused/unused_1ff0a.asm"
+.INCLUDE "home/enemies_hit_damage.asm"
+.INCLUDE "home/unused/unused_1fed6.asm"
 .INCLUDE "home/vectors.asm"

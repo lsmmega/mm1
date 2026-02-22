@@ -52,7 +52,7 @@ _check_collision:
 	TAX
 	SEC
 	LDA aobject_hp + 1
-	SBC boss_damage_table, X
+	SBC weapon_boss_damage_table, X
 	BEQ @death
 	BCS @not_death
 
