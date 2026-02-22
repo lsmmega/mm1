@@ -94,9 +94,7 @@ _boss_death:
 .INCBIN  "home/home_17_0.bin"
 .INCLUDE "home/tiles_update.asm"
 .INCBIN  "home/home_17_1.bin"
-
-	track_queue track_refill
-
+.INCLUDE "home/boss_hp_filled.asm"
 .INCBIN  "home/home_18_0.bin"
 .INCLUDE "home/object_speed_init.asm"
 .INCBIN  "home/home_18_1.bin"
