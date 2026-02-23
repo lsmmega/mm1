@@ -448,7 +448,7 @@ _draw_score_bar:
 	STA z:z0C
 	LDA #boss_bar_ycoord
 	STA z:z0E
-	LDA aobject_hp + 1
+	LDA aboss_hp
 	JSR _calc_vertical_bar
 
 @skip:
