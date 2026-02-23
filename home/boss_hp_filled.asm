@@ -2,10 +2,10 @@ _boss_hp_filled:
 	LDA z:znmi_frame
 	AND #%00000001
 	BNE @skip
-	LDA aobject_hp + 1
+	LDA aboss_hp
 	CMP #$1C
 	BEQ @max
-	INC aobject_hp + 1
+	INC aboss_hp
 	LDA z:znmi_frame
 	AND #%00000111
 	BNE @skip

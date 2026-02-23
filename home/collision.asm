@@ -51,14 +51,14 @@ _check_collision:
 	ADC z:zcurrent_weapon
 	TAX
 	SEC
-	LDA aobject_hp + 1
+	LDA aboss_hp
 	SBC weapon_boss_damage_table, X
 	BEQ @death
 	BCS @not_death
 
 @death:
 	LDA #$00
-	STA aobject_hp + 1
+	STA aboss_hp
 	JMP _boss_death
 
 @not_boss_collide_megaman_bullet:
@@ -66,7 +66,7 @@ _check_collision:
 	JMP @cant_collide_megaman_bullet
 
 @not_death:
-	STA aobject_hp + 1
+	STA aboss_hp
 	LDA z:zcurrent_stage
 	CMP #stage_wily1
 	BEQ @skip_invincibility_upper_object
