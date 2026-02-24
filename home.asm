@@ -31,6 +31,7 @@
 .INCLUDE "home/check_object_type.asm"
 .INCBIN  "home/home_6_1_0_0.bin"
 .INCLUDE "home/scrolling_set.asm"
+.INCLUDE "home/replace_special_blockset.asm"
 .INCBIN  "home/home_6_1_0_1.bin"
 .INCLUDE "home/init_sprites_index.asm"
 .INCLUDE "home/spawn_tiles.asm"
@@ -41,12 +42,7 @@
 .INCLUDE "home/recoil_thunder_beam.asm"
 .INCLUDE "home/items.asm"
 .INCLUDE "home/collision.asm"
-
-_boss_death:
-.INCBIN  "home/home_9.bin"
-
-	track_queue track_explosion
-
+.INCLUDE "home/boss_death.asm"
 .INCBIN  "home/home_10.bin"
 
 	track_queue track_door
@@ -92,9 +88,12 @@ _run_bosses_ai:
 
 	track_queue track_earthquake
 
-.INCBIN  "home/home_17_0.bin"
+.INCBIN  "home/home_17_0_0.bin"
+.INCLUDE "home/boss_hp_filled_regular.asm"
+.INCBIN  "home/home_17_0_1.bin"
 .INCLUDE "home/tiles_update.asm"
 .INCBIN  "home/home_17_1.bin"
+.INCLUDE "home/generate_wily_machine_1_phase_2.asm"
 .INCLUDE "home/boss_hp_filled.asm"
 .INCBIN  "home/home_18_0.bin"
 .INCLUDE "home/object_speed_init.asm"

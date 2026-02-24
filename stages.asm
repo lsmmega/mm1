@@ -212,6 +212,9 @@ _init_palette_special_blockset:
 _init_regular:
 .INCBIN  "5/5_0_3.bin"
 
+_stage_loop:
+.INCBIN  "5/5_0_4.bin"
+
 	track_queue track_jump_into_water
 
 .INCBIN  "5/5_1.bin"

@@ -45,6 +45,7 @@
 	zclear_points                   = $3D
 	zboss_ai_pointer                = $3E
 	zcurrent_bankswitch             = $42
+	zboss_move_counter              = $44
 	ztrack_queue_pointer            = $45
 	zrandom                         = $46
 	zgutsman_stomp_timer            = $47
@@ -117,5 +118,12 @@
 	aobject_ycoord_speed            = $680
 	aobject_frozen_timer            = $6A0
 	aobject_hp                      = $6C0
+	aboss_hp                        = $6C1
 	aobject_id                      = $6E0
 	ano_of_special_blockset         = $720
+	aspecial_blockset_type          = $721
+	aspecial_blockset_screen        = $722
+	aspecial_blockset_x1coord       = $723
+	aspecial_blockset_y1coord       = $724
+	aspecial_blockset_x2coord       = $725
+	aspecial_blockset_y2coord       = $726
