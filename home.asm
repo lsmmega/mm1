@@ -43,7 +43,9 @@
 .INCLUDE "home/items.asm"
 .INCLUDE "home/collision.asm"
 .INCLUDE "home/boss_death.asm"
-.INCBIN  "home/home_10.bin"
+.INCBIN  "home/home_10_0.bin"
+.INCLUDE "home/special_blockset.asm"
+.INCBIN  "home/home_10_1.bin"
 
 	track_queue track_door
 

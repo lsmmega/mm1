@@ -67,6 +67,7 @@
 	zmagnet_beam                    = $71
 	zscore                          = $72
 	zsprites_tiles_palette_index    = $7A
+	zspecial_blockset_index         = $8E
 	zspawn_tiles_size               = $92
 	zspawn_tiles_index              = $93
 	zrunning_type                   = $94
