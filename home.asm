@@ -46,10 +46,9 @@
 .INCBIN  "home/home_10_0.bin"
 .INCLUDE "home/special_blockset.asm"
 .INCBIN  "home/home_10_1.bin"
-
-	track_queue track_door
-
-.INCBIN  "home/home_11_0.bin"
+.INCLUDE "home/scrolling.asm"
+.INCBIN  "home/home_10_2.bin"
+.INCLUDE "home/door.asm"
 .INCLUDE "home/sprites_timer.asm"
 .INCLUDE "home/clear_timer.asm"
 .INCLUDE "home/sprites.asm"

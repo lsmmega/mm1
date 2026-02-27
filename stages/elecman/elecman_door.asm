@@ -27,38 +27,42 @@
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00
 
 elecman_door:
-	.BYTE (@end_1 - @start_1) / 2
+elecman_door_0:
+	.BYTE (elecman_door_0_end - elecman_door_0_start) / 2
 
-@start_1:
+elecman_door_0_start:
 	mapdoorcoord 14, 16, 0
 	mapdoorcoord 14, 16, 1
 	mapdoorcoord 14, 12, 0
 	mapdoorcoord 14, 12, 1
-@end_1:
+elecman_door_0_end:
 
-	.BYTE (@end_2 - @start_2) / 2
+elecman_door_1:
+	.BYTE (elecman_door_1_end - elecman_door_1_start) / 2
 
-@start_2:
+elecman_door_1_start:
 	mapdoorcoord 6, 24, 2
 	mapdoorcoord 6, 24, 3
 	mapdoorcoord 8, 24, 2
 	mapdoorcoord 8, 24, 3
-@end_2:
+elecman_door_1_end:
 
-	.BYTE (@end_3 - @start_3) / 2
+elecman_door_2:
+	.BYTE (elecman_door_2_end - elecman_door_2_start) / 2
 
-@start_3:
+elecman_door_2_start:
 	mapdoorcoord 14, 20, 5
 	mapdoorcoord 14, 20, 6
 	mapdoorcoord 14, 16, 5
 	mapdoorcoord 14, 16, 7
-@end_3:
+elecman_door_2_end:
 
-	.BYTE (@end_4 - @start_4) / 2
+elecman_door_3:
+	.BYTE (elecman_door_3_end - elecman_door_3_start) / 2
 
-@start_4:
+elecman_door_3_start:
 	mapdoorcoord 0, 20, 4
-@end_4:
+elecman_door_3_end:
 
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00

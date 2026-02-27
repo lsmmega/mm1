@@ -27,37 +27,42 @@
 	.BYTE $00
 
 iceman_wily2_door:
-	.BYTE (@end_1 - @start_1) / 2
+iceman_wily2_door_0:
+	.BYTE (iceman_wily2_door_0_end - iceman_wily2_door_0_start) / 2
 
-@start_1:
+iceman_wily2_door_0_start:
 	mapdoorcoord 14, 16, 0
 	mapdoorcoord 14, 16, 1
 	mapdoorcoord 14, 12, 0
 	mapdoorcoord 14, 12, 1
-@end_1:
+iceman_wily2_door_0_end:
 
-	.BYTE (@end_2 - @start_2) / 2
+iceman_wily2_door_1:
+	.BYTE (iceman_wily2_door_1_end - iceman_wily2_door_1_start) / 2
 
-@start_2:
+iceman_wily2_door_1_start:
 	mapdoorcoord 14, 16, 2
 	mapdoorcoord 14, 16, 1
 	mapdoorcoord 14, 12, 3
 	mapdoorcoord 14, 12, 4
-@end_2:
+iceman_wily2_door_1_end:
 
-	.BYTE (@end_3 - @start_3) / 2
+iceman_wily2_door_2:
+	.BYTE (iceman_wily2_door_2_end - iceman_wily2_door_2_start) / 2
 
-@start_3:
+iceman_wily2_door_2_start:
 	mapdoorcoord 0, 12, 5
 	mapdoorcoord 0, 12, 6
 	mapdoorcoord 0, 16, 5
 	mapdoorcoord 0, 16, 6
-@end_3:
+iceman_wily2_door_2_end:
 
-	.BYTE (@end_4 - @start_4) / 2
-@start_4:
+iceman_wily2_door_3:
+	.BYTE (iceman_wily2_door_3_end - iceman_wily2_door_3_start) / 2
+
+iceman_wily2_door_3_start:
 	mapdoorcoord 2, 0, 7
-@end_4:
+iceman_wily2_door_3_end:
 
 ;end
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00
