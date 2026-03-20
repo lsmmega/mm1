@@ -44,6 +44,7 @@
 	ztimer                          = $3C
 	zclear_points                   = $3D
 	zboss_ai_pointer                = $3E
+	zpause                          = $41
 	zcurrent_bankswitch             = $42
 	zboss_move_counter              = $44
 	ztrack_queue_pointer            = $45
@@ -86,6 +87,25 @@
 	zundo_clear_points              = $B5
 	zstage_clear_flag               = $BB
 	zstage_select_flag              = $BC
+	zaudio_header                   = $E0
+	zsfx_channel                    = $E1
+	ztrack_pointers                 = $E2
+	zplayback_flag                  = $E4
+	zaudio_E5                       = $E5
+	zsfx_apu_register_index         = $E6
+	zmusic_playmultispeed           = $E7
+	zfade_in_out_rate               = $E8
+	zfade_in_out_level              = $E9
+	zaudio_frame                    = $EA
+	zmusic_apu_register_index       = $EB
+	zaudio_ram_pointers             = $EC
+	zmusic_channel                  = $EE
+	zundo_sfx_channel               = $EF
+	zsfx_pointers                   = $F0
+	zsfx_frame                      = $F2
+	zsfx_loop                       = $F3
+	zaudio_F4                       = $F4
+	zaudio_F5                       = $F5
 	zppu_mask                       = $FE
 	zppu_ctrl                       = $FF
 
@@ -112,6 +132,8 @@
 	aobject_xcoord                  = $480
 	aobject_xcoord_speed            = $4C0
 	aobject_xcoord_speed_fraction   = $4E0
+	aaudio_ram                      = $500
+	amodulation_pointers            = $57C
 	atrack_queue                    = $580
 	aobject_ycoord                  = $600
 	aobject_timer                   = $640

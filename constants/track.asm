@@ -51,7 +51,8 @@
 	track_flood
 	track_megaman_death
 	track_1up
-	music_fade_out = $FD
+	music_playmultispeed = $FC
+	music_fade_in_out
 	mute_sfx
 	mute_music
 .ENDENUM

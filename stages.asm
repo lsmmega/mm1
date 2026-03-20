@@ -167,6 +167,7 @@ clear_points_font:
 .INCBIN  "gfx/sprites/bosses/wily_machine_1.chr"
 
 .SEGMENT "BANK04"
+.INCLUDE "ram/ram.asm"
 .INCLUDE "stages/elecman/elecman_tsa.asm"
 .INCLUDE "stages/elecman/elecman_mapset.asm"
 .INCLUDE "unknown/unknown_10bd0.asm"
@@ -182,7 +183,6 @@ clear_points_font:
 
 .SEGMENT "BANK05"
 .INCLUDE "macros/stack.asm"
-.INCLUDE "ram/ram.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_ending_tsa.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_ending_mapset.asm"
 .INCLUDE "unknown/unknown_14bd0.asm"

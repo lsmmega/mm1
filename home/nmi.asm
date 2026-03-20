@@ -98,7 +98,7 @@ nmi:
 	LDX z:ztrack_queue_pointer
 	BEQ @no_queue
 	LDA atrack_queue - 1, X
-	CMP #music_fade_out
+	CMP #music_fade_in_out
 	BCS @sound_effect_lefd
 	CMP #track_1up + 1
 	BCS @skip
