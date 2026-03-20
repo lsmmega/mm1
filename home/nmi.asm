@@ -99,15 +99,15 @@ nmi:
 	BEQ @no_queue
 	LDA atrack_queue - 1, X
 	CMP #music_fade_in_out
-	BCS @sound_effect_lefd
+	BCS @sound_effect_le_music_fade_in_out
 	CMP #track_1up + 1
 	BCS @skip
 
-@sound_effect_lefd:
-	BNE @not_sound_effect_fd
+@sound_effect_le_music_fade_in_out:
+	BNE @not_sound_effect_music_fade_in_out
 	LDY z:zmusic_fade_out_rate
 
-@not_sound_effect_fd:
+@not_sound_effect_music_fade_in_out:
 	JSR _nmi_audio_track_queue
 
 @skip:
