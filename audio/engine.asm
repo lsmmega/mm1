@@ -395,15 +395,15 @@ _init_channel:
 	CPY #$01
 	BEQ @is_noise
 	LDA #$00
-	STA $4000, X
+	STA SQ1_VOL, X
 	INX
-	STA $4000, X
+	STA SQ1_VOL, X
 	DEX
 	RTS
 
 @is_noise:
 	LDA #$07
-	STA $4015
+	STA APU_STATUS
 	RTS
 
 _audio_processing:
@@ -703,7 +703,7 @@ _handle_modulator_volume_envelope:
 @is_triangle:
 	LDX z:zmusic_apu_register_index
 	LDA z:zaudio_F4
-	STA $4000, X
+	STA SQ1_VOL, X
 	LDA z:zaudio_F5
 	BPL @not_sfx
 	LDA #$10 | 1 << 7
@@ -847,7 +847,7 @@ _pitch_envelope_common:
 	CMP z:zmusic_channel
 	BNE @not_noise
 	LDA #$0F
-	STA $4015
+	STA APU_STATUS
 	TXA
 	AND #%00001111
 	TAX
@@ -866,7 +866,7 @@ _pitch_envelope_common:
 	LDX z:zmusic_apu_register_index
 	INX
 	INX
-	STA $4000, X
+	STA SQ1_VOL, X
 	TYA
 	LDY #$1C
 	CMP (zaudio_ram_pointers), Y
@@ -877,7 +877,7 @@ _pitch_envelope_common:
 	STA (zaudio_ram_pointers), Y
 	ORA #$08
 	INX
-	STA $4000, X
+	STA SQ1_VOL, X
 	RTS
 
 _break_frame:
@@ -885,7 +885,7 @@ _break_frame:
 	CPY z:zmusic_channel
 	BNE @not_noise
 	LDA #$07
-	STA $4015
+	STA APU_STATUS
 	RTS
 
 @not_noise:
@@ -893,9 +893,9 @@ _break_frame:
 	LDX z:zmusic_apu_register_index
 	INX
 	INX
-	STA $4000, X
+	STA SQ1_VOL, X
 	INX
-	STA $4000, X
+	STA SQ1_VOL, X
 	RTS
 
 _play_note_with_modulator:

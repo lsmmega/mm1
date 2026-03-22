@@ -1,7 +1,6 @@
 .SEGMENT "HOME"
 .INCLUDE "constants/bank.asm"
 .INCLUDE "constants/button.asm"
-.INCLUDE "constants/nes.asm"
 .INCLUDE "constants/stage.asm"
 .INCLUDE "constants/tsa.asm"
 .INCLUDE "constants/uxrom.asm"
