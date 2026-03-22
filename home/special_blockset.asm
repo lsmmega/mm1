@@ -60,7 +60,7 @@ _special_blockset_collision:
 	LDA z:zobject_ram_index
 	BNE @not_megaman
 	LDA aspecial_blockset_type, Y
-	ORA #$80
+	ORA #%10000000
 	RTS
 
 @not_megaman:

@@ -1,4 +1,5 @@
 ;cutman screen id set
+stage_screen_id:
 	.BYTE $00
 	.BYTE $00
 	.BYTE $01
@@ -53,6 +54,7 @@
 	.BYTE $FF
 
 ;screen id pointers
+stage_screen_id_pointers:
 	.WORD mapset_cutman_wily1_00
 	.WORD mapset_cutman_wily1_01
 	.WORD mapset_cutman_wily1_02

@@ -3,6 +3,7 @@
 .INCLUDE "constants/button.asm"
 .INCLUDE "constants/nes.asm"
 .INCLUDE "constants/stage.asm"
+.INCLUDE "constants/tsa.asm"
 .INCLUDE "constants/uxrom.asm"
 .INCLUDE "home/bank.asm"
 .INCLUDE "home/reset.asm"
@@ -43,7 +44,7 @@
 .INCLUDE "home/items.asm"
 .INCLUDE "home/collision.asm"
 .INCLUDE "home/boss_death.asm"
-.INCBIN  "home/home_10_0.bin"
+.INCLUDE "home/tsa_blockset.asm"
 .INCLUDE "home/special_blockset.asm"
 .INCBIN  "home/home_10_1.bin"
 .INCLUDE "home/scrolling.asm"
@@ -62,6 +63,7 @@
 .INCLUDE "home/object_tiles.asm"
 .INCLUDE "home/palette.asm"
 .INCLUDE "home/screen.asm"
+.INCLUDE "home/tsa.asm"
 .INCBIN  "home/home_11_3.bin"
 
 _run_bosses_ai:

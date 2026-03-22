@@ -34,7 +34,10 @@
 	znmi_wait                       = $1F
 	znmi_frame                      = $23
 	zscroll_end_direction           = $26
+	ztsa_blockset_pointers          = $2A
+	zladder_upper_xcoord            = $2E
 	zobject_ram_index               = $2F
+	zladder_flag                    = $30
 	zcurrent_stage                  = $31
 	zpalette_update_type            = $34
 	zpalette_update_address         = $35
@@ -73,6 +76,7 @@
 	zspawn_tiles_index              = $93
 	zrunning_type                   = $94
 	zwater_delay                    = $95
+	zice_flag                       = $96
 	z1up                            = $A6
 	zmusic_fade_out_rate            = $A7
 	zyellow_devil_object_tiles_flag = $AA
@@ -136,6 +140,7 @@
 	amodulation_pointers            = $57C
 	atrack_queue                    = $580
 	aobject_ycoord                  = $600
+	aobject_ycoord_fraction         = $620
 	aobject_timer                   = $640
 	aobject_ycoord_speed_fraction   = $660
 	aobject_ycoord_speed            = $680

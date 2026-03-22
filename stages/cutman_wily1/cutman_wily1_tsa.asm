@@ -1,4 +1,5 @@
 ;background tile 16x16 id | block type attributes index
+stage_tsa_blockset:
 	;     topleft,      bottomleft,   topright,     bottomright
 	.BYTE $00 | 0 << 6, $00 | 0 << 6, $00 | 0 << 6, $00 | 0 << 6 ;00
 	.BYTE $01 | 0 << 6, $01 | 0 << 6, $01 | 0 << 6, $01 | 0 << 6 ;01
