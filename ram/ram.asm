@@ -47,6 +47,7 @@
 	ztimer                          = $3C
 	zclear_points                   = $3D
 	zboss_ai_pointer                = $3E
+	zrandom_integer                 = $40
 	zpause                          = $41
 	zcurrent_bankswitch             = $42
 	zboss_move_counter              = $44

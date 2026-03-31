@@ -29,6 +29,7 @@
 .INCBIN  "home/home_6_0.bin"
 .INCLUDE "home/check_object.asm"
 .INCLUDE "home/check_object_type.asm"
+.INCLUDE "home/random_integer.asm"
 .INCBIN  "home/home_6_1_0_0.bin"
 .INCLUDE "home/scrolling_set.asm"
 .INCLUDE "home/replace_special_blockset.asm"
