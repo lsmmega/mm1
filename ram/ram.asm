@@ -54,7 +54,11 @@
 	ztrack_queue_pointer            = $45
 	zrandom                         = $46
 	zgutsman_stomp_timer            = $47
+	zdiv_temp                       = $4A
 	zscore_addition                 = $4A
+	zdividend_integer               = $4B
+	zdividend_fraction              = $4C
+	zdivisor                        = $4D
 	zsprites_pointer                = $54
 	zmegaman_invincibility_time     = $55
 	zboss_invincibility_time        = $56
