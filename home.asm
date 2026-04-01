@@ -31,7 +31,6 @@
 .INCLUDE "home/check_object_type.asm"
 .INCLUDE "home/random_integer.asm"
 .INCLUDE "home/division.asm"
-.INCBIN  "home/home_6_1_0_0.bin"
 .INCLUDE "home/scrolling_set.asm"
 .INCLUDE "home/replace_special_blockset.asm"
 .INCBIN  "home/home_6_1_0_1.bin"

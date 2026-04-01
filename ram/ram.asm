@@ -58,7 +58,8 @@
 	zscore_addition                 = $4A
 	zdividend_integer               = $4B
 	zdividend_fraction              = $4C
-	zdivisor                        = $4D
+	zdivisor_255mode                = $4D
+	zdivisor_constantsmode          = $4E
 	zsprites_pointer                = $54
 	zmegaman_invincibility_time     = $55
 	zboss_invincibility_time        = $56
