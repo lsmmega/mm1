@@ -194,6 +194,7 @@ stage_tsa_blockset:
 	.BYTE $17 | 0 << 6, $17 | 0 << 6, $05 | 3 << 6, $05 | 3 << 6 ;BE
 	.BYTE $3F | 2 << 6, $16 | 0 << 6, $3F | 2 << 6, $16 | 0 << 6 ;BF
 
+stage_tsa_attributes:
 ;attributes
 	.BYTE topleft_palette_0 | topright_palette_0 | bottomleft_palette_0 | bottomright_palette_0 ;00
 	.BYTE topleft_palette_1 | topright_palette_1 | bottomleft_palette_1 | bottomright_palette_1 ;01

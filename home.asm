@@ -45,7 +45,7 @@
 .INCLUDE "home/boss_death.asm"
 .INCLUDE "home/tsa_blockset.asm"
 .INCLUDE "home/special_blockset.asm"
-.INCBIN  "home/home_10_1.bin"
+.INCLUDE "home/update_stage_screen.asm"
 .INCLUDE "home/scrolling.asm"
 .INCBIN  "home/home_10_2.bin"
 .INCLUDE "home/door.asm"
