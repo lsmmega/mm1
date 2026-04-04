@@ -101,6 +101,7 @@ _run_bosses_ai:
 .INCBIN  "home/home_18_0.bin"
 .INCLUDE "home/object_speed_init.asm"
 .INCBIN  "home/home_18_1.bin"
+.INCLUDE "home/enemies_face_to_megaman.asm"
 .INCLUDE "home/generate_object.asm"
 .INCBIN  "home/home_19_1.bin"
 
