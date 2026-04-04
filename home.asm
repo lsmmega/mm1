@@ -33,7 +33,6 @@
 .INCLUDE "home/division.asm"
 .INCLUDE "home/scrolling_set.asm"
 .INCLUDE "home/replace_special_blockset.asm"
-.INCBIN  "home/home_6_1_0_1.bin"
 .INCLUDE "home/init_sprites_index.asm"
 .INCLUDE "home/spawn_tiles.asm"
 .INCLUDE "home/sprites_tiles_set.asm"
