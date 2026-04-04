@@ -83,7 +83,7 @@ _generate_wily_machine_1_phase_2:
 	LDY #$08
 	JSR _object_speed_init
 	LDA #$80
-	STA z:zboss_move_counter
+	STA z:zboss_move_timer
 	LDA #$05
 	STA z:zboss_ai_pointer
 	stack_pointers $FF

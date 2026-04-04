@@ -161,6 +161,8 @@ clear_points_font:
 .INCBIN  "gfx/stages/wily/wily.chr"
 .INCBIN  "gfx/ending/ending.chr"
 .INCBIN  "gfx/title/title.chr"
+
+yellow_devil_tiles:
 .INCBIN  "gfx/yellow_devil/yellow_devil.chr"
 .INCBIN  "gfx/sprites/bosses/yellow_devil.chr"
 .INCBIN  "gfx/wily_machine_1/wily_machine_1.chr"

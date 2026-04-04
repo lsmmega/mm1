@@ -92,7 +92,7 @@ _run_bosses_ai:
 
 .INCBIN  "home/home_17_0_0.bin"
 .INCLUDE "home/boss_hp_filled_regular.asm"
-.INCBIN  "home/home_17_0_1.bin"
+.INCLUDE "home/load_yellow_devil.asm"
 .INCLUDE "home/tiles_update.asm"
 .INCBIN  "home/home_17_1.bin"
 .INCLUDE "home/generate_wily_machine_1_phase_2.asm"
