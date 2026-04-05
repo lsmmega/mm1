@@ -32,15 +32,15 @@ _update_stage_screen:
 	PLA
 	STA z:z0C
 	CPY #$84
-	BNE @no_block_remove
+	BNE _no_special_blockset_remove
 	LDY z:zcurrent_stage
 	LDA z:z05
-	CMP @special_room_id_table, Y
-	BNE @not_special_room
-	LDA @special_room_16x16tiles_id_table, Y
-	BNE @done
+	CMP special_room_id_table, Y
+	BNE _not_special_room_with_special_blockset
+	LDA special_room_16x16tiles_id_table, Y
+	BNE _special_blockset_16x16tiles_id_done
 
-@special_room_16x16tiles_id_table:
+special_room_16x16tiles_id_table:
 	.BYTE $5B ;cutman
 	.BYTE $00 ;iceman
 	.BYTE $00 ;bombman
@@ -54,7 +54,7 @@ _update_stage_screen:
 	.BYTE $01 ;unknown
 	.BYTE $01 ;unknown
 
-@not_special_room_16x16tiles_id_table:
+not_special_room_16x16tiles_id_table:
 	.BYTE $01 ;cutman
 	.BYTE $01 ;iceman
 	.BYTE $01 ;bombman
@@ -68,7 +68,7 @@ _update_stage_screen:
 	.BYTE $01 ;unknown
 	.BYTE $01 ;unknown
 
-@special_room_id_table:
+special_room_id_table:
 	.BYTE $17 ;cutman
 	.BYTE $17 ;iceman
 	.BYTE $17 ;bombman
@@ -80,11 +80,11 @@ _update_stage_screen:
 	.BYTE $2F ;wily3
 	.BYTE $23 ;wily4
 
-@not_special_room:
-	LDA @not_special_room_16x16tiles_id_table, Y
-	BNE @done
+_not_special_room_with_special_blockset:
+	LDA not_special_room_16x16tiles_id_table, Y
+	BNE _special_blockset_16x16tiles_id_done
 
-@no_block_remove:
+_no_special_blockset_remove:
 	LDY z:z05
 	LDA stage_screen_id, Y
 	ASL
@@ -99,7 +99,7 @@ _update_stage_screen:
 	TAY
 	LDA (z06), Y
 
-@done:
+_special_blockset_16x16tiles_id_done:
 	PHA
 	LDY #$00
 	STY z:z07

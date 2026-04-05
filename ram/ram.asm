@@ -39,6 +39,7 @@
 	zobject_ram_index               = $2F
 	zladder_flag                    = $30
 	zcurrent_stage                  = $31
+	zvertical_scrolling_coord       = $33
 	zpalette_update_type            = $34
 	zpalette_update_address         = $35
 	zpalette_update_flag            = $37

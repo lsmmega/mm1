@@ -47,7 +47,6 @@
 .INCLUDE "home/special_blockset.asm"
 .INCLUDE "home/update_stage_screen.asm"
 .INCLUDE "home/scrolling.asm"
-.INCBIN  "home/home_10_2.bin"
 .INCLUDE "home/door.asm"
 .INCLUDE "home/sprites_timer.asm"
 .INCLUDE "home/clear_timer.asm"
