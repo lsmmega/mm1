@@ -1,4 +1,4 @@
-init_stage_select_object_table:
+init_stage_select_tiles_table:
 ;bankswitch, ppu address length
 	.BYTE $00, 2
 	.BYTE $00, 2
@@ -11,7 +11,7 @@ init_stage_select_object_table:
 	.BYTE $02, 1
 	.BYTE $00, 8
 
-init_stage_select_object_address_table:
+init_stage_select_tiles_address_table:
 	.WORD $9800
 	.WORD $A800
 	.WORD $A000
@@ -34,15 +34,15 @@ _init_stage_select:
 @mainloop:
 	ASL
 	TAX
-	LDA init_stage_select_object_table, X
+	LDA init_stage_select_tiles_table, X
 	TAY
 	STA z:zcurrent_bankswitch
 	STA uxrom_prg_bank, Y
-	LDA init_stage_select_object_address_table, X
+	LDA init_stage_select_tiles_address_table, X
 	STA z:z04
-	LDA init_stage_select_object_address_table + 1, X
+	LDA init_stage_select_tiles_address_table + 1, X
 	STA z:z05
-	LDA init_stage_select_object_table + 1, X
+	LDA init_stage_select_tiles_table + 1, X
 	TAX
 
 @loop_1:
