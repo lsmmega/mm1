@@ -62,6 +62,7 @@
 .INCLUDE "home/palette.asm"
 .INCLUDE "home/screen.asm"
 .INCLUDE "home/tsa.asm"
+.INCLUDE "home/init_stage_select.asm"
 .INCBIN  "home/home_11_3.bin"
 
 _run_bosses_ai:
