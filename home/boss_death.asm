@@ -112,7 +112,7 @@ _boss_death:
 @is_wily_machine_1_phase_2:
 	LDX #$10
 	STX z:zobject_ram_index
-	JSR $AEFD
+	JSR $AEFD ;enemies explosion, undo
 	LDA #$F8
 	STA aobject_ycoord + 16
 	STA aobject_ycoord + 1
