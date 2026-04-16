@@ -1930,7 +1930,7 @@ _yellow_devil_boss_ai:
 	STA z:z01
 	LDA #$00
 	STA z:z00
-	JSR $F628
+	JSR _update_distance_speed
 
 @exist_1:
 	LDA #$3F
@@ -2768,7 +2768,7 @@ _wily_machine_1_phase_2_boss_ai:
 	STA z:z01
 	LDA #$00
 	STA z:z00
-	JSR $F628
+	JSR _update_distance_speed
 	LDX #$16
 	JSR _check_object
 	LDA #$48
