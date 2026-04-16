@@ -1,6 +1,6 @@
 objects_set_fireman:
 	;      id,   x,   y, object
-	.BYTE $00, $80, $E0, objects_fireman_palette_alternate
+	.BYTE $00, $80, $E0, objects_32_palette_alternate
 	.BYTE $00, $78, $80, objects_screw_driver_ground
 	.BYTE $00, $78, $40, objects_screw_driver_ground
 	.BYTE $00, $F0, $40, objects_screw_driver_ground

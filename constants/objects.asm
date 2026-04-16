@@ -49,7 +49,7 @@
 	objects_2f ;gutsman is used for enable track platform sfx, wily3 is used for enable flood
 	objects_30 ;gutsman is used for disable track platform sfx, wily3 is used for palette change
 	objects_changkey
-	objects_fireman_palette_alternate
+	objects_32_palette_alternate
 	objects_copy_robot_rolling_cutter
 	objects_copy_robot_ice_slasher
 	objects_copy_robot_hyper_bomb

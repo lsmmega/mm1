@@ -1,4 +1,4 @@
-_objects_fireman_palette_alternate:
+_objects_32_palette_alternate:
 	LDA z:znmi_frame
 	AND #%00000111
 	BNE @skip

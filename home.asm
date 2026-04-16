@@ -72,7 +72,7 @@
 .INCLUDE "home/load_cwu_01p_wily_machine_1.asm"
 .INCLUDE "home/generate_wily_machine_1_phase_2.asm"
 .INCLUDE "home/boss_hp_filled.asm"
-.INCLUDE "home/objects_fireman_palette_alternate.asm"
+.INCLUDE "home/objects_32_palette_alternate.asm"
 .INCBIN  "home/home_18_0.bin"
 .INCLUDE "home/object_speed_init.asm"
 .INCLUDE "home/distance.asm"
