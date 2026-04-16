@@ -2453,7 +2453,7 @@ _copy_robot_check_megaman_current_weapon:
 
 @continue:
 	STA z:z0C
-	JSR $F516
+	JSR _enemies_one_shoot
 	RTS
 
 _check_megaman_current_weapon_energy:
