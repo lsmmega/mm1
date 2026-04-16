@@ -26,7 +26,7 @@
 .INCLUDE "home/track_queue.asm"
 .INCLUDE "home/init_stage_palette_special_blockset.asm"
 .INCLUDE "home/checkpoint_ycoord.asm"
-.INCBIN  "home/home_6_0.bin"
+.INCLUDE "home/write_special_object_xcoord_speed.asm"
 .INCLUDE "home/check_object.asm"
 .INCLUDE "home/check_object_type.asm"
 .INCLUDE "home/random_integer.asm"
@@ -64,37 +64,12 @@
 .INCLUDE "home/tsa.asm"
 .INCLUDE "home/init_stage_select.asm"
 .INCBIN  "home/home_11_3.bin"
-
-_run_bosses_ai:
-.INCBIN  "home/home_11_4.bin"
-
-	track_queue track_cutman_move
-
-.INCBIN  "home/home_12.bin"
-
-	track_queue track_cutman_move
-
-.INCBIN  "home/home_13.bin"
-
-	track_queue track_rolling_cutter
-
-.INCBIN  "home/home_14.bin"
-
-	track_queue track_ice_slasher
-
-.INCBIN  "home/home_15.bin"
-
-	track_queue track_thunder_beam
-
-.INCBIN  "home/home_16.bin"
-
-	track_queue track_earthquake
-
-.INCBIN  "home/home_17_0_0.bin"
+.INCLUDE "home/bosses_ai.asm"
+.INCLUDE "home/load_copy_robot.asm"
 .INCLUDE "home/boss_hp_filled_regular.asm"
 .INCLUDE "home/load_yellow_devil.asm"
 .INCLUDE "home/tiles_update.asm"
-.INCBIN  "home/home_17_1.bin"
+.INCLUDE "home/load_cwu_01p_wily_machine_1.asm"
 .INCLUDE "home/generate_wily_machine_1_phase_2.asm"
 .INCLUDE "home/boss_hp_filled.asm"
 .INCLUDE "home/objects_fireman_palette_alternate.asm"
@@ -109,7 +84,7 @@ _run_bosses_ai:
 
 .INCBIN  "home/home_20_0.bin"
 .INCLUDE "home/create_explosion.asm"
-.INCBIN  "home/home_20_1.bin"
+.INCLUDE "home/bosses_shoot_object_with_255fraction_speed.asm"
 .INCLUDE "home/title_game_over_screen.asm"
 .INCLUDE "home/object_collision_coord.asm"
 .INCLUDE "home/weapon_damage.asm"

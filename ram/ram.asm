@@ -52,10 +52,13 @@
 	zrandom_integer                 = $40
 	zpause                          = $41
 	zcurrent_bankswitch             = $42
+	zboss_object_flag               = $43
 	zboss_move_timer                = $44
 	ztrack_queue_pointer            = $45
 	zrandom                         = $46
 	zgutsman_stomp_timer            = $47
+	zboss_coord_speed_fraction      = $48
+	zboss_coord_speed               = $49
 	zdiv_temp                       = $4A
 	zscore_addition                 = $4A
 	zdividend_integer               = $4B
@@ -142,6 +145,7 @@
 	aobject_frameset_timer          = $440
 	aobject_screen                  = $460
 	aobject_xcoord                  = $480
+	aobject_xcoord_fraction         = $4A0
 	aobject_xcoord_speed            = $4C0
 	aobject_xcoord_speed_fraction   = $4E0
 	aaudio_ram                      = $500

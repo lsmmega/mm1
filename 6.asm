@@ -6,7 +6,7 @@
 .INCLUDE "sprites/pointers/oam_frameset_pointers.asm"
 .INCLUDE "sprites/pointers/oamcoord_index_pointers.asm"
 .INCLUDE "sprites/oamcoord.asm"
-.INCBIN  "6/6_0.bin"
+.INCLUDE "data/special_xcoord_speed_table.asm"
 .INCLUDE "sprites/pointers/oam_enemies_sprites_pointers.asm"
 .INCLUDE "sprites/pointers/oam_enemies_frameset_pointers.asm"
 .INCLUDE "sprites/oam_sprites.asm"

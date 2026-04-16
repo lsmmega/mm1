@@ -77,6 +77,7 @@ stages := \
 	macros/* \
 	sprites/pointers/* \
 	sprites/* \
+	data/* \
 	6/* \
 	objects/* \
 	stages/* \
