@@ -3,7 +3,7 @@ nmi:
 	PHA
 	PHX
 	PHY
-	LDA znmi_wait
+	LDA z:znmi_wait
 	BEQ @yes
 	JMP @no
 
