@@ -79,7 +79,7 @@
 ;objects_enemies_bullet_palette_2
 	.BYTE cant_collide_map | can_collide_megaman | cant_collide_megaman_bullet | objects_not_temporary | objects_visible | objects_left
 
-;objects_enemies_killed
+;objects_cwu_01p_killed
 	.BYTE cant_collide_map | cant_collide_megaman | cant_collide_megaman_bullet | objects_not_temporary | objects_visible | objects_left
 
 ;objects_super_cutter_standby

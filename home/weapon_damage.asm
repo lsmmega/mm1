@@ -26,7 +26,7 @@ mega_buster_damage_table:
 	.BYTE $14 ;objects_fireball_standby
 	.BYTE $14 ;objects_short_elec_beam
 	.BYTE $00 ;objects_enemies_bullet_palette_2
-	.BYTE $00 ;objects_enemies_killed
+	.BYTE $00 ;objects_cwu_01p_killed
 	.BYTE $02 ;objects_super_cutter_standby
 	.BYTE $14 ;objects_crazy_razy_head_1
 	.BYTE $07 ;objects_crazy_razy_foot_1
@@ -87,7 +87,7 @@ rolling_cutter_damage_table:
 	.BYTE $14 ;objects_fireball_standby
 	.BYTE $14 ;objects_short_elec_beam
 	.BYTE $00 ;objects_enemies_bullet_palette_2
-	.BYTE $00 ;objects_enemies_killed
+	.BYTE $00 ;objects_cwu_01p_killed
 	.BYTE $02 ;objects_super_cutter_standby
 	.BYTE $14 ;objects_crazy_razy_head_1
 	.BYTE $07 ;objects_crazy_razy_foot_1
@@ -148,7 +148,7 @@ ice_slasher_damage_table:
 	.BYTE $00 ;objects_fireball_standby
 	.BYTE $00 ;objects_short_elec_beam
 	.BYTE $00 ;objects_enemies_bullet_palette_2
-	.BYTE $00 ;objects_enemies_killed
+	.BYTE $00 ;objects_cwu_01p_killed
 	.BYTE $00 ;objects_super_cutter_standby
 	.BYTE $00 ;objects_crazy_razy_head_1
 	.BYTE $00 ;objects_crazy_razy_foot_1
@@ -209,7 +209,7 @@ hyper_bomb_damage_table:
 	.BYTE $14 ;objects_fireball_standby
 	.BYTE $14 ;objects_short_elec_beam
 	.BYTE $00 ;objects_enemies_bullet_palette_2
-	.BYTE $00 ;objects_enemies_killed
+	.BYTE $00 ;objects_cwu_01p_killed
 	.BYTE $14 ;objects_super_cutter_standby
 	.BYTE $14 ;objects_crazy_razy_head_1
 	.BYTE $14 ;objects_crazy_razy_foot_1
@@ -270,7 +270,7 @@ fire_storm_damage_table:
 	.BYTE $14 ;objects_fireball_standby
 	.BYTE $14 ;objects_short_elec_beam
 	.BYTE $00 ;objects_enemies_bullet_palette_2
-	.BYTE $00 ;objects_enemies_killed
+	.BYTE $00 ;objects_cwu_01p_killed
 	.BYTE $02 ;objects_super_cutter_standby
 	.BYTE $14 ;objects_crazy_razy_head_1
 	.BYTE $14 ;objects_crazy_razy_foot_1
@@ -331,7 +331,7 @@ thunder_beam_damage_table:
 	.BYTE $14 ;objects_fireball_standby
 	.BYTE $14 ;objects_short_elec_beam
 	.BYTE $00 ;objects_enemies_bullet_palette_2
-	.BYTE $00 ;objects_enemies_killed
+	.BYTE $00 ;objects_cwu_01p_killed
 	.BYTE $01 ;objects_super_cutter_standby
 	.BYTE $14 ;objects_crazy_razy_head_1
 	.BYTE $14 ;objects_crazy_razy_foot_1
@@ -392,7 +392,7 @@ super_arm_damage_table:
 	.BYTE $14 ;objects_fireball_standby
 	.BYTE $14 ;objects_short_elec_beam
 	.BYTE $00 ;objects_enemies_bullet_palette_2
-	.BYTE $00 ;objects_enemies_killed
+	.BYTE $00 ;objects_cwu_01p_killed
 	.BYTE $14 ;objects_super_cutter_standby
 	.BYTE $14 ;objects_crazy_razy_head_1
 	.BYTE $14 ;objects_crazy_razy_foot_1

@@ -26,7 +26,7 @@
 	.BYTE $00 ;objects_fireball_standby
 	.BYTE $01 ;objects_short_elec_beam
 	.BYTE $00 ;objects_enemies_bullet_palette_2
-	.BYTE $00 ;objects_enemies_killed
+	.BYTE $00 ;objects_cwu_01p_killed
 	.BYTE $00 ;objects_super_cutter_standby
 	.BYTE $00 ;objects_crazy_razy_head_1
 	.BYTE $00 ;objects_crazy_razy_foot_1

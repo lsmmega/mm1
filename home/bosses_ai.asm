@@ -2605,7 +2605,7 @@ _cwu_01p_boss_ai:
 	STA z:zboss_move_timer
 	INC z:zboss_ai_pointer
 	STA z:zobject_ram_index
-	JSR $F4A6
+	JSR _cwu_01p_ai
 	RTS
 
 @continue:
@@ -2622,7 +2622,7 @@ _cwu_01p_boss_ai:
 @unbeaten:
 	DEC z:zboss_move_stage
 	BNE @done
-	JSR $F4A6
+	JSR _cwu_01p_ai
 	BCS @done
 	DEC z:zboss_ai_pointer
 	RTS

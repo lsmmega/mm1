@@ -26,7 +26,7 @@
 	objects_fireball_standby
 	objects_short_elec_beam
 	objects_enemies_bullet_palette_2
-	objects_enemies_killed
+	objects_cwu_01p_killed
 	objects_super_cutter_standby
 	objects_crazy_razy_head_1
 	objects_crazy_razy_foot_1

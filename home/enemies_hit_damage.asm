@@ -26,7 +26,7 @@ enemies_hit_damage_table:
 	.BYTE 3  ;objects_fireball_standby
 	.BYTE 4  ;objects_short_elec_beam
 	.BYTE 2  ;objects_enemies_bullet_palette_2
-	.BYTE 1  ;objects_enemies_killed
+	.BYTE 1  ;objects_cwu_01p_killed
 	.BYTE 4  ;objects_super_cutter_standby
 	.BYTE 3  ;objects_crazy_razy_head_1
 	.BYTE 3  ;objects_crazy_razy_foot_1
