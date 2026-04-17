@@ -65,5 +65,5 @@
 .INCLUDE "screen/stage_select.asm"
 .INCBIN  "6/6_11.bin"
 
-__open_menu_store:
+_open_menu_jmp:
 .INCBIN  "6/6_12.bin"

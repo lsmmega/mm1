@@ -20,4 +20,4 @@ _open_menu_store:
 
 @not_wily1:
 @no_boss:
-	JMP __open_menu_store
+	JMP _open_menu_jmp
