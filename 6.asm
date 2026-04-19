@@ -31,14 +31,7 @@
 .INCLUDE "stages/elecman/elecman_unknown_objects_set.asm"
 .INCBIN  "6/6_1.bin"
 .INCLUDE "screen/ending.asm"
-.INCBIN  "6/6_2.bin"
-
-	track_queue track_pause
-
-.INCBIN  "6/6_3.bin"
-
-	track_queue track_select
-
+.INCLUDE "engine/menu.asm"
 .INCBIN  "6/6_4.bin"
 
 	track_queue track_stage_select
@@ -64,6 +57,5 @@
 .INCBIN  "6/6_10.bin"
 .INCLUDE "screen/stage_select.asm"
 .INCBIN  "6/6_11.bin"
-
-_open_menu_jmp:
+.INCLUDE "engine/jump.asm"
 .INCBIN  "6/6_12.bin"

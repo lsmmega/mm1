@@ -65,9 +65,12 @@
 	zdividend_fraction              = $4C
 	zdivisor_255mode                = $4D
 	zdivisor_constantsmode          = $4E
+	zsuper_arm_block_index          = $52
 	zsprites_pointer                = $54
 	zmegaman_invincibility_time     = $55
 	zboss_invincibility_time        = $56
+	zmenu_screen_xcoord             = $57
+	zmenu_screen                    = $58
 	ztiles_address                  = $59
 	zobject_pointer                 = $5A
 	ztiles_update_20size            = $5B
@@ -96,6 +99,7 @@
 	zcapsule_parameter              = $AD
 	zscore_ball                     = $AE
 	zteleport_flag                  = $B0
+	zundo_running_type              = $B1
 	zforce_screen_xcoord            = $B2
 	zforce_screen                   = $B3
 	zforce_screen_flag              = $B4

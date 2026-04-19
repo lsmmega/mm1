@@ -69,7 +69,9 @@ stages := \
 	audio/sfx/* \
 	audio/unused/* \
 	stages/gutsman_ending/* \
-	5/*
+	engine/* \
+	5/* \
+	engine/sprites/*
 
 6 := \
 	6.asm \
@@ -87,7 +89,8 @@ stages := \
 	stages/fireman_wily4/* \
 	stages/elecman/* \
 	stages/gutsman_ending/* \
-	screen/*
+	screen/* \
+	engine/*
 
 gfx := \
 	gfx/sprites/megaman/megaman.bmp gfx/sprites/megaman/megaman.chr \

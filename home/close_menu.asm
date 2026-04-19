@@ -1,4 +1,4 @@
-_close_menu_restore:
+_close_menu:
 	LDA z:zcurrent_boss
 	CMP #$0A
 	BEQ @is_wily_machine_1

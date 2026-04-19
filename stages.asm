@@ -287,7 +287,7 @@ _run_enemies_ai:
 	track_queue track_big_eye
 
 .INCBIN  "5/5_17.bin"
-.INCLUDE "5/wily_machine_1_explosion.asm"
+.INCLUDE "engine/sprites/wily_machine_1_explosion.asm"
 .INCBIN  "5/5_18.bin"
 
 	track_queue track_magnet_beam

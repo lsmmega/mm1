@@ -21,6 +21,7 @@
 .INCLUDE "home/open_menu.asm"
 .INCLUDE "home/close_menu.asm"
 .INCLUDE "home/object_tiles_prewrite.asm"
+.INCLUDE "home/update_menu_screen.asm"
 .INCBIN  "home/home_5_1.bin"
 .INCLUDE "home/short_frozen.asm"
 .INCLUDE "home/track_queue.asm"
