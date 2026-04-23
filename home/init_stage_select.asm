@@ -61,5 +61,5 @@ _init_stage_select:
 	CMP #$0A
 	BNE @mainloop
 	zbankswitch $06
-	JSR $BFF6 ;go to stage select
+	JSR _stage_select_jmp
 	JMP _bankswitch_05

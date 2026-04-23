@@ -23,7 +23,7 @@ stages := \
 	macros/* \
 	ram/* \
 	stages/cutman_wily1/* \
-	unknown/* \
+	unused/* \
 	gfx/sprites/megaman/*.bmp \
 	gfx/sprites/bosses/*.bmp \
 	gfx/sprites/bosses/fireman/*.bmp \
@@ -90,6 +90,8 @@ stages := \
 	stages/elecman/* \
 	stages/gutsman_ending/* \
 	screen/* \
+	unused/* \
+	data/stage_select/* \
 	engine/*
 
 gfx := \

@@ -29,33 +29,11 @@
 .INCLUDE "stages/bombman_wily3/wily3_objects_set.asm"
 .INCLUDE "stages/fireman_wily4/wily4_objects_set.asm"
 .INCLUDE "stages/elecman/elecman_unknown_objects_set.asm"
+
+_ending:
 .INCBIN  "6/6_1.bin"
 .INCLUDE "screen/ending.asm"
 .INCLUDE "engine/menu.asm"
-.INCBIN  "6/6_4.bin"
-
-	track_queue track_stage_select
-
-.INCBIN  "6/6_5.bin"
-
-	track_queue track_select
-
-.INCBIN  "6/6_6.bin"
-
-	track_queue track_press_start
-	track_queue track_boss_show
-
-.INCBIN  "6/6_7.bin"
-
-	track_queue track_points
-
-.INCBIN  "6/6_8.bin"
-.INCBIN  "6/6_9.bin"
-
-	track_queue track_wily_ufo
-
-.INCBIN  "6/6_10.bin"
-.INCLUDE "screen/stage_select.asm"
-.INCBIN  "6/6_11.bin"
+.INCLUDE "engine/stage_select.asm"
+.INCLUDE "unused/unused_1bfe2.asm"
 .INCLUDE "engine/jump.asm"
-.INCBIN  "6/6_12.bin"
