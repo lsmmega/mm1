@@ -132,7 +132,7 @@ _stage_select:
 	LDY #$07
 
 @loop_9:
-	LDA stage_select_character_table, X
+	LDA stage_select_string_table, X
 	STA PPU_DATA
 	INX
 	DEY
@@ -182,15 +182,15 @@ _stage_select:
 	LDX #$00
 
 @loop_11:
-	LDA stage_select_select_stage_character_table, X
+	LDA stage_select_select_stage_string_table, X
 	STA PPU_ADDRESS
 	INX
-	LDA stage_select_select_stage_character_table, X
+	LDA stage_select_select_stage_string_table, X
 	STA PPU_ADDRESS
 	INX
 
 @loop_10:
-	LDA stage_select_select_stage_character_table, X
+	LDA stage_select_select_stage_string_table, X
 	STA PPU_DATA
 	INX
 	TXA
@@ -491,12 +491,12 @@ _stage_select:
 	STA ascreen_ppu_attribute_data
 	LDA z:zcurrent_stage
 	LDX #$07
-	JSR @print_character
+	JSR @print_string
 	LDA #$D0
 	STA ascreen_ppu_attribute_address + 1
 	LDA #$09
 	LDX #$0C
-	JSR @print_character
+	JSR @print_string
 	LDX #$44
 	LDY #$03
 	LDA #$B0
@@ -841,7 +841,7 @@ _stage_select:
 	STA z:zscreen_update_flag
 	RTS
 
-@print_character:
+@print_string:
 	STA aobject_flag
 	STX aobject_frameset_timer
 	LDY #$00
@@ -854,9 +854,9 @@ _stage_select:
 	LDA aobject_flag
 	ASL
 	TAX
-	LDA stage_select_character, X
+	LDA stage_select_string, X
 	STA z:z04
-	LDA stage_select_character + 1, X
+	LDA stage_select_string + 1, X
 	STA z:z05
 	LDA (z04), Y
 	STA ascreen_ppu_attribute_data + 1
@@ -1190,7 +1190,7 @@ _stage_select:
 .INCLUDE "data/stage_select/palettes.asm"
 .INCLUDE "data/stage_select/frame.asm"
 .INCLUDE "data/stage_select/objects.asm"
-.INCLUDE "data/stage_select/character.asm"
+.INCLUDE "data/stage_select/string.asm"
 
 regular_stage_clear_flags_table:
 	.BYTE stage_cutman_clear
