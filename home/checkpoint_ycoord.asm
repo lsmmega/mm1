@@ -39,7 +39,7 @@ checkpoint_0_ycoord:
 	.BYTE $B4 ;wily3
 	.BYTE $94 ;wily4
 	.BYTE $84 ;unused
-	.BYTE $64 ;unused
+	.BYTE $64 ;ending
 
 ;checkpoint 1 ycoord
 	.BYTE $94 ;cutman

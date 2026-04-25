@@ -73,14 +73,13 @@ stages := \
 	5/* \
 	engine/sprites/*
 
-6 := \
-	6.asm \
+miscellaneous := \
+	miscellaneous.asm \
 	constants/* \
 	macros/* \
 	sprites/pointers/* \
 	sprites/* \
 	data/* \
-	6/* \
 	objects/* \
 	stages/* \
 	stages/cutman_wily1/* \
@@ -89,10 +88,10 @@ stages := \
 	stages/fireman_wily4/* \
 	stages/elecman/* \
 	stages/gutsman_ending/* \
-	screen/* \
-	unused/* \
+	engine/* \
+	data/ending/* \
 	data/stage_select/* \
-	engine/*
+	unused/*
 
 gfx := \
 	gfx/sprites/megaman/megaman.bmp gfx/sprites/megaman/megaman.chr \
@@ -219,7 +218,7 @@ mm1: mm1.nes
 header.o: $(header)
 	ca65 header.asm
 
-main.o: $(home) $(stages) $(6)
+main.o: $(home) $(stages) $(miscellaneous)
 	bmp2nes $(gfx)
 	ca65 main.asm
 

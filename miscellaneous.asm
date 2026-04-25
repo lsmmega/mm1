@@ -29,10 +29,7 @@
 .INCLUDE "stages/bombman_wily3/wily3_objects_set.asm"
 .INCLUDE "stages/fireman_wily4/wily4_objects_set.asm"
 .INCLUDE "stages/elecman/elecman_unknown_objects_set.asm"
-
-_ending:
-.INCBIN  "6/6_1.bin"
-.INCLUDE "screen/ending.asm"
+.INCLUDE "engine/ending.asm"
 .INCLUDE "engine/menu.asm"
 .INCLUDE "engine/stage_select.asm"
 .INCLUDE "unused/unused_1bfe2.asm"

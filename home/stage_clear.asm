@@ -87,6 +87,8 @@ _stage_clear:
 	JSR _timer
 	LDA #$80
 	JSR _timer
+
+_ending_to_stage_select_jmp:
 	JSR _nmi_disable
 	DEC z:zstage_clear_flag
 	stack_pointers $FF

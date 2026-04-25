@@ -1,5 +1,6 @@
 .INCLUDE "constants/ending_charmap.asm"
 
+ending_string_table:
 	.BYTE 5 ;string 1 total line(s)
 
 ending_string_1:

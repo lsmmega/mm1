@@ -1,4 +1,4 @@
 .INCLUDE "macros/far.asm"
 .INCLUDE "stages.asm"
-.INCLUDE "6.asm"
+.INCLUDE "miscellaneous.asm"
 .INCLUDE "home.asm"
