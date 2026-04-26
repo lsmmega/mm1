@@ -32,6 +32,9 @@
 	zscreen_update_flag                 = $1C
 	zscreen_ycoord                      = $1E
 	znmi_wait                           = $1F
+	zobject_in_process_screen           = $20
+	zobject_in_process_xcoord_speed     = $21
+	zobject_in_process_xcoord           = $22
 	znmi_frame                          = $23
 	zscroll_end_direction               = $26
 	zscreen_end_of_left                 = $27
