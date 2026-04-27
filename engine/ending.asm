@@ -9,7 +9,7 @@ _ending:
 	LDA #$14
 	STA z:zscreen_end_of_left
 	LDA #$1E
-	STA z:zscreen_enf_of_right
+	STA z:zscreen_end_of_right
 	LDA #$30
 	STA z:z0C
 	LDX #$04

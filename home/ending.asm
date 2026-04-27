@@ -11,7 +11,7 @@ _ending_generate_object:
 
 _ending_objects_xcoord_move:
 	JSR _bankswitch_05
-	JSR _objects_in_process_screen
+	JSR _objects_leftward
 	JSR $988F
 
 _ending_objects_no_xcoord_move:

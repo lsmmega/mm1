@@ -38,7 +38,7 @@
 	znmi_frame                          = $23
 	zscroll_end_direction               = $26
 	zscreen_end_of_left                 = $27
-	zscreen_enf_of_right                = $28
+	zscreen_end_of_right                = $28
 	ztsa_blockset_pointers              = $2A
 	zladder_upper_xcoord                = $2E
 	zobject_ram_index                   = $2F
