@@ -93,6 +93,7 @@
 	zscore                              = $72
 	zsprites_tiles_palette_index        = $7A
 	zending_update_object_palette_index = $8B
+	zobjects_scrolling_flag             = $8D
 	zspecial_blockset_index             = $8E
 	zspawn_tiles_size                   = $92
 	zspawn_tiles_index                  = $93
