@@ -12,7 +12,7 @@ _ending_generate_object:
 _ending_objects_xcoord_move:
 	JSR _bankswitch_05
 	JSR _objects_leftward
-	JSR $988F
+	JSR _objects_screen_moving
 
 _ending_objects_no_xcoord_move:
 	JSR _sprites

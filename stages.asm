@@ -244,6 +244,7 @@ _stage_loop:
 	track_queue track_megaman_hit
 
 .INCBIN  "5/5_7_0.bin"
+.INCLUDE "engine/objects_screen.asm"
 
 _run_enemies_ai:
 .INCBIN  "5/5_7_1.bin"
