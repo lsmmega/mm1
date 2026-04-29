@@ -22,7 +22,7 @@ _objects_screen_moving:
 @continue:
 	LDA #$00
 	STA z:zscreen_xcoord
-	BEQ @done
+	BEQ _objects_screen_moving_done
 
 @not_rightmost:
 	SEC
@@ -35,17 +35,17 @@ _objects_screen_moving:
 	SEC
 	LDA #$00
 	SBC z:z0C
-	BEQ @done
+	BEQ _objects_screen_moving_done
 	STA z:z0C
 	JSR _objects_scrolling_right
-	JMP @done
+	JMP _objects_screen_moving_done
 
 @not_scrolling_right:
 	LDA z:z0C
-	BEQ @done
+	BEQ _objects_screen_moving_done
 	JSR _objects_scrolling_left
 
-@done:
+_objects_screen_moving_done:
 	LDX z:zobject_ram_index
 	LDA z:zobject_in_process_screen
 	STA aobject_screen, X

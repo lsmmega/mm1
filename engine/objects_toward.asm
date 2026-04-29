@@ -1,5 +1,7 @@
 _objects_rightward:
 	LDX z:zobject_ram_index
+
+_bosses_rightward:
 	CLC
 	LDA aobject_xcoord_fraction, X
 	ADC aobject_xcoord_speed_fraction, X
@@ -78,6 +80,8 @@ _objects_rightward:
 
 _objects_leftward:
 	LDX z:zobject_ram_index
+
+_bosses_leftward:
 	SEC
 	LDA aobject_xcoord_fraction, X
 	SBC aobject_xcoord_speed_fraction, X

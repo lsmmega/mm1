@@ -255,7 +255,9 @@ _run_enemies_ai:
 
 	track_queue track_explosion
 
-.INCBIN  "5/5_9_0.bin"
+.INCBIN  "5/5_9_0_0.bin"
+.INCLUDE "engine/objects_vertical.asm"
+.INCBIN  "5/5_9_0_1.bin"
 .INCLUDE "engine/objects_toward.asm"
 .INCBIN  "5/5_9_1.bin"
 .INCLUDE "engine/objects_scrolling.asm"

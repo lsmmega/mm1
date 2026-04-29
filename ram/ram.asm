@@ -36,6 +36,8 @@
 	zobject_in_process_xcoord_speed     = $21
 	zobject_in_process_xcoord           = $22
 	znmi_frame                          = $23
+	zobject_in_process_ycoord_speed     = $24
+	zobject_in_process_ycoord           = $25
 	zscroll_end_direction               = $26
 	zscreen_end_of_left                 = $27
 	zscreen_end_of_right                = $28

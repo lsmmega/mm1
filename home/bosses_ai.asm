@@ -2869,16 +2869,16 @@ _update_bosses_xcoord_speed_without_compare:
 	LDA z:zboss_object_flag
 	AND #objects_right
 	BEQ @left
-	JSR $9DF1
+	JSR _bosses_rightward
 	JMP @continue
 
 @left:
-	JSR $9E6F
+	JSR _bosses_leftward
 
 @continue:
-	JSR $98D8
-	JSR $9BC4
-	LDA ztsa_blockset_pointers + 1
+	JSR _objects_screen_moving_done
+	JSR _objects_vertical_moving
+	LDA z:ztsa_blockset_pointers + 1
 	RTS
 
 _bosses_shoot_object:
