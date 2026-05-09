@@ -33,3 +33,7 @@ _init:
 	LDA z:z05
 	CMP #$08
 	BNE @loop_4
+	LDA #background_table_right
+	STA z:zppu_ctrl
+	LDA #background_leftmost_enable | sprites_leftmost_enable
+	STA z:zppu_mask
