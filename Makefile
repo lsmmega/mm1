@@ -70,6 +70,7 @@ stages := \
 	audio/unused/* \
 	stages/gutsman_ending/* \
 	engine/* \
+	data/* \
 	5/* \
 	engine/sprites/*
 

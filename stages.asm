@@ -199,9 +199,7 @@ yellow_devil_tiles:
 .INCLUDE "engine/init.asm"
 .INCLUDE "engine/game_over.asm"
 .INCLUDE "engine/init_stage_select.asm"
-
-_stage_start:
-.INCBIN  "5/5_0_1_2.bin"
+.INCLUDE "engine/stage_start.asm"
 
 _init_palette_special_blockset:
 .INCBIN  "5/5_0_2.bin"
@@ -222,7 +220,9 @@ _stage_loop:
 
 	track_queue track_wily_boss_fighting
 
-.INCBIN  "5/5_3.bin"
+.INCBIN  "5/5_3_0.bin"
+.INCLUDE "data/wily_stage_thousands_clear_points.asm"
+.INCBIN  "5/5_3_1.bin"
 
 	track_queue track_refill
 
