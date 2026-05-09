@@ -22,6 +22,7 @@
 	objects_temporary          = 1 << 4
 	objects_invisible          = 1 << 5
 	objects_right              = 1 << 6
+	objects_hitting_bullet     = 1 << 7
 
 ;stage clear flags
 	stage_bombman_clear = 1 << 1

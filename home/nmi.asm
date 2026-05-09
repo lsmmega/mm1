@@ -62,7 +62,7 @@ nmi:
 	CMP #$6F
 	BEQ @no_shake
 	LDA aobject_flag
-	AND #%11110000
+	AND #objects_temporary | objects_invisible | objects_right | objects_hitting_bullet
 	ORA #can_collide_megaman
 	STA aobject_flag
 

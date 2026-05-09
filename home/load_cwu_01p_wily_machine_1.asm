@@ -104,7 +104,7 @@ _load_cwu_01p_wily_machine_1:
 @loop_6:
 	LDA #$AC
 	STA aobject_xcoord, X
-	LDA #$02
+	LDA #can_collide_megaman
 	STA aobject_flag, X
 	LDY #$08
 	JSR _object_speed_init

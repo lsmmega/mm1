@@ -111,7 +111,7 @@ _check_collision:
 
 @loop_1:
 	LDA aobject_flag, X
-	AND #%10000000
+	AND #objects_hitting_bullet
 	BNE @skip_check_1
 	JSR _check_collide_megaman_bullet
 	BCS @can_collide_megaman_bullet
@@ -153,7 +153,7 @@ _check_collision:
 @can_collide_megaman_bullet:
 	STX z:z0C
 	LDA aobject_flag, X
-	ORA #%10000000
+	ORA #objects_hitting_bullet
 	STA aobject_flag, X
 
 @invincibility_done:
