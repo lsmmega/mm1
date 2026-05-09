@@ -198,9 +198,7 @@ yellow_devil_tiles:
 .INCLUDE "stages/gutsman_ending/gutsman_door.asm"
 .INCLUDE "engine/init.asm"
 .INCLUDE "engine/game_over.asm"
-
-_back_to_stage_select:
-.INCBIN  "5/5_0_1_1.bin"
+.INCLUDE "engine/init_stage_select.asm"
 
 _stage_start:
 .INCBIN  "5/5_0_1_2.bin"
