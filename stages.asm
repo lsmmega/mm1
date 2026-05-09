@@ -290,7 +290,9 @@ _run_enemies_ai:
 
 .INCBIN  "5/5_17.bin"
 .INCLUDE "engine/sprites/wily_machine_1_explosion.asm"
-.INCBIN  "5/5_18.bin"
+.INCBIN  "5/5_18_0.bin"
+.INCLUDE "engine/clean_objects_speed.asm"
+.INCBIN  "5/5_18_1.bin"
 
 	track_queue track_magnet_beam
 
@@ -310,4 +312,6 @@ _run_enemies_ai:
 
 	track_queue track_track_platform
 
-.INCBIN  "5/5_23.bin"
+.INCBIN  "5/5_23_0.bin"
+.INCLUDE "engine/kill_drops.asm"
+.INCBIN  "5/5_23_1.bin"

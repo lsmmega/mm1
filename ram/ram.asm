@@ -94,6 +94,7 @@
 	zmagnet_beam                        = $71
 	zscore                              = $72
 	zsprites_tiles_palette_index        = $7A
+	zenemies_screen_thread              = $7B
 	zending_update_object_palette_index = $8B
 	zobjects_scrolling_flag             = $8D
 	zspecial_blockset_index             = $8E
@@ -170,6 +171,7 @@
 	aaudio_ram                      = $500
 	amodulation_pointers            = $57C
 	atrack_queue                    = $580
+	aenemies_hitting_thread         = $590
 	aobject_ycoord                  = $600
 	aobject_ycoord_fraction         = $620
 	aobject_timer                   = $640
