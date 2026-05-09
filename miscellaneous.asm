@@ -1,5 +1,4 @@
 .SEGMENT "BANK06"
-.INCLUDE "constants/flags.asm"
 .INCLUDE "constants/oam.asm"
 .INCLUDE "constants/objects.asm"
 .INCLUDE "sprites/pointers/oam_sprites_pointers.asm"

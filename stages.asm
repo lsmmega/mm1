@@ -1,4 +1,5 @@
 .SEGMENT "BANK00"
+.INCLUDE "constants/flags.asm"
 .INCLUDE "constants/palettes.asm"
 .INCLUDE "constants/ppu_attributes.asm"
 .INCLUDE "constants/scrolling.asm"
@@ -314,4 +315,4 @@ _run_enemies_ai:
 
 .INCBIN  "5/5_23_0.bin"
 .INCLUDE "engine/kill_drops.asm"
-.INCBIN  "5/5_23_1.bin"
+.INCLUDE "engine/enemies_immnue_hit.asm"
