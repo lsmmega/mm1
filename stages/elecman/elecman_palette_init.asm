@@ -17,7 +17,7 @@
 	.BYTE black, black,      black,        dark_cyan
 	.BYTE black, white_gray, light_gray,   dark_gray
 
-;unknown palette init
+;title screen palette only
 ;background
 	.BYTE black, white_azure, white_gray, dark_spring
 	.BYTE black, light_rose,  white_gray, dark_red
