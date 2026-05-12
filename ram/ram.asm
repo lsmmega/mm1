@@ -90,7 +90,7 @@
 	zjoy1_force_pressed_flag            = $68
 	zjoy1_force_pressed_bits            = $69
 	zmegaman_hp                         = $6A
-	zrolling_cutter                     = $6B
+	zweapon_consume                     = $6B
 	zmagnet_beam                        = $71
 	zscore                              = $72
 	zsprites_tiles_palette_index        = $7A
