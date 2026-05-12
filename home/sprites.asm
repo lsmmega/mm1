@@ -438,7 +438,7 @@ _draw_score_bar:
 	STA z:z05
 	LDA #upper_vertical_bar_4_tile
 	STA z:z04
-	LDA zweapon_consume - 1, X
+	LDA z:zweapon_consume - 1, X
 	JSR _calc_vertical_bar
 	LDA z:zboss_ai_pointer
 	BEQ @skip
