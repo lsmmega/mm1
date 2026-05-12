@@ -2460,7 +2460,7 @@ _check_megaman_current_weapon_energy:
 	LDA #$01
 	STA z:zobject_ram_index
 	LDX z:zcurrent_weapon
-	LDA z:zmegaman_hp, X
+	LDA z:zweapon_consume - 1, X
 	BEQ _copy_robot_use_done
 	TXA
 	ASL
