@@ -81,11 +81,8 @@
 .INCLUDE "home/distance.asm"
 .INCLUDE "home/enemies_face_to_megaman.asm"
 .INCLUDE "home/generate_object.asm"
-.INCBIN  "home/home_19_1.bin"
-
-	track_queue track_throw_boulder
-
-.INCBIN  "home/home_20_0.bin"
+.INCLUDE "home/magnet_beam_collision.asm"
+.INCLUDE "home/weapons_special_blockset.asm"
 .INCLUDE "home/create_explosion.asm"
 .INCLUDE "home/bosses_shoot_object_with_255fraction_speed.asm"
 .INCLUDE "home/title_game_over_screen.asm"

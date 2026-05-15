@@ -258,33 +258,7 @@ _run_enemies_ai:
 .INCBIN  "5/5_9_1.bin"
 .INCLUDE "engine/objects_scrolling.asm"
 .INCBIN  "5/5_9_2.bin"
-
-	track_queue track_explosion
-
-.INCBIN  "5/5_10.bin"
-
-	track_queue track_mega_buster
-
-.INCBIN  "5/5_11.bin"
-
-	track_queue track_rolling_cutter
-
-.INCBIN  "5/5_12.bin"
-
-	track_queue track_ice_slasher
-
-.INCBIN  "5/5_13.bin"
-
-	track_queue track_fire_storm
-
-.INCBIN  "5/5_14.bin"
-
-	track_queue track_thunder_beam
-
-.INCBIN  "5/5_15.bin"
-
-	track_queue track_magnet_beam
-
+.INCLUDE "engine/weapons.asm"
 .INCBIN  "5/5_16.bin"
 
 	track_queue track_big_eye

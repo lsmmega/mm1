@@ -87,6 +87,13 @@
 	zgot_weapon_flag                    = $5D
 	zobject_tiles_update_size           = $5E
 	zcurrent_weapon                     = $5F
+	zweapon_firing                      = $60
+	zweapon_timer                       = $61
+	zhyper_bomb_ycoord_speed            = $62
+	zweapon_ycoord_speed_fraction       = $63
+	zweapon_ycoord_speed                = $64
+	zweapon_xcoord_speed_fraction       = $65
+	zweapon_xcoord_speed                = $66
 	zjoy1_force_pressed_flag            = $68
 	zjoy1_force_pressed_bits            = $69
 	zmegaman_hp                         = $6A
@@ -103,6 +110,7 @@
 	zrunning_type                       = $94
 	zwater_delay                        = $95
 	zice_flag                           = $96
+	zweapon_consume_fraction            = $9F
 	z1up                                = $A6
 	zmusic_fade_out_rate                = $A7
 	zyellow_devil_object_tiles_flag     = $AA
@@ -172,6 +180,12 @@
 	amodulation_pointers            = $57C
 	atrack_queue                    = $580
 	aenemies_hitting_thread         = $590
+	amagnet_beam_length             = $5A0
+	amagnet_beam_timer              = $5B0
+	amagnet_beam_xcoord             = $5C0
+	amagnet_beam_screen             = $5D0
+	amagnet_beam_frameset           = $5E0
+	amagnet_beam_ycoord             = $5F0
 	aobject_ycoord                  = $600
 	aobject_ycoord_fraction         = $620
 	aobject_timer                   = $640
