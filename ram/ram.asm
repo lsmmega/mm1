@@ -110,6 +110,8 @@
 	zrunning_type                       = $94
 	zwater_delay                        = $95
 	zice_flag                           = $96
+	zfoot_holder_index                  = $9A
+	zcurrent_foot_holder_flag           = $9E
 	zweapon_consume_fraction            = $9F
 	z1up                                = $A6
 	zmusic_fade_out_rate                = $A7
@@ -195,6 +197,10 @@
 	aobject_hp                      = $6C0
 	aboss_hp                        = $6C1
 	aobject_id                      = $6E0
+	afoot_holder_screen             = $700
+	afoot_holder_xcoord             = $708
+	afoot_holder_ycoord             = $710
+	afoot_holder_flag               = $718
 	ano_of_special_blockset         = $720
 	aspecial_blockset_type          = $721
 	aspecial_blockset_screen        = $722

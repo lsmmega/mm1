@@ -229,7 +229,9 @@ _stage_loop:
 
 	track_queue track_landing
 
-.INCBIN  "5/5_5.bin"
+.INCBIN  "5/5_5_0.bin"
+.INCLUDE "engine/no_damage_collision.asm"
+.INCBIN  "5/5_5_1.bin"
 
 	track_queue track_teleport
 
