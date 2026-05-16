@@ -14,13 +14,13 @@ _init_enemies_special_blockset:
 	DEX
 	BPL @loop_2
 	LDA z:zcurrent_stage
-	CMP #$01
+	CMP #stage_iceman
 	BEQ @iceman
-	CMP #$04
+	CMP #stage_elecman
 	BEQ @elecman
-	CMP #$03
+	CMP #stage_fireman
 	BEQ @fireman
-	CMP #$06
+	CMP #stage_wily1
 	BEQ @wily_1
 	RTS
 
