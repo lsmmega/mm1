@@ -46,7 +46,7 @@ _objects_scrolling_left:
 	LDA aobject_xcoord
 	STA z:z04
 
-@loop:
+_objects_scrolling_left_common:
 	LDA z:z05
 	BMI _objects_scrolling_skip_common
 	CMP z:zscreen_end_of_left
@@ -71,7 +71,7 @@ _objects_scrolling_left:
 @nz:
 	DEC z:z04
 	DEC z:z0C
-	BNE @loop
+	BNE _objects_scrolling_left_common
 
 @skip:
 	RTS

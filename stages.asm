@@ -258,6 +258,7 @@ _run_enemies_ai:
 .INCBIN  "5/5_9_1.bin"
 .INCLUDE "engine/objects_scrolling.asm"
 .INCBIN  "5/5_9_2_0.bin"
+.INCLUDE "engine/draw_entire_screen.asm"
 .INCLUDE "engine/init_enemies_special_blockset.asm"
 .INCBIN  "5/5_9_2_1.bin"
 .INCLUDE "engine/weapons.asm"
