@@ -110,6 +110,9 @@
 	zrunning_type                       = $94
 	zwater_delay                        = $95
 	zice_flag                           = $96
+	zice_toward                         = $97
+	zice_xcoord_speed_fraction          = $98
+	zice_xcoord_speed                   = $99
 	zfoot_holder_index                  = $9A
 	zcurrent_foot_holder_flag           = $9E
 	zweapon_consume_fraction            = $9F
