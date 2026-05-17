@@ -232,13 +232,7 @@ _stage_loop:
 .INCBIN  "5/5_5_0.bin"
 .INCLUDE "engine/no_damage_collision.asm"
 .INCBIN  "5/5_5_1.bin"
-
-	track_queue track_teleport
-
-.INCBIN  "5/5_6.bin"
-
-	track_queue track_megaman_hit
-
+.INCLUDE "engine/handle_special_megaman_objects.asm"
 .INCBIN  "5/5_7_0.bin"
 .INCLUDE "engine/objects_screen.asm"
 
