@@ -41,6 +41,7 @@
 	zscroll_end_direction               = $26
 	zscreen_end_of_left                 = $27
 	zscreen_end_of_right                = $28
+	zscroll_direction_index             = $29
 	ztsa_blockset_pointers              = $2A
 	zladder_upper_xcoord                = $2E
 	zobject_ram_index                   = $2F
@@ -103,8 +104,12 @@
 	zsprites_tiles_palette_index        = $7A
 	zenemies_screen_thread              = $7B
 	zending_update_object_palette_index = $8B
+	zenemies_index                      = $8C
 	zobjects_scrolling_flag             = $8D
 	zspecial_blockset_index             = $8E
+	zwatcher_index                      = $8F
+	zwatcher_screen                     = $90
+	zwatcher_timer                      = $91
 	zspawn_tiles_size                   = $92
 	zspawn_tiles_index                  = $93
 	zrunning_type                       = $94
