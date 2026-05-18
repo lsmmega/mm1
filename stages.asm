@@ -247,7 +247,7 @@ _run_enemies_ai:
 
 .INCBIN  "5/5_9_0_0.bin"
 .INCLUDE "engine/objects_vertical.asm"
-.INCBIN  "5/5_9_0_1.bin"
+.INCLUDE "engine/ice_tsa.asm"
 .INCLUDE "engine/objects_toward.asm"
 .INCBIN  "5/5_9_1.bin"
 .INCLUDE "engine/objects_scrolling.asm"

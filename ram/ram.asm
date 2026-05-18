@@ -119,6 +119,9 @@
 	zice_xcoord_speed_fraction          = $98
 	zice_xcoord_speed                   = $99
 	zfoot_holder_index                  = $9A
+	zentire_toward                      = $9B
+	zalternative_xcoord_speed_fraction  = $9C
+	zalternative_xcoord_speed           = $9D
 	zcurrent_foot_holder_flag           = $9E
 	zweapon_consume_fraction            = $9F
 	z1up                                = $A6

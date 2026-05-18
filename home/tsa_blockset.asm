@@ -67,6 +67,8 @@ _check_object_ycoord_collision_with_background:
 	LDA #block
 	STA z:ztsa_blockset_pointers
 	JMP _bankswitch_05
+
+_check_tsa_collision:
 	LDA #$00
 	STA z:zladder_flag
 	LDA aobject_xcoord

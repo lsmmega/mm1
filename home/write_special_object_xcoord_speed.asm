@@ -9,15 +9,17 @@ _write_special_object_xcoord_speed:
 	DEY
 	BPL @loop
 	LDY #$00
-	JMP @continue
+	JMP _write_special_object_xcoord_speed_continue
 
 @is_special_object_id:
 	LDA index_xcoord_speed_with_special_object_table, Y
 	TAY
-	JMP @continue
+	JMP _write_special_object_xcoord_speed_continue
+
+_write_special_object_xcoord_speed_common:
 	zbankswitch $06
 
-@continue:
+_write_special_object_xcoord_speed_continue:
 	LDA special_object_xcoord_speed_table, Y
 	PHA
 	AND #%11110000
