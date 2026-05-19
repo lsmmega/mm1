@@ -226,10 +226,7 @@ _stage_loop:
 .INCBIN  "5/5_3_1.bin"
 .INCLUDE "engine/refilling.asm"
 .INCBIN  "5/5_4.bin"
-
-	track_queue track_landing
-
-.INCBIN  "5/5_5_0.bin"
+.INCLUDE "engine/run_megaman.asm"
 .INCLUDE "engine/no_damage_collision.asm"
 .INCBIN  "5/5_5_1.bin"
 .INCLUDE "engine/handle_special_megaman_objects.asm"

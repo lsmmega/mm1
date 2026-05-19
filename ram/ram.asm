@@ -43,6 +43,7 @@
 	zscreen_end_of_right                = $28
 	zscroll_direction_index             = $29
 	ztsa_blockset_pointers              = $2A
+	zlast_ycoord                        = $2D
 	zladder_upper_xcoord                = $2E
 	zobject_ram_index                   = $2F
 	zladder_flag                        = $30
