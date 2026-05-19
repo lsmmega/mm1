@@ -234,6 +234,7 @@ _stage_loop:
 .INCBIN  "5/5_5_1.bin"
 .INCLUDE "engine/handle_special_megaman_objects.asm"
 .INCBIN  "5/5_7_0.bin"
+.INCLUDE "engine/change_direction.asm"
 .INCLUDE "engine/objects_screen.asm"
 
 _run_enemies_ai:
