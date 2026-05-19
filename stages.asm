@@ -228,7 +228,6 @@ _stage_loop:
 .INCBIN  "5/5_4.bin"
 .INCLUDE "engine/run_megaman.asm"
 .INCLUDE "engine/no_damage_collision.asm"
-.INCBIN  "5/5_5_1.bin"
 .INCLUDE "engine/handle_special_megaman_objects.asm"
 .INCBIN  "5/5_7_0.bin"
 .INCLUDE "engine/change_direction.asm"
