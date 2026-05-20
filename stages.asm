@@ -229,7 +229,7 @@ _stage_loop:
 .INCLUDE "engine/run_megaman.asm"
 .INCLUDE "engine/no_damage_collision.asm"
 .INCLUDE "engine/handle_special_megaman_objects.asm"
-.INCBIN  "5/5_7_0.bin"
+.INCLUDE "engine/ladder_tsa.asm"
 .INCLUDE "engine/change_direction.asm"
 .INCLUDE "engine/objects_screen.asm"
 
