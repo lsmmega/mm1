@@ -250,6 +250,7 @@ _run_enemies_ai:
 .INCBIN  "5/5_9_2_0.bin"
 .INCLUDE "engine/draw_entire_screen.asm"
 .INCLUDE "engine/init_enemies_special_blockset.asm"
+.INCLUDE "engine/check_megaman_damaged.asm"
 .INCBIN  "5/5_9_2_1.bin"
 .INCLUDE "engine/weapons.asm"
 .INCBIN  "5/5_16.bin"
