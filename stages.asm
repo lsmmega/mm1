@@ -225,7 +225,6 @@ _stage_loop:
 .INCLUDE "data/wily_stage_thousands_clear_points.asm"
 .INCBIN  "5/5_3_1.bin"
 .INCLUDE "engine/refilling.asm"
-.INCBIN  "5/5_4.bin"
 .INCLUDE "engine/run_megaman.asm"
 .INCLUDE "engine/no_damage_collision.asm"
 .INCLUDE "engine/handle_special_megaman_objects.asm"

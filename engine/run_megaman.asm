@@ -1,3 +1,37 @@
+_megaman_on_stage:
+	LDX #$00
+	STX z:zobject_ram_index
+	LDA aobject_flag
+	AND #%01111111
+	STA aobject_flag
+	AND #%00001111
+	BEQ @no_heavily_handle
+	JMP _handle_megaman_heavily_objects
+
+@no_heavily_handle:
+	LDA aobject_timer
+	AND #%11110000
+	CMP #$20
+	BEQ _run_megaman_on_stage
+	LDA aobject_flag
+	AND #%00010000
+	BNE @on_ladder
+	LDA z:zladder_flag
+	AND #%01111111
+	BEQ _run_megaman_on_stage
+	LDA z:zjoy1_pressed
+	AND #up_button | down_button
+	BEQ _run_megaman_on_stage
+	ORA z:zladder_flag
+	CMP #$11
+	BEQ _run_megaman_on_stage
+	CMP #$2E
+	BEQ _run_megaman_on_stage
+	JMP _ladder_tsa
+
+@on_ladder:
+	JMP _climbing_ladder
+
 _run_megaman_on_stage:
 	LDA z:zrunning_type
 	BEQ @not_on_water
