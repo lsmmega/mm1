@@ -231,18 +231,18 @@ _fire_storm_trajectory:
 	TAX
 	CLC
 	LDA aobject_ycoord
-	ADC @ycoord_table, X
+	ADC flip_ycoord_trajectory_table, X
 	STA aobject_ycoord + 6
 	CLC
 	LDA aobject_xcoord
-	ADC @xcoord_table, X
+	ADC flip_xcoord_trajectory_table, X
 	STA aobject_xcoord + 6
 	LDA aobject_screen
-	ADC @screen_table, X
+	ADC flip_screen_trajectory_table, X
 	STA aobject_screen + 6
 	RTS
 
-@ycoord_table:
+flip_ycoord_trajectory_table:
 	.BYTE +20
 	.BYTE +14
 	.BYTE +0
@@ -252,7 +252,7 @@ _fire_storm_trajectory:
 	.BYTE +0
 	.BYTE +14
 
-@xcoord_table:
+flip_xcoord_trajectory_table:
 	.BYTE +0
 	.BYTE -14
 	.BYTE -20
@@ -262,7 +262,7 @@ _fire_storm_trajectory:
 	.BYTE +20
 	.BYTE +14
 
-@screen_table:
+flip_screen_trajectory_table:
 	.BYTE +0
 	.BYTE -1
 	.BYTE -1
