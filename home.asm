@@ -74,7 +74,6 @@
 .INCLUDE "home/generate_wily_machine_1_phase_2.asm"
 .INCLUDE "home/boss_hp_filled.asm"
 .INCLUDE "home/objects_32_palette_alternate.asm"
-.INCBIN  "home/home_18_0.bin"
 .INCLUDE "home/cwu_01p.asm"
 .INCLUDE "home/one_shoot.asm"
 .INCLUDE "home/object_speed_init.asm"

@@ -1,3 +1,47 @@
+_enemies_cwu_01p:
+	LDA aobject_frameset_timer, X
+	AND #%11110000
+	CMP #$30
+	BNE @appearing
+	STA aobject_frameset_timer, X
+
+@appearing:
+	LDA aobject_frozen_timer, X
+	BNE @dont_shoot
+	DEC aobject_timer, X
+	LDA aobject_timer, X
+	CMP #$60
+	BCS @dont_shoot
+	AND #%00011111
+	BNE @dont_shoot
+	LDA aobject_flag, X
+	PHA
+	JSR _enemies_face_to_megaman
+	STA z:z0C
+	LDA #$00
+	JSR _generate_object
+	BCS @exist
+	LDA #$7C
+	STA aobject_pointer, X
+	LDA #$02
+	STA z:z01
+	LDA #$00
+	STA z:z00
+	JSR _update_distance_speed
+
+@exist:
+	LDX z:zobject_ram_index
+	PLA
+	STA aobject_flag, X
+	LDA aobject_timer, X
+	BNE @dont_reset
+	LDA #$DE
+	STA aobject_timer, X
+
+@dont_shoot:
+@dont_reset:
+	JSR _check_enemies_collision
+
 _check_cwu_01p_killed:
 	LDA aobject_id, X
 	CMP #objects_cwu_01p_killed
