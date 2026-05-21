@@ -153,7 +153,7 @@ _load_copy_robot:
 @loop_9:
 	LDX #$14
 	STX z:zobject_ram_index
-	JSR _objects_32_palette_alternate
+	JSR _enemies_32_palette_alternate
 	JSR _sprites
 	JSR _nmi_wait
 	DEC z:ztimer
