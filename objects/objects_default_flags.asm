@@ -1,3 +1,4 @@
+objects_default_flags_table:
 ;objects_bunby_heli
 	.BYTE cant_collide_map | can_collide_megaman | can_collide_megaman_bullet | objects_not_temporary | objects_visible | objects_left
 

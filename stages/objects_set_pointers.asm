@@ -1,3 +1,4 @@
+objects_set_pointers:
 ;objects set pointers
 	.WORD objects_set_cutman
 	.WORD objects_set_iceman

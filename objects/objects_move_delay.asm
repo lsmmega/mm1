@@ -1,3 +1,4 @@
+objects_move_delay_table:
 ;objects move delay
 	.BYTE $00 ;objects_bunby_heli
 	.BYTE $1F ;objects_metall

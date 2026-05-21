@@ -108,9 +108,9 @@
 	zenemies_index                      = $8C
 	zobjects_scrolling_flag             = $8D
 	zspecial_blockset_index             = $8E
-	zwatcher_index                      = $8F
-	zwatcher_screen                     = $90
-	zwatcher_timer                      = $91
+	zspecial_enemies_index              = $8F
+	zspecial_enemies_id                 = $90
+	zspecial_enemies_timer              = $91
 	zspawn_tiles_size                   = $92
 	zspawn_tiles_index                  = $93
 	zrunning_type                       = $94
@@ -127,6 +127,8 @@
 	zweapon_consume_fraction            = $9F
 	z1up                                = $A6
 	zmusic_fade_out_rate                = $A7
+	zenemies_coord_speed_fraction       = $A8
+	zenemies_coord_speed                = $A9
 	zyellow_devil_object_tiles_flag     = $AA
 	zcheckpoint_pointer                 = $AB
 	zcurrent_boss                       = $AC

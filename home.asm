@@ -64,7 +64,7 @@
 .INCLUDE "home/screen.asm"
 .INCLUDE "home/tsa.asm"
 .INCLUDE "home/init_stage_select.asm"
-.INCBIN  "home/home_11_3.bin"
+.INCLUDE "home/find_enemies.asm"
 .INCLUDE "home/bosses_ai.asm"
 .INCLUDE "home/load_copy_robot.asm"
 .INCLUDE "home/boss_hp_filled_regular.asm"

@@ -45,7 +45,7 @@ _init_regular:
 	STA z:zscreen_xcoord
 	STA z:zcurrent_weapon
 	STA z:zboss_ai_pointer
-	STA z:zwatcher_index
+	STA z:zspecial_enemies_index
 	STA z:zice_xcoord_speed_fraction
 	STA z:zice_xcoord_speed
 	STA aboss_hp

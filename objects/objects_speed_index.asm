@@ -1,3 +1,4 @@
+objects_speed_index_table:
 ;objects speed index, related to home/object_speed_init.asm
 	.BYTE $2C << 2 ;objects_bunby_heli
 	.BYTE $02 << 2 ;objects_metall
