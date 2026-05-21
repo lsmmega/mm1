@@ -34,13 +34,13 @@ _refilling:
 @4_frames:
 	TXA
 	PHA
-	JSR _refilling_timer
+	JSR _frozen_timer
 	PLA
 	TAX
 	JMP @loop
 
 @done:
-	JSR _refilling_timer
+	JSR _frozen_timer
 
 @skip:
 	LDA #$00
@@ -48,7 +48,7 @@ _refilling:
 	STA z:zjoy1_pressed
 	RTS
 
-_refilling_timer:
+_frozen_timer:
 	INC aobject_frozen_timer
 	JSR _short_frozen
 	JSR _sprites
