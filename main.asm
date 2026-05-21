@@ -1,3 +1,4 @@
+	.FEATURE FORCE_RANGE
 .INCLUDE "macros/far.asm"
 .INCLUDE "stages.asm"
 .INCLUDE "miscellaneous.asm"

@@ -1,5 +1,4 @@
 _create_explosion_object:
-	.FEATURE FORCE_RANGE
 	LDA aobject_ycoord, Y
 	STA aobject_ycoord, X
 	LDA aobject_xcoord, Y

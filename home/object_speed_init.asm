@@ -1,5 +1,4 @@
 _object_speed_init:
-	.FEATURE FORCE_RANGE
 	LDA object_speed_init_table, Y
 	STA aobject_ycoord_speed_fraction, X
 	LDA object_speed_init_table + 1, Y

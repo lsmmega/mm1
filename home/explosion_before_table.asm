@@ -1,5 +1,4 @@
 explosion_before_xcoord_table:
-	.FEATURE FORCE_RANGE
 	.BYTE -5, +5, +0
 
 explosion_before_screen_table:

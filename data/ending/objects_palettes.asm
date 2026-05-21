@@ -1,5 +1,4 @@
 ending_objects_and_palettes_set_table:
-	.FEATURE FORCE_RANGE
 ;1
 	.BYTE $80 | ($1B - $10) ;xcoord, screen
 

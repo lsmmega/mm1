@@ -1,5 +1,4 @@
 oam_ycoord:
-	.FEATURE FORCE_RANGE
 	.BYTE -12
 	.BYTE -12
 	.BYTE -12

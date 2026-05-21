@@ -1,5 +1,4 @@
 stage_select_objects_table:
-	.FEATURE FORCE_RANGE
 ;object id, ycoord, xcoord, right/left
 	.BYTE $22, $34, $60, objects_right ;cutman 
 	.BYTE $37, $74, $C0, objects_left  ;iceman 

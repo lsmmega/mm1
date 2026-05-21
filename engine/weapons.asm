@@ -1,5 +1,4 @@
 _run_weapons_trajectory:
-	.FEATURE FORCE_RANGE
 	LDA z:zweapon_firing
 	BMI @fire
 	LDA z:zcurrent_weapon

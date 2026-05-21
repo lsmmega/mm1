@@ -1,5 +1,4 @@
 nmi:
-	.FEATURE FORCE_RANGE
 	PHA
 	PHX
 	PHY

@@ -1,5 +1,4 @@
 _enemies_immnue_hit:
-	.FEATURE FORCE_RANGE
 	LDA aobject_flag, X
 	AND #~objects_hitting_bullet
 	STA aobject_flag, X

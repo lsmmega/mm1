@@ -1,5 +1,4 @@
 _check_object_ycoord_collision_with_background:
-	.FEATURE FORCE_RANGE
 	JSR _bankswitch_stage
 	LDA z:z01
 	STA z:z0C

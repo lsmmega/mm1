@@ -1,5 +1,4 @@
 _change_direction:
-	.FEATURE FORCE_RANGE
 	LDA aobject_flag
 	AND #~objects_right
 	STA aobject_flag
