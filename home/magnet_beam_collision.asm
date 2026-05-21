@@ -1,4 +1,4 @@
-_magnet_beam_collision:
+_magnet_beam_object_collision:
 	LDA amagnet_beam_length, X
 	AND #%01111100
 	ASL

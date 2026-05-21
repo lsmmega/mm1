@@ -1,4 +1,4 @@
-_super_arm_collision:
+_super_arm_special_blockset_collision:
 	LDA z:zweapon_firing
 	BNE @skip
 	LDA aobject_flag
@@ -82,7 +82,7 @@ _find_replace_special_blockset:
 weapons_special_blockset_collision_xcoord_table:
 	.BYTE -9, -1, +8, +0
 
-_thunder_beam_collision:
+_thunder_beam_special_blockset_collision:
 	LDA #$FF
 	STA z:zweapon_timer
 	LDA #$04
@@ -101,6 +101,8 @@ _thunder_beam_collision:
 	STA z:z00
 	LDA aspecial_blockset_screen, Y
 	STA z:z01
+
+_super_arm_thunder_beam_special_blockset_collision_common:
 	LDA aobject_flag + 5
 	AND #objects_right
 	ORA #can_collide_megaman_bullet

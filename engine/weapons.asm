@@ -5,7 +5,7 @@ _run_weapons_trajectory:
 	LDA z:zcurrent_weapon
 	CMP #$06
 	BNE @not_super_arm
-	JSR _super_arm_collision
+	JSR _super_arm_special_blockset_collision
 
 @not_super_arm:
 	RTS
@@ -353,7 +353,7 @@ _thunder_beam_trajectory:
 	JSR _special_blockset_collision
 	CMP #$82
 	BNE @skip
-	JMP _thunder_beam_collision
+	JMP _thunder_beam_special_blockset_collision
 
 @skip:
 	INX
@@ -501,7 +501,7 @@ _magnet_beam_trajectory:
 	STA amagnet_beam_screen, X
 	LDA aobject_ycoord
 	STA amagnet_beam_ycoord, X
-	JSR _magnet_beam_collision
+	JSR _magnet_beam_object_collision
 	CPY #$01
 	BNE @running
 
@@ -783,7 +783,7 @@ _use_super_arm:
 	LDX #$05
 	JSR _set_weapon_attributes
 	LDY z:zcurrent_stage
-	LDA @hold_object_table, Y
+	LDA hold_guts_block_object_table, Y
 	STA aobject_pointer, X
 	RTS
 
@@ -805,14 +805,14 @@ _use_super_arm:
 	STA z:zweapon_timer
 	JSR _use_weapons_heavily
 	LDY z:zcurrent_stage
-	LDA @hold_object_table, Y
+	LDA hold_guts_block_object_table, Y
 	STA aobject_pointer, X
 	JMP _calc_weapon_consume
 
 @throwing:
 	RTS
 
-@hold_object_table:
+hold_guts_block_object_table:
 	.BYTE $6C ;cutman
 	.BYTE $00 ;iceman
 	.BYTE $00 ;bombman
