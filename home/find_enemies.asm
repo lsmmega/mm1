@@ -269,8 +269,8 @@ _tiles_spawning:
 	LDX #$10
 
 @loop:
-	JSR _enemies_one_shoot
-	BCS @not_clear
+	JSR _check_enemies
+	BCS @not_hidden
 	LDA aobject_flag, X
 	ORA #$08
 	STA aobject_flag, X
@@ -292,7 +292,7 @@ _tiles_spawning:
 	INX
 	BNE @loop
 
-@not_clear:
+@not_hidden:
 	LDY z:z03
 	RTS
 

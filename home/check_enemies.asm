@@ -1,4 +1,4 @@
-_enemies_one_shoot:
+_check_enemies:
 @loop:
 	LDA aobject_pointer, X
 	CMP #$FF
