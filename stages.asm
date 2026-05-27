@@ -245,7 +245,7 @@ _run_enemies_ai:
 .INCLUDE "engine/objects_vertical.asm"
 .INCLUDE "engine/ice_tsa.asm"
 .INCLUDE "engine/objects_toward.asm"
-.INCBIN  "5/5_9_1.bin"
+.INCLUDE "data/stages/open_door_screen_set.asm"
 .INCLUDE "engine/objects_scrolling.asm"
 .INCBIN  "5/5_9_2_0.bin"
 .INCLUDE "engine/draw_entire_screen.asm"
