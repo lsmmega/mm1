@@ -112,7 +112,7 @@ _boss_death:
 @is_wily_machine_1_phase_2:
 	LDX #$10
 	STX z:zobject_ram_index
-	JSR _wily_machine_1_explosion
+	JSR _enemies_explosion
 	LDA #$F8
 	STA aobject_ycoord + 16
 	STA aobject_ycoord + 1

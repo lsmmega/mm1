@@ -1,6 +1,6 @@
 _objects_vertical_moving:
 	LDX z:zobject_ram_index
-	JSR @run_ycoord
+	JSR _objects_run_ycoord
 	BCC @not_hidden
 	LDX z:zobject_ram_index
 	BNE @not_megaman_1
@@ -128,7 +128,7 @@ _objects_vertical_moving:
 	JSR _check_object_xcoord_collision_with_background
 	RTS
 
-@run_ycoord:
+_objects_run_ycoord:
 	SEC
 	LDA aobject_ycoord_fraction, X
 	SBC aobject_ycoord_speed_fraction, X

@@ -75,7 +75,7 @@
 .INCLUDE "home/boss_hp_filled.asm"
 .INCLUDE "home/objects_32_palette_alternate.asm"
 .INCLUDE "home/cwu_01p.asm"
-.INCLUDE "home/one_shoot.asm"
+.INCLUDE "home/check_enemies.asm"
 .INCLUDE "home/object_speed_init.asm"
 .INCLUDE "home/distance.asm"
 .INCLUDE "home/enemies_face_to_megaman.asm"

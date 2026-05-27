@@ -253,34 +253,6 @@ _run_enemies_ai:
 .INCLUDE "engine/check_megaman_damaged.asm"
 .INCLUDE "engine/weapons_collision.asm"
 .INCLUDE "engine/weapons.asm"
-.INCBIN  "5/5_16.bin"
-
-	track_queue track_big_eye
-
-.INCBIN  "5/5_17.bin"
-.INCLUDE "engine/sprites/wily_machine_1_explosion.asm"
-.INCBIN  "5/5_18_0.bin"
-.INCLUDE "engine/clean_objects_speed.asm"
-.INCBIN  "5/5_18_1.bin"
-
-	track_queue track_magnet_beam
-
-.INCBIN  "5/5_19.bin"
-
-	track_queue track_appearing_block
-
-.INCBIN  "5/5_20.bin"
-
-	track_queue track_explosion
-
-.INCBIN  "5/5_21.bin"
-
-	track_queue track_flood
-
-.INCBIN  "5/5_22.bin"
-
-	track_queue track_track_platform
-
-.INCBIN  "5/5_23_0.bin"
+.INCLUDE "engine/enemies.asm"
 .INCLUDE "engine/kill_drops.asm"
 .INCLUDE "engine/enemies_immnue_hit.asm"

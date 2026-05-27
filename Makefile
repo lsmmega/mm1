@@ -73,7 +73,6 @@ stages := \
 	data/stages/* \
 	data/* \
 	5/* \
-	engine/sprites/*
 
 miscellaneous := \
 	miscellaneous.asm \

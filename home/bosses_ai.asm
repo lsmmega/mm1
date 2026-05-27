@@ -1775,13 +1775,13 @@ _yellow_devil_boss_ai:
 	STA z:zboss_invincibility_time
 
 @no_invincibility:
-	LDA @jumptable, Y
+	LDA yellow_devil_ai_jumptable, Y
 	STA z:z04
-	LDA @jumptable + 1, Y
+	LDA yellow_devil_ai_jumptable + 1, Y
 	STA z:z05
 	JMP (z04)
 
-@ready:
+_yellow_devil_ready:
 	DEC z:zboss_move_stage
 	BEQ @start
 	RTS
@@ -1789,11 +1789,11 @@ _yellow_devil_boss_ai:
 @start:
 	LDX #$02
 
-@loop_1:
+@loop:
 	LDA @background_palette_table, X
 	STA abackground_palette_original + 5, X
 	DEX
-	BPL @loop_1
+	BPL @loop
 	JSR _update_background_palette
 	INC z:zboss_ai_pointer
 	LDA aobject_screen
@@ -1809,20 +1809,20 @@ _yellow_devil_boss_ai:
 @background_palette_table:
 	.BYTE dark_orange, light_orange, white_orange
 
-@right_blob:
+_yellow_devil_right_blob:
 	LDA z:zboss_move_stage
 	CMP #$13
-	BEQ @done_1
+	BEQ @done
 	LDA z:zboss_move_timer
 	CMP #$19
-	BEQ @create_next_blob_1
+	BEQ @create_next_blob
 	INC z:zboss_move_timer
 	RTS
 
-@create_next_blob_1:
+@create_next_blob:
 	LDA #$00
 	STA z:zboss_move_timer
-	JSR @create_blob
+	JSR _yellow_devil_create_blob
 	LDA #$08
 	STA aobject_xcoord, X
 	LDA #$31
@@ -1831,31 +1831,31 @@ _yellow_devil_boss_ai:
 	JSR _object_speed_init
 	RTS
 
-@done_1:
+@done:
 	INC z:zboss_ai_pointer
 	LDA #$40
 	STA z:zboss_move_timer
 	RTS
 
-@left_blob:
+_yellow_devil_left_blob:
 	LDA z:zboss_move_stage
 	CMP #$26
-	BEQ @done_2
+	BEQ _yellow_devil_left_blob_done
 
-@continue_1:
+_yellow_devil_blob_continue:
 	LDA z:zboss_move_timer
 	CMP #$19
-	BEQ @create_next_blob_2
+	BEQ @create_next_blob
 	INC z:zboss_move_timer
 	RTS
 
-@create_next_blob_2:
+@create_next_blob:
 	LDA #$00
 	STA z:zboss_move_timer
-	JSR @create_blob
+	JSR _yellow_devil_create_blob
 	RTS
 
-@done_2:
+_yellow_devil_left_blob_done:
 	INC z:zboss_ai_pointer
 	LDA #$30
 	STA z:zboss_move_timer
@@ -1863,19 +1863,19 @@ _yellow_devil_boss_ai:
 	STA z:zboss_move_stage
 	RTS
 
-@return_right_blob:
+_yellow_devil_return_right_blob:
 	LDA z:zboss_move_stage
 	CMP #$13
-	BNE @continue_1
+	BNE _yellow_devil_blob_continue
 	LDA #$30
 	STA z:zboss_move_timer
 	LDA #$07
 	STA z:zboss_ai_pointer
 	RTS
 
-@eye:
+_yellow_devil_eye:
 	DEC z:zboss_move_timer
-	BNE @nz_1
+	BNE @nz
 	LDA #$05
 	JSR _random_integer
 	TAY
@@ -1887,9 +1887,9 @@ _yellow_devil_boss_ai:
 	INX
 
 @is_right_blob:
-	LDA @eye_xcoord_table, X
+	LDA yellow_devil_eye_xcoord_table, X
 	STA aobject_xcoord + 1
-	LDA @eye_ycoord_table, Y
+	LDA yellow_devil_eye_ycoord_table, Y
 	STA aobject_ycoord + 1
 	LDA #can_collide_megaman | can_collide_megaman_bullet
 	STA aobject_flag + 1
@@ -1898,10 +1898,10 @@ _yellow_devil_boss_ai:
 	JSR _compare_megaman_xcoord_with_bosses_xcoord
 	INC z:zboss_ai_pointer
 
-@nz_1:
+@nz:
 	RTS
 
-@shoot:
+_yellow_devil_shoot:
 	LDA aobject_frameset_timer + 1
 	BEQ @move_blob
 	CMP #$20
@@ -1911,10 +1911,10 @@ _yellow_devil_boss_ai:
 	BCS @skip
 	LDY #$21
 	DEC z:zboss_move_timer
-	BNE @nz_2
+	BNE @nz
 	LDY #$30
 
-@nz_2:
+@nz:
 	STY aobject_frameset_timer + 1
 	RTS
 
@@ -1925,14 +1925,14 @@ _yellow_devil_boss_ai:
 	STA z:zobject_ram_index
 	LDA #$2D
 	JSR _generate_object
-	BCS @exist_1
+	BCS @exist
 	LDA #$07
 	STA z:z01
 	LDA #$00
 	STA z:z00
 	JSR _update_distance_speed
 
-@exist_1:
+@exist:
 	LDA #$3F
 	STA z:zboss_move_timer
 	RTS
@@ -1947,7 +1947,7 @@ _yellow_devil_boss_ai:
 @skip:
 	RTS
 
-@eye_xcoord_table:
+yellow_devil_eye_xcoord_table:
 ;right, left
 	.BYTE $B8, $48
 	.BYTE $B5, $45
@@ -1955,32 +1955,32 @@ _yellow_devil_boss_ai:
 	.BYTE $B4, $44
 	.BYTE $B5, $45
 
-@eye_ycoord_table:
+yellow_devil_eye_ycoord_table:
 	.BYTE $55, $5A, $60, $66, $6C
 
-@create_blob:
+_yellow_devil_create_blob:
 	LDA #$00
 	STA z:zobject_ram_index
 	LDA #$38
 	JSR _generate_object
-	BCS @exist_2
+	BCS @exist
 	LDY z:zboss_move_stage
 	CPY #$13
 	BCS @is_left_blob
 	LDA #can_collide_megaman | objects_right
 	STA aobject_flag, X
-	LDA @left_blob_coord_table, Y
-	BNE @continue_2
+	LDA yellow_devil_left_blob_coord_table, Y
+	BNE @continue
 
 @is_left_blob:
 	LDA #can_collide_megaman
 	STA aobject_flag, X
-	LDA @right_blob_coord_table - $13, Y
+	LDA yellow_devil_right_blob_coord_table - $13, Y
 
-@continue_2:
+@continue:
 	AND #%11110000
 	STA aobject_xcoord, X
-	LDA @right_blob_coord_table, Y
+	LDA yellow_devil_right_blob_coord_table, Y
 	PHA
 	AND #%11110000
 	STA aobject_hp, X
@@ -1999,57 +1999,57 @@ _yellow_devil_boss_ai:
 	JSR _object_speed_init
 	INC z:zboss_move_stage
 
-@exist_2:
+@exist:
 	RTS
 
-@draw_yellow_devil_tiles:
+_draw_yellow_devil_tiles:
 	LDY aobject_timer, X
-	LDA @draw_tiles_table, Y
+	LDA yellow_devil_draw_tiles_table, Y
 	CMP #$FF
 	BNE @not_double_1
-	LDA @draw_tiles_table + 2, Y
+	LDA yellow_devil_draw_tiles_table + 2, Y
 	STA z:z05
-	LDA @draw_tiles_table + 3, Y
+	LDA yellow_devil_draw_tiles_table + 3, Y
 	STA z:z04
-	LDX @draw_tiles_table + 1, Y
-	JSR @write_special_tiles
+	LDX yellow_devil_draw_tiles_table + 1, Y
+	JSR _yellow_devil_write_special_tiles
 	LDX z:zobject_ram_index
-	JSR @convert_coord_to_ppu_address
+	JSR _yellow_devil_convert_coord_to_ppu_address
 	LDY aobject_timer, X
-	LDA @draw_tiles_table + 1, Y
+	LDA yellow_devil_draw_tiles_table + 1, Y
 	ORA #$04
 	TAX
-	JSR @write_special_tiles
+	JSR _yellow_devil_write_special_tiles
 	RTS
 
 @not_double_1:
-	JSR @convert_coord_to_ppu_address
+	JSR _yellow_devil_convert_coord_to_ppu_address
 	LDX #$00
 
-@loop_2:
-	LDA @draw_tiles_table, Y
+@loop:
+	LDA yellow_devil_draw_tiles_table, Y
 	STA z:z06, X
 	INY
 	INX
 	CPX #$04
-	BNE @loop_2
-	JSR @write_to_appu_address
+	BNE @loop
+	JSR _yellow_devil_write_to_appu_address
 	RTS
 
-@write_special_tiles:
+_yellow_devil_write_special_tiles:
 	LDY #$00
 
-@loop_3:
-	LDA @draw_tiles_special_table, X
+@loop:
+	LDA yellow_devil_draw_tiles_special_table, X
 	STA a:z06, Y
 	INX
 	INY
 	CPY #$04
-	BNE @loop_3
-	JSR @write_to_appu_address
+	BNE @loop
+	JSR _yellow_devil_write_to_appu_address
 	RTS
 
-@disappear:
+_yellow_devil_disappear:
 	LDA aobject_timer, X
 	CMP #$4C
 	BCS @right
@@ -2064,37 +2064,37 @@ _yellow_devil_boss_ai:
 @left:
 	STA z:z0C
 	TAY
-	LDA @draw_tiles_table, Y
+	LDA yellow_devil_draw_tiles_table, Y
 	CMP #$FF
 	BNE @not_double_2
-	LDA @draw_tiles_table + 2, Y
+	LDA yellow_devil_draw_tiles_table + 2, Y
 	STA z:z05
-	LDA @draw_tiles_table + 3, Y
+	LDA yellow_devil_draw_tiles_table + 3, Y
 	STA z:z04
 	CPY #$08
 	BNE @not_special_02
 	LDX #$40
-	JSR @write_special_tiles
-	JMP @continue_3
+	JSR _yellow_devil_write_special_tiles
+	JMP @continue
 
 @not_special_02:
 	CPY #$54
 	BNE @not_special_15
 	LDX #$44
-	JSR @write_special_tiles
-	JMP @continue_3
+	JSR _yellow_devil_write_special_tiles
+	JMP @continue
 
 @not_special_15:
 	JSR @write_00tiles
 
-@continue_3:
-	JSR @write_to_appu_address
+@continue:
+	JSR _yellow_devil_write_to_appu_address
 	LDY z:z0C
 
 @not_double_2:
-	JSR @convert_coord_to_ppu_address
+	JSR _yellow_devil_convert_coord_to_ppu_address
 	JSR @write_00tiles
-	JSR @write_to_appu_address
+	JSR _yellow_devil_write_to_appu_address
 	RTS
 
 @write_00tiles:
@@ -2105,7 +2105,7 @@ _yellow_devil_boss_ai:
 	STA z:z09
 	RTS
 
-@write_to_appu_address:
+_yellow_devil_write_to_appu_address:
 	LDA z:zyellow_devil_object_tiles_flag
 	ASL
 	TAY
@@ -2118,20 +2118,20 @@ _yellow_devil_boss_ai:
 	TAY
 	LDX #$00
 
-@loop_4:
+@loop:
 	LDA z:z06, X
 	STA aobject_ppu_data + 18, Y
 	INY
 	INX
 	CPX #$04
-	BNE @loop_4
+	BNE @loop
 	LDX z:zobject_ram_index
 	INC z:zyellow_devil_object_tiles_flag
 	LDA #$FF
 	STA z:zobject_tiles_update_size
 	RTS
 
-@convert_coord_to_ppu_address:
+_yellow_devil_convert_coord_to_ppu_address:
 	LDA #$09
 	STA z:z05
 	LDA aobject_ycoord, X
@@ -2151,7 +2151,7 @@ _yellow_devil_boss_ai:
 	STA z:z04
 	RTS
 
-@right_blob_coord_table:
+yellow_devil_right_blob_coord_table:
 ;xcoord | ycoord >> 4
 	.BYTE $E0 | $80 >> 4 ;00
 	.BYTE $E0 | $70 >> 4 ;01
@@ -2173,7 +2173,7 @@ _yellow_devil_boss_ai:
 	.BYTE $B0 | $90 >> 4 ;11
 	.BYTE $A0 | $70 >> 4 ;12
 
-@left_blob_coord_table:
+yellow_devil_left_blob_coord_table:
 ;xcoord | ycoord >> 4
 	.BYTE $20 | $80 >> 4 ;00
 	.BYTE $20 | $70 >> 4 ;01
@@ -2195,13 +2195,13 @@ _yellow_devil_boss_ai:
 	.BYTE $50 | $90 >> 4 ;11
 	.BYTE $60 | $70 >> 4 ;12
 
-@draw_tiles_table:
+yellow_devil_draw_tiles_table:
 	.BYTE $A1, $00, $A8, $A9 ;00
 	.BYTE $96, $97, $9D, $00 ;01
-	.BYTE $FF, @length_02 - @draw_tiles_special_table, $26, $5D ;02
-	.BYTE $FF, @length_03 - @draw_tiles_special_table, $25, $5B ;03
+	.BYTE $FF, yellow_devil_draw_tiles_length_02 - yellow_devil_draw_tiles_special_table, $26, $5D ;02
+	.BYTE $FF, yellow_devil_draw_tiles_length_03 - yellow_devil_draw_tiles_special_table, $25, $5B ;03
 	.BYTE $87, $95, $87, $9C ;04
-	.BYTE $FF, @length_05 - @draw_tiles_special_table, $26, $59 ;05
+	.BYTE $FF, yellow_devil_draw_tiles_length_05 - yellow_devil_draw_tiles_special_table, $26, $59 ;05
 	.BYTE $87, $8B, $87, $8F ;06
 	.BYTE $84, $85, $87, $88 ;07
 	.BYTE $AC, $00, $B3, $00 ;08
@@ -2213,14 +2213,14 @@ _yellow_devil_boss_ai:
 	.BYTE $8A, $87, $8E, $87 ;0E
 	.BYTE $94, $87, $9A, $9B ;0F
 	.BYTE $80, $81, $86, $87 ;10
-	.BYTE $FF, @length_11 - @draw_tiles_special_table, $26, $53 ;11
+	.BYTE $FF, yellow_devil_draw_tiles_length_11 - yellow_devil_draw_tiles_special_table, $26, $53 ;11
 	.BYTE $92, $93, $98, $99 ;12
 	.BYTE $00, $EE, $E6, $E7 ;13
 	.BYTE $D8, $D9, $00, $D2 ;14
-	.BYTE $FF, @length_15 - @draw_tiles_special_table, $26, $41 ;15
-	.BYTE $FF, @length_16 - @draw_tiles_special_table, $25, $43 ;16
+	.BYTE $FF, yellow_devil_draw_tiles_length_15 - yellow_devil_draw_tiles_special_table, $26, $41 ;15
+	.BYTE $FF, yellow_devil_draw_tiles_length_16 - yellow_devil_draw_tiles_special_table, $25, $43 ;16
 	.BYTE $DA, $87, $D3, $87 ;17
-	.BYTE $FF, @length_18 - @draw_tiles_special_table, $26, $45 ;18
+	.BYTE $FF, yellow_devil_draw_tiles_length_18 - yellow_devil_draw_tiles_special_table, $26, $45 ;18
 	.BYTE $C4, $87, $C0, $87 ;19
 	.BYTE $CA, $CB, $C7, $87 ;1A
 	.BYTE $00, $E3, $00, $BA ;1B
@@ -2232,39 +2232,39 @@ _yellow_devil_boss_ai:
 	.BYTE $87, $C5, $87, $C1 ;21
 	.BYTE $87, $DB, $D4, $D5 ;22
 	.BYTE $CE, $CF, $87, $C9 ;23
-	.BYTE $FF, @length_24 - @draw_tiles_special_table, $26, $4B ;24
+	.BYTE $FF, yellow_devil_draw_tiles_length_24 - yellow_devil_draw_tiles_special_table, $26, $4B ;24
 	.BYTE $DC, $DD, $D6, $D7 ;25
 
-@draw_tiles_special_table:
-@length_02:
+yellow_devil_draw_tiles_special_table:
+yellow_devil_draw_tiles_length_02:
 	.BYTE $00, $40, $B6, $41
 	.BYTE $AE, $AF, $B4, $B5
 
-@length_03:
+yellow_devil_draw_tiles_length_03:
 	.BYTE $00, $00, $89, $00
 	.BYTE $8C, $8D, $90, $91
 
-@length_05:
+yellow_devil_draw_tiles_length_05:
 	.BYTE $00, $AD, $00, $00
 	.BYTE $87, $A0, $A6, $A7
 
-@length_11:
+yellow_devil_draw_tiles_length_11:
 	.BYTE $00, $00, $00, $B0
 	.BYTE $AA, $AB, $B1, $B2
 
-@length_15:
+yellow_devil_draw_tiles_length_15:
 	.BYTE $18, $00, $19, $B7
 	.BYTE $E0, $E1, $B8, $B9
 
-@length_16:
+yellow_devil_draw_tiles_length_16:
 	.BYTE $00, $00, $00, $C6
 	.BYTE $C2, $C3, $DE, $DF
 
-@length_18:
+yellow_devil_draw_tiles_length_18:
 	.BYTE $E2, $00, $00, $00
 	.BYTE $EF, $87, $E8, $E9
 
-@length_24:
+yellow_devil_draw_tiles_length_24:
 	.BYTE $00, $00, $BD, $00
 	.BYTE $E4, $E5, $BB, $BC
 
@@ -2274,15 +2274,15 @@ _yellow_devil_boss_ai:
 ;special 15
 	.BYTE $18, $00, $19, $00
 
-@jumptable:
-	.WORD @ready
-	.WORD @right_blob
-	.WORD @eye
-	.WORD @shoot
-	.WORD @left_blob
-	.WORD @eye
-	.WORD @shoot
-	.WORD @return_right_blob
+yellow_devil_ai_jumptable:
+	.WORD _yellow_devil_ready
+	.WORD _yellow_devil_right_blob
+	.WORD _yellow_devil_eye
+	.WORD _yellow_devil_shoot
+	.WORD _yellow_devil_left_blob
+	.WORD _yellow_devil_eye
+	.WORD _yellow_devil_shoot
+	.WORD _yellow_devil_return_right_blob
 
 _copy_robot_boss_ai:
 	LDA z:zboss_invincibility_time
