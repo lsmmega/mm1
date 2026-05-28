@@ -1,4 +1,4 @@
-_run_enemies_ai_code:
+_run_enemies_ai:
 	LDA aobject_id, X
 	ASL
 	TAY

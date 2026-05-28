@@ -232,7 +232,7 @@ _stage_loop:
 .INCLUDE "engine/change_direction.asm"
 .INCLUDE "engine/objects_screen.asm"
 
-_run_enemies_ai:
+_run_objects:
 .INCBIN  "5/5_7_1.bin"
 
 	track_queue track_fireman_move

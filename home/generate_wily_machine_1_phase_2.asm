@@ -45,7 +45,7 @@ _generate_wily_machine_1_phase_2:
 	STA aobject_flag, X
 
 @skip:
-	JSR _run_enemies_ai
+	JSR _run_objects
 	JSR _sprites
 	JSR _nmi_wait
 	LDX z:zobject_pointer

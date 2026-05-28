@@ -90,7 +90,7 @@ _load_cwu_01p_wily_machine_1:
 	BNE @loop_4
 
 @loop_5:
-	JSR _run_enemies_ai
+	JSR _run_objects
 	LDA aobject_xcoord + 16
 	CMP #$AB
 	BCS @next_2
