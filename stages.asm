@@ -247,7 +247,7 @@ _run_objects:
 .INCLUDE "engine/objects_toward.asm"
 .INCLUDE "data/stages/open_door_screen_set.asm"
 .INCLUDE "engine/objects_scrolling.asm"
-.INCBIN  "5/5_9_2_0.bin"
+.INCLUDE "engine/scrolling.asm"
 .INCLUDE "engine/draw_entire_screen.asm"
 .INCLUDE "engine/init_enemies_special_blockset.asm"
 .INCLUDE "engine/check_megaman_damaged.asm"

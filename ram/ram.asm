@@ -30,6 +30,7 @@
 	zscreen_xcoord                      = $1A
 	zscreen                             = $1B
 	zscreen_update_flag                 = $1C
+	zunused_1D                          = $1D
 	zscreen_ycoord                      = $1E
 	znmi_wait                           = $1F
 	zobject_in_process_screen           = $20
