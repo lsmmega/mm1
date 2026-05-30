@@ -1,11 +1,4 @@
 .SEGMENT "BANK00"
-.INCLUDE "constants/flags.asm"
-.INCLUDE "constants/palettes.asm"
-.INCLUDE "constants/ppu_attributes.asm"
-.INCLUDE "constants/scrolling.asm"
-.INCLUDE "constants/tiles_address.asm"
-.INCLUDE "constants/track.asm"
-.INCLUDE "macros/coords.asm"
 .INCLUDE "stages/cutman_wily1/cutman_wily1_tsa.asm"
 .INCLUDE "stages/cutman_wily1/cutman_wily1_mapset.asm"
 .INCLUDE "unused/unused_bd0.asm"
@@ -170,7 +163,6 @@ yellow_devil_tiles:
 .INCBIN  "gfx/sprites/bosses/wily_machine_1.chr"
 
 .SEGMENT "BANK04"
-.INCLUDE "ram/ram.asm"
 .INCLUDE "stages/elecman/elecman_tsa.asm"
 .INCLUDE "stages/elecman/elecman_mapset.asm"
 .INCLUDE "unused/unused_10bd0.asm"
@@ -185,7 +177,6 @@ yellow_devil_tiles:
 .INCLUDE "audio.asm"
 
 .SEGMENT "BANK05"
-.INCLUDE "macros/stack.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_ending_tsa.asm"
 .INCLUDE "stages/gutsman_ending/gutsman_ending_mapset.asm"
 .INCLUDE "unused/unused_14bd0.asm"
