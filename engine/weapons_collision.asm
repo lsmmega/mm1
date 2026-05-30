@@ -147,6 +147,8 @@ _super_arm_collision:
 	LDA aobject_pointer, X
 	CMP hold_guts_block_object_table, Y
 	BNE @undo
+
+_super_arm_collision_common:
 	SEC
 	LDA aobject_ycoord, X
 	SBC #$10

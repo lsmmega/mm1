@@ -76,6 +76,7 @@
 	zdivisor_255mode                    = $4D
 	zdivisor_constantsmode              = $4E
 	zsuper_arm_block_index              = $52
+	zhit_objects_attributes             = $53
 	zsprites_pointer                    = $54
 	zmegaman_invincibility_time         = $55
 	zboss_invincibility_time            = $56

@@ -5,6 +5,8 @@ _create_explosion_object:
 	STA aobject_xcoord, X
 	LDA aobject_screen, Y
 	STA aobject_screen, X
+
+_create_explosion_object_common:
 	LDA z:z0D
 	STA aobject_pointer, X
 	LDY z:z0C

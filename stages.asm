@@ -231,17 +231,7 @@ _stage_loop:
 .INCLUDE "engine/ladder_tsa.asm"
 .INCLUDE "engine/change_direction.asm"
 .INCLUDE "engine/objects_screen.asm"
-
-_run_objects:
-.INCBIN  "5/5_7_1.bin"
-
-	track_queue track_fireman_move
-
-.INCBIN  "5/5_8.bin"
-
-	track_queue track_explosion
-
-.INCBIN  "5/5_9_0_0.bin"
+.INCLUDE "engine/run_objects.asm"
 .INCLUDE "engine/objects_vertical.asm"
 .INCLUDE "engine/ice_tsa.asm"
 .INCLUDE "engine/objects_toward.asm"
