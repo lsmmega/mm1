@@ -8,4 +8,5 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 
 # Special Thanks
 
-[Bisqwit](https://bisqwit.iki.fi/jutut/megamansource/)
+- [Bisqwit](https://bisqwit.iki.fi/jutut/megamansource/)
+- [NesDev](https://www.nesdev.org/)
