@@ -193,28 +193,14 @@ yellow_devil_tiles:
 .INCLUDE "engine/init_stage_select.asm"
 .INCLUDE "engine/stage_start.asm"
 .INCLUDE "engine/init_regular.asm"
-
-_stage_loop:
-.INCBIN  "5/5_0_4.bin"
-
-	track_queue track_jump_into_water
-
-.INCBIN  "5/5_1.bin"
-
-	track_queue track_pause
-
-.INCBIN  "5/5_2.bin"
-
-	track_queue track_wily_boss_fighting
-
-.INCBIN  "5/5_3_0.bin"
+.INCLUDE "engine/stage_loop.asm"
 .INCLUDE "data/stages/tracks.asm"
 .INCLUDE "data/stages/checkpoints_scroll_direction_index.asm"
 .INCLUDE "data/stages/checkpoints_enemies_index.asm"
 .INCLUDE "data/ready_oam_coord.asm"
 .INCLUDE "data/stages/checkpoints_end_of_screen_x.asm"
 .INCLUDE "data/wily_stage_thousands_clear_points.asm"
-.INCBIN  "5/5_3_1.bin"
+.INCLUDE "engine/teleporting.asm"
 .INCLUDE "engine/refilling.asm"
 .INCLUDE "engine/run_megaman.asm"
 .INCLUDE "engine/no_damage_collision.asm"
@@ -228,7 +214,7 @@ _stage_loop:
 .INCLUDE "engine/objects_toward.asm"
 .INCLUDE "data/stages/open_door_screen_set.asm"
 .INCLUDE "engine/objects_scrolling.asm"
-.INCLUDE "engine/scrolling.asm"
+.INCLUDE "engine/switch_scrolling.asm"
 .INCLUDE "engine/draw_entire_screen.asm"
 .INCLUDE "engine/init_enemies_special_blockset.asm"
 .INCLUDE "engine/check_megaman_damaged.asm"

@@ -71,8 +71,7 @@ stages := \
 	stages/gutsman_ending/* \
 	engine/* \
 	data/stages/* \
-	data/* \
-	5/* \
+	data/*
 
 miscellaneous := \
 	miscellaneous.asm \
