@@ -10,7 +10,7 @@ stage_select_string:
 	.WORD stage_select_string_start
 	.WORD stage_select_string_clear_points
 
-.INCLUDE "constants/lowerbits_charmap.asm"
+.INCLUDE "constants/charmap/lowerbits.asm"
 
 stage_select_string_table:
 stage_select_string_cutman:

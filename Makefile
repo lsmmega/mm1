@@ -12,6 +12,7 @@ header := \
 home := \
 	home.asm \
 	constants/* \
+	constants/charmap/* \
 	macros/* \
 	ram/* \
 	home/* \
@@ -20,6 +21,7 @@ home := \
 stages := \
 	stages.asm \
 	constants/* \
+	constants/charmap/* \
 	macros/* \
 	ram/* \
 	stages/cutman_wily1/* \
@@ -76,6 +78,7 @@ stages := \
 miscellaneous := \
 	miscellaneous.asm \
 	constants/* \
+	constants/charmap/* \
 	macros/* \
 	sprites/pointers/* \
 	sprites/* \

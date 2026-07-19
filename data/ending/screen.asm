@@ -1,4 +1,4 @@
-.INCLUDE "constants/ending_charmap.asm"
+.INCLUDE "constants/charmap/ending.asm"
 
 ending_string_table:
 	.BYTE 5 ;string 1 total line(s)

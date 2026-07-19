@@ -1,4 +1,4 @@
-.INCLUDE "constants/upperbits_charmap.asm"
+.INCLUDE "constants/charmap/upperbits.asm"
 
 _title_game_over_screen:
 	JSR _bankswitch_stage

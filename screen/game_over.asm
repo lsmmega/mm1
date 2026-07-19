@@ -1,4 +1,4 @@
-.INCLUDE "constants/upperbits_charmap.asm"
+.INCLUDE "constants/charmap/upperbits.asm"
 
 	.BYTE $01 ;unknown
 
