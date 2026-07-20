@@ -1,6 +1,6 @@
 ;same as sprites/oam_sprites.asm, but enemies
 oam_enemies_sprites_00:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2E
 
 @start:
@@ -10,7 +10,7 @@ oam_enemies_sprites_00:
 @end:
 
 oam_enemies_sprites_01:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2E
 
 @start:
@@ -19,7 +19,7 @@ oam_enemies_sprites_01:
 @end:
 
 oam_enemies_sprites_02:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2E
 
 @start:
@@ -29,7 +29,7 @@ oam_enemies_sprites_02:
 @end:
 
 oam_enemies_sprites_03:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2E
 
 @start:
@@ -39,7 +39,7 @@ oam_enemies_sprites_03:
 @end:
 
 oam_enemies_sprites_04:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2A
 
 @start:
@@ -48,7 +48,7 @@ oam_enemies_sprites_04:
 @end:
 
 oam_enemies_sprites_05:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2A
 
 @start:
@@ -57,7 +57,7 @@ oam_enemies_sprites_05:
 @end:
 
 oam_enemies_sprites_06:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -68,7 +68,7 @@ oam_enemies_sprites_06:
 @end:
 
 oam_enemies_sprites_07:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -79,7 +79,7 @@ oam_enemies_sprites_07:
 @end:
 
 oam_enemies_sprites_08:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3C
 
 @start:
@@ -102,7 +102,7 @@ oam_enemies_sprites_08:
 @end:
 
 oam_enemies_sprites_09:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3C
 
 @start:
@@ -125,7 +125,7 @@ oam_enemies_sprites_09:
 @end:
 
 oam_enemies_sprites_0a:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -133,7 +133,7 @@ oam_enemies_sprites_0a:
 @end:
 
 oam_enemies_sprites_0b:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $01
 
 @start:
@@ -146,7 +146,7 @@ oam_enemies_sprites_0b:
 @end:
 
 oam_enemies_sprites_0c:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $01
 
 @start:
@@ -159,7 +159,7 @@ oam_enemies_sprites_0c:
 @end:
 
 oam_enemies_sprites_0d:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $01
 
 @start:
@@ -172,7 +172,7 @@ oam_enemies_sprites_0d:
 @end:
 
 oam_enemies_sprites_0e:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3B
 
 @start:
@@ -201,7 +201,7 @@ oam_enemies_sprites_0e:
 @end:
 
 oam_enemies_sprites_0f:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3B
 
 @start:
@@ -230,7 +230,7 @@ oam_enemies_sprites_0f:
 @end:
 
 oam_enemies_sprites_10:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $01
 
 @start:
@@ -243,7 +243,7 @@ oam_enemies_sprites_10:
 @end:
 
 oam_enemies_sprites_11:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $01
 
 @start:
@@ -256,7 +256,7 @@ oam_enemies_sprites_11:
 @end:
 
 oam_enemies_sprites_12:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $01
 
 @start:
@@ -269,7 +269,7 @@ oam_enemies_sprites_12:
 @end:
 
 oam_enemies_sprites_13:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $01
 
 @start:
@@ -282,7 +282,7 @@ oam_enemies_sprites_13:
 @end:
 
 oam_enemies_sprites_14:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2F
 
 @start:
@@ -291,7 +291,7 @@ oam_enemies_sprites_14:
 @end:
 
 oam_enemies_sprites_15:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -302,7 +302,7 @@ oam_enemies_sprites_15:
 @end:
 
 oam_enemies_sprites_16:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2F
 
 @start:
@@ -312,7 +312,7 @@ oam_enemies_sprites_16:
 @end:
 
 oam_enemies_sprites_17:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2F
 
 @start:
@@ -322,7 +322,7 @@ oam_enemies_sprites_17:
 @end:
 
 oam_enemies_sprites_18:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2F
 
 @start:
@@ -332,7 +332,7 @@ oam_enemies_sprites_18:
 @end:
 
 oam_enemies_sprites_19:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $40
 
 @start:
@@ -355,7 +355,7 @@ oam_enemies_sprites_19:
 @end:
 
 oam_enemies_sprites_1a:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3C
 
 @start:
@@ -370,7 +370,7 @@ oam_enemies_sprites_1a:
 @end:
 
 oam_enemies_sprites_1b:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3C
 
 @start:
@@ -385,7 +385,7 @@ oam_enemies_sprites_1b:
 @end:
 
 oam_enemies_sprites_1c:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3C
 
 @start:
@@ -400,7 +400,7 @@ oam_enemies_sprites_1c:
 @end:
 
 oam_enemies_sprites_31:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -415,7 +415,7 @@ oam_enemies_sprites_31:
 @end:
 
 oam_enemies_sprites_32:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -430,7 +430,7 @@ oam_enemies_sprites_32:
 @end:
 
 oam_enemies_sprites_33:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -445,7 +445,7 @@ oam_enemies_sprites_33:
 @end:
 
 oam_enemies_sprites_1d:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -456,12 +456,12 @@ oam_enemies_sprites_1d:
 @end:
 
 oam_enemies_sprites_1e:
-	.BYTE (oam_enemies_sprites_1e_end - oam_enemies_sprites_1e_start) / 2
+	.BYTE (oam_enemies_sprites_1e_end - oam_enemies_sprites_1e_start) >> 1
 	.BYTE $24
 
 oam_enemies_sprites_1f:
 oam_enemies_sprites_1e_start:
-	.BYTE (oam_enemies_sprites_1f_end - oam_enemies_sprites_1f_start) / 2
+	.BYTE (oam_enemies_sprites_1f_end - oam_enemies_sprites_1f_start) >> 1
 	.BYTE $30
 
 oam_enemies_sprites_1f_start:
@@ -475,7 +475,7 @@ oam_enemies_sprites_1e_end:
 oam_enemies_sprites_1f_end:
 
 oam_enemies_sprites_20:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -486,7 +486,7 @@ oam_enemies_sprites_20:
 @end:
 
 oam_enemies_sprites_21:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -497,7 +497,7 @@ oam_enemies_sprites_21:
 @end:
 
 oam_enemies_sprites_22:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -508,7 +508,7 @@ oam_enemies_sprites_22:
 @end:
 
 oam_enemies_sprites_23:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -519,7 +519,7 @@ oam_enemies_sprites_23:
 @end:
 
 oam_enemies_sprites_24:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -527,7 +527,7 @@ oam_enemies_sprites_24:
 @end:
 
 oam_enemies_sprites_25:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -538,7 +538,7 @@ oam_enemies_sprites_25:
 @end:
 
 oam_enemies_sprites_26:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $31
 
 @start:
@@ -551,7 +551,7 @@ oam_enemies_sprites_26:
 @end:
 
 oam_enemies_sprites_27:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $32
 
 @start:
@@ -563,7 +563,7 @@ oam_enemies_sprites_27:
 @end:
 
 oam_enemies_sprites_28:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $32
 
 @start:
@@ -576,7 +576,7 @@ oam_enemies_sprites_28:
 @end:
 
 oam_enemies_sprites_29:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -587,7 +587,7 @@ oam_enemies_sprites_29:
 @end:
 
 oam_enemies_sprites_2a:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2B
 
 @start:
@@ -600,7 +600,7 @@ oam_enemies_sprites_2a:
 @end:
 
 oam_enemies_sprites_2b:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2B
 
 @start:
@@ -613,7 +613,7 @@ oam_enemies_sprites_2b:
 @end:
 
 oam_enemies_sprites_2c:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2A
 
 @start:
@@ -622,7 +622,7 @@ oam_enemies_sprites_2c:
 @end:
 
 oam_enemies_sprites_2d:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2A
 
 @start:
@@ -631,7 +631,7 @@ oam_enemies_sprites_2d:
 @end:
 
 oam_enemies_sprites_2e:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $33
 
 @start:
@@ -650,7 +650,7 @@ oam_enemies_sprites_2e:
 @end:
 
 oam_enemies_sprites_2f:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $34
 
 @start:
@@ -667,7 +667,7 @@ oam_enemies_sprites_2f:
 @end:
 
 oam_enemies_sprites_30:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $35
 
 @start:
@@ -683,7 +683,7 @@ oam_enemies_sprites_30:
 @end:
 
 oam_enemies_sprites_34:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2F
 
 @start:
@@ -693,7 +693,7 @@ oam_enemies_sprites_34:
 @end:
 
 oam_enemies_sprites_35:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $36
 
 @start:
@@ -703,7 +703,7 @@ oam_enemies_sprites_35:
 @end:
 
 oam_enemies_sprites_36:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $37
 
 @start:
@@ -713,7 +713,7 @@ oam_enemies_sprites_36:
 @end:
 
 oam_enemies_sprites_37:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2E
 
 @start:
@@ -723,7 +723,7 @@ oam_enemies_sprites_37:
 @end:
 
 oam_enemies_sprites_38:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $33
 
 @start:
@@ -741,7 +741,7 @@ oam_enemies_sprites_38:
 @end:
 
 oam_enemies_sprites_39:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $33
 
 @start:
@@ -757,7 +757,7 @@ oam_enemies_sprites_39:
 @end:
 
 oam_enemies_sprites_3a:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $33
 
 @start:
@@ -773,7 +773,7 @@ oam_enemies_sprites_3a:
 @end:
 
 oam_enemies_sprites_3b:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3A
 
 @start:
@@ -791,7 +791,7 @@ oam_enemies_sprites_3b:
 @end:
 
 oam_enemies_sprites_3c:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $38
 
 @start:
@@ -806,7 +806,7 @@ oam_enemies_sprites_3c:
 @end:
 
 oam_enemies_sprites_3d:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $38
 
 @start:
@@ -823,7 +823,7 @@ oam_enemies_sprites_3d:
 @end:
 
 oam_enemies_sprites_3e:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $38
 
 @start:
@@ -838,7 +838,7 @@ oam_enemies_sprites_3e:
 @end:
 
 oam_enemies_sprites_3f:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $38
 
 @start:
@@ -854,7 +854,7 @@ oam_enemies_sprites_3f:
 @end:
 
 oam_enemies_sprites_40:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $38
 
 @start:
@@ -869,7 +869,7 @@ oam_enemies_sprites_40:
 @end:
 
 oam_enemies_sprites_41:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $38
 
 @start:
@@ -882,7 +882,7 @@ oam_enemies_sprites_41:
 @end:
 
 oam_enemies_sprites_42:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $38
 
 @start:
@@ -893,7 +893,7 @@ oam_enemies_sprites_42:
 @end:
 
 oam_enemies_sprites_43:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $38
 
 @start:
@@ -904,7 +904,7 @@ oam_enemies_sprites_43:
 @end:
 
 oam_enemies_sprites_44:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $39
 
 @start:
@@ -917,7 +917,7 @@ oam_enemies_sprites_44:
 @end:
 
 oam_enemies_sprites_45:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $39
 
 @start:
@@ -930,7 +930,7 @@ oam_enemies_sprites_45:
 @end:
 
 oam_enemies_sprites_46:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $39
 
 @start:
@@ -945,7 +945,7 @@ oam_enemies_sprites_46:
 @end:
 
 oam_enemies_sprites_47:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $40
 
 @start:
@@ -968,7 +968,7 @@ oam_enemies_sprites_47:
 @end:
 
 oam_enemies_sprites_48:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $40
 
 @start:
@@ -991,7 +991,7 @@ oam_enemies_sprites_48:
 @end:
 
 oam_enemies_sprites_49:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $40
 
 @start:
@@ -1014,7 +1014,7 @@ oam_enemies_sprites_49:
 @end:
 
 oam_enemies_sprites_4a:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1022,7 +1022,7 @@ oam_enemies_sprites_4a:
 @end:
 
 oam_enemies_sprites_4b:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1030,7 +1030,7 @@ oam_enemies_sprites_4b:
 @end:
 
 oam_enemies_sprites_4c:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1045,7 +1045,7 @@ oam_enemies_sprites_4c:
 @end:
 
 oam_enemies_sprites_4d:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1058,7 +1058,7 @@ oam_enemies_sprites_4d:
 oam_enemies_sprites_4e:
 oam_enemies_sprites_4f:
 oam_enemies_sprites_50:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1069,7 +1069,7 @@ oam_enemies_sprites_50:
 @end:
 
 oam_enemies_sprites_51:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1077,7 +1077,7 @@ oam_enemies_sprites_51:
 @end:
 
 oam_enemies_sprites_52:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1085,7 +1085,7 @@ oam_enemies_sprites_52:
 @end:
 
 oam_enemies_sprites_53:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1096,7 +1096,7 @@ oam_enemies_sprites_53:
 @end:
 
 oam_enemies_sprites_54:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1107,7 +1107,7 @@ oam_enemies_sprites_54:
 @end:
 
 oam_enemies_sprites_55:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1118,7 +1118,7 @@ oam_enemies_sprites_55:
 @end:
 
 oam_enemies_sprites_56:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $37
 
 @start:
@@ -1127,7 +1127,7 @@ oam_enemies_sprites_56:
 @end:
 
 oam_enemies_sprites_57:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1138,7 +1138,7 @@ oam_enemies_sprites_57:
 @end:
 
 oam_enemies_sprites_58:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $37
 
 @start:
@@ -1148,7 +1148,7 @@ oam_enemies_sprites_58:
 @end:
 
 oam_enemies_sprites_59:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $37
 
 @start:
@@ -1158,7 +1158,7 @@ oam_enemies_sprites_59:
 @end:
 
 oam_enemies_sprites_5a:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $37
 
 @start:
@@ -1169,7 +1169,7 @@ oam_enemies_sprites_5a:
 
 oam_enemies_sprites_5b:
 oam_enemies_sprites_5c:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3B
 
 @start:
@@ -1179,7 +1179,7 @@ oam_enemies_sprites_5c:
 @end:
 
 oam_enemies_sprites_5d:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $35
 
 @start:
@@ -1200,7 +1200,7 @@ oam_enemies_sprites_5d:
 @end:
 
 oam_enemies_sprites_5e:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1208,7 +1208,7 @@ oam_enemies_sprites_5e:
 @end:
 
 oam_enemies_sprites_5f:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3B
 
 @start:
@@ -1218,7 +1218,7 @@ oam_enemies_sprites_5f:
 @end:
 
 oam_enemies_sprites_60:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1234,7 +1234,7 @@ oam_enemies_sprites_60:
 @end:
 
 oam_enemies_sprites_61:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1250,7 +1250,7 @@ oam_enemies_sprites_61:
 @end:
 
 oam_enemies_sprites_62:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1266,7 +1266,7 @@ oam_enemies_sprites_62:
 @end:
 
 oam_enemies_sprites_63:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1282,7 +1282,7 @@ oam_enemies_sprites_63:
 @end:
 
 oam_enemies_sprites_64:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3D
 
 @start:
@@ -1294,7 +1294,7 @@ oam_enemies_sprites_64:
 @end:
 
 oam_enemies_sprites_65:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3E
 
 @start:
@@ -1308,7 +1308,7 @@ oam_enemies_sprites_65:
 @end:
 
 oam_enemies_sprites_66:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3F
 
 @start:
@@ -1321,7 +1321,7 @@ oam_enemies_sprites_66:
 @end:
 
 oam_enemies_sprites_67:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1332,7 +1332,7 @@ oam_enemies_sprites_67:
 @end:
 
 oam_enemies_sprites_68:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1343,7 +1343,7 @@ oam_enemies_sprites_68:
 @end:
 
 oam_enemies_sprites_69:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1354,7 +1354,7 @@ oam_enemies_sprites_69:
 @end:
 
 oam_enemies_sprites_6a:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1365,7 +1365,7 @@ oam_enemies_sprites_6a:
 @end:
 
 oam_enemies_sprites_6b:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1376,7 +1376,7 @@ oam_enemies_sprites_6b:
 @end:
 
 oam_enemies_sprites_6c:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1387,7 +1387,7 @@ oam_enemies_sprites_6c:
 @end:
 
 oam_enemies_sprites_6d:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1398,7 +1398,7 @@ oam_enemies_sprites_6d:
 @end:
 
 oam_enemies_sprites_6e:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1409,7 +1409,7 @@ oam_enemies_sprites_6e:
 @end:
 
 oam_enemies_sprites_6f:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1420,7 +1420,7 @@ oam_enemies_sprites_6f:
 @end:
 
 oam_enemies_sprites_70:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1431,7 +1431,7 @@ oam_enemies_sprites_70:
 @end:
 
 oam_enemies_sprites_71:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1442,7 +1442,7 @@ oam_enemies_sprites_71:
 @end:
 
 oam_enemies_sprites_72:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1453,7 +1453,7 @@ oam_enemies_sprites_72:
 @end:
 
 oam_enemies_sprites_73:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1464,7 +1464,7 @@ oam_enemies_sprites_73:
 @end:
 
 oam_enemies_sprites_74:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1475,7 +1475,7 @@ oam_enemies_sprites_74:
 @end:
 
 oam_enemies_sprites_75:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1486,7 +1486,7 @@ oam_enemies_sprites_75:
 @end:
 
 oam_enemies_sprites_76:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1497,7 +1497,7 @@ oam_enemies_sprites_76:
 @end:
 
 oam_enemies_sprites_77:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1508,7 +1508,7 @@ oam_enemies_sprites_77:
 @end:
 
 oam_enemies_sprites_78:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1519,7 +1519,7 @@ oam_enemies_sprites_78:
 @end:
 
 oam_enemies_sprites_79:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1530,7 +1530,7 @@ oam_enemies_sprites_79:
 @end:
 
 oam_enemies_sprites_7a:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $41
 
 @start:
@@ -1549,7 +1549,7 @@ oam_enemies_sprites_7a:
 @end:
 
 oam_enemies_sprites_7b:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $41
 
 @start:
@@ -1572,7 +1572,7 @@ oam_enemies_sprites_7b:
 @end:
 
 oam_enemies_sprites_7c:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $41
 
 @start:
@@ -1603,7 +1603,7 @@ oam_enemies_sprites_7c:
 @end:
 
 oam_enemies_sprites_7d:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $41
 
 @start:
@@ -1658,7 +1658,7 @@ oam_enemies_sprites_7d:
 @end:
 
 oam_enemies_sprites_7e:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1666,7 +1666,7 @@ oam_enemies_sprites_7e:
 @end:
 
 oam_enemies_sprites_7f:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $2A
 
 @start:
@@ -1675,7 +1675,7 @@ oam_enemies_sprites_7f:
 @end:
 
 oam_enemies_sprites_80:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1686,7 +1686,7 @@ oam_enemies_sprites_80:
 @end:
 
 oam_enemies_sprites_81:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1697,7 +1697,7 @@ oam_enemies_sprites_81:
 @end:
 
 oam_enemies_sprites_82:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1708,7 +1708,7 @@ oam_enemies_sprites_82:
 @end:
 
 oam_enemies_sprites_83:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1719,7 +1719,7 @@ oam_enemies_sprites_83:
 @end:
 
 oam_enemies_sprites_84:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1730,7 +1730,7 @@ oam_enemies_sprites_84:
 @end:
 
 oam_enemies_sprites_85:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1741,7 +1741,7 @@ oam_enemies_sprites_85:
 @end:
 
 oam_enemies_sprites_86:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1752,7 +1752,7 @@ oam_enemies_sprites_86:
 @end:
 
 oam_enemies_sprites_87:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1763,7 +1763,7 @@ oam_enemies_sprites_87:
 @end:
 
 oam_enemies_sprites_88:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1774,7 +1774,7 @@ oam_enemies_sprites_88:
 @end:
 
 oam_enemies_sprites_89:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1785,7 +1785,7 @@ oam_enemies_sprites_89:
 @end:
 
 oam_enemies_sprites_8a:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1796,7 +1796,7 @@ oam_enemies_sprites_8a:
 @end:
 
 oam_enemies_sprites_8b:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $24
 
 @start:
@@ -1807,7 +1807,7 @@ oam_enemies_sprites_8b:
 @end:
 
 oam_enemies_sprites_8c:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $00
 
 @start:
@@ -1823,7 +1823,7 @@ oam_enemies_sprites_8c:
 @end:
 
 oam_enemies_sprites_8d:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3C
 
 @start:
@@ -1838,7 +1838,7 @@ oam_enemies_sprites_8d:
 @end:
 
 oam_enemies_sprites_8e:
-	.BYTE (@end - @start) / 2
+	.BYTE (@end - @start) >> 1
 	.BYTE $3C
 
 @start:
