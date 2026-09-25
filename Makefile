@@ -18,6 +18,27 @@ home := \
 	home/* \
 	home/unused/*
 
+miscellaneous := \
+	miscellaneous.asm \
+	constants/* \
+	constants/charmap/* \
+	macros/* \
+	sprites/pointers/* \
+	sprites/* \
+	data/* \
+	objects/* \
+	stages/* \
+	stages/cutman_wily1/* \
+	stages/iceman_wily2/* \
+	stages/bombman_wily3/* \
+	stages/fireman_wily4/* \
+	stages/elecman/* \
+	stages/gutsman_ending/* \
+	engine/* \
+	data/ending/* \
+	data/stage_select/* \
+	unused/*
+
 stages := \
 	stages.asm \
 	constants/* \
@@ -74,27 +95,6 @@ stages := \
 	engine/* \
 	data/stages/* \
 	data/*
-
-miscellaneous := \
-	miscellaneous.asm \
-	constants/* \
-	constants/charmap/* \
-	macros/* \
-	sprites/pointers/* \
-	sprites/* \
-	data/* \
-	objects/* \
-	stages/* \
-	stages/cutman_wily1/* \
-	stages/iceman_wily2/* \
-	stages/bombman_wily3/* \
-	stages/fireman_wily4/* \
-	stages/elecman/* \
-	stages/gutsman_ending/* \
-	engine/* \
-	data/ending/* \
-	data/stage_select/* \
-	unused/*
 
 gfx := \
 	gfx/sprites/megaman/megaman.bmp gfx/sprites/megaman/megaman.chr \
