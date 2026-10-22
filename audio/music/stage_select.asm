@@ -3,7 +3,7 @@ music_stage_select:
 	.WORD music_stage_select_pulse_1
 	.WORD music_stage_select_pulse_2
 	.WORD music_stage_select_triangle
-	.WORD $0000
+	.WORD 0
 	.WORD music_stage_select_modulator
 
 music_stage_select_pulse_1:
